@@ -1,0 +1,20 @@
+:root{
+    --primary-4:#58C27D;
+    --neutral-8: #FCFCFD;
+    --neutral-6:#E6E8EC;
+    --neutral-2:#23262F;
+    --neutral-4:#777E90;
+    --neutral-3:#353945;
+    --neutral-7:#F4F5F6;
+
+
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+body{
+    font-family: "Poppins", system-ui;
+}
