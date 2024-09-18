@@ -1,11 +1,23 @@
 :root{
+    --primary-1:#3B71FE;
+    --primary-2:#8BC5E5;
+    --primary-3:#92A5EF;
     --primary-4:#58C27D;
-    --neutral-8: #FCFCFD;
-    --neutral-6:#E6E8EC;
+    
+    --secondary-1: #A4CDE3;
+    --secondary-2: #E4D7CF;
+    --secondary-3: #FFD166;
+    --secondary-4: #FA8F54;
+
+
+    --neutral-1:#141416;
     --neutral-2:#23262F;
-    --neutral-4:#777E90;
     --neutral-3:#353945;
+    --neutral-4:#777E90;
+    --neutral-5:#B1B5C3;
+    --neutral-6:#E6E8EC;
     --neutral-7:#F4F5F6;
+    --neutral-8: #FCFCFD;
 
 
 }
@@ -17,4 +29,59 @@
 }
 body{
     font-family: "Poppins", system-ui;
+}
+.text-xl{
+    font-size: 48px; 
+}
+.text-lg {
+    font-size: 24px;
+}
+
+.text-base {
+    font-size: 16px;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-ex {
+    font-size: 12px;
+}
+
+.flex-aic {
+    display: flex;
+    align-items: center;
+}
+
+.font-dmSan {
+    font-family: "DM Sans", sans-serif;
+}
+.btn{
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 10px 16px;
+    border-radius: 9999px;
+    
+}
+.btn-ghost{
+    border: none;
+    display: flex;
+    gap:12px;
+    color: var(--neutral-4);
+    span{
+        font-family: "DM Sans", sans-serif;
+    }
+}
+.btn-outline{
+    font-family: "DM Sans", sans-serif;
+    border: 2px solid var(--neutral-6);
+    span{
+        font-weight: 700;
+        font-size: 14px;
+    }
 }

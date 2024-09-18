@@ -5,41 +5,209 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="resources/css/header.css">
+    <link rel="stylesheet" href="/resources/css/account_setting.css">
+    <link rel="stylesheet" href="/resources/css/footer.css">
 </head>
 <body>
-    <header>
-        <!-- logo, role -->
-            <div class="header-left"></div>
-            <!-- avatar, notification, language.. -->
-            <div class="header-right"></div>
-        </header>
-<div class="sidebar">
-    <!-- List function -->
-    <div class="list-function">
-
-    </div>
-</div>
-<div class="main-content">
-    <!-- Update profile -->
-    <div class="form-update"></div>
-</div>
-    <footer>
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <!-- logo -->
-                    <div class="footer-logo">
-                        
+    <div class="container">
+        <div class="header-container">
+            <header>
+                <!-- logo, role -->
+                <div class="header-left">
+                    <div class="logo">
+                        <img src="/resources/image/logo/logo.png" alt="Logo fleet" class="imgLogo" id="logo">
+                        <label for="logo" class="logoName">fleet</label>
                     </div>
-                    <!-- global navigate -->
-                    <div class="footer-navigate">
-                    </div>
-                    <!-- contact -->
-                    <div class="footer-email"></div>
+                    <div class="line"></div>
+                    <select name="select_roles" id="select_roles" class="selectRoles">
+                        <option value="Traveler">Traveler</option>
+                        <option value="Traveler">Traveler</option>
+                        <option value="Traveler">Traveler</option>
+                    </select>
+                    
                 </div>
+                <!-- avatar, notification, language.. -->
+                <div class="header-right">
+                    <a href="" class="support">Support</a>
+                    <button class="btn btn-ghost">
+                        <img src="/resources/icons/language.png" alt="iconLanguage" class="iconLanguage">
+                        <span>Language</span> 
+                    </button>
+                    <button class="btn btn-outline"> <span>List your property</span></button>
+                    <div class="notification">
+                        <img src="/resources/icons/notification.png" alt="notification" class="notifiIcon">
+                    </div>
+                    <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="avt avt-header">
+                </div>   
+            </header>
+        </div>
+        <div class="main-form_edit">
+            <!-- list function on the left -->
+            <div class="list-function">
+                <a class="fc-choice" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 8.66634C5.42267 8.66634 3.33333 10.7557 3.33333 13.333V14.6663C3.33333 15.0345 3.03486 15.333 2.66667 15.333C2.29848 15.333 2 15.0345 2 14.6663V13.333C2 10.0193 4.68629 7.33301 8 7.33301C11.3137 7.33301 14 10.0193 14 13.333V14.6663C14 15.0345 13.7015 15.333 13.3333 15.333C12.9651 15.333 12.6667 15.0345 12.6667 14.6663V13.333C12.6667 10.7557 10.5773 8.66634 8 8.66634Z" fill="#23262F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 7.33366C9.47276 7.33366 10.6667 6.13975 10.6667 4.66699C10.6667 3.19423 9.47276 2.00033 8 2.00033C6.52724 2.00033 5.33333 3.19423 5.33333 4.66699C5.33333 6.13975 6.52724 7.33366 8 7.33366ZM8 8.66699C10.2091 8.66699 12 6.87613 12 4.66699C12 2.45785 10.2091 0.666992 8 0.666992C5.79086 0.666992 4 2.45785 4 4.66699C4 6.87613 5.79086 8.66699 8 8.66699Z" fill="#23262F"/>
+                        </svg>
+                    <span class="text-sm font-dmSan has-choice">Personal info</span>                  
+                </a>
+                <a class="fc-choice" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 7.33333C6.81828 7.33333 5.76562 7.37637 4.90558 7.43104C4.08981 7.4829 3.46253 8.10532 3.40398 8.91533C3.36233 9.49155 3.33333 10.0987 3.33333 10.6667C3.33333 11.2346 3.36233 11.8418 3.40398 12.418C3.46253 13.228 4.08981 13.8504 4.90559 13.9023C5.76562 13.957 6.81828 14 8 14C9.18172 14 10.2344 13.957 11.0944 13.9023C11.9102 13.8504 12.5375 13.228 12.596 12.418C12.6377 11.8418 12.6667 11.2346 12.6667 10.6667C12.6667 10.0987 12.6377 9.49155 12.596 8.91533C12.5375 8.10532 11.9102 7.4829 11.0944 7.43104C10.2344 7.37637 9.18172 7.33333 8 7.33333ZM4.821 6.10039C3.34251 6.19437 2.18092 7.34158 2.07412 8.81921C2.03101 9.41559 2 10.0566 2 10.6667C2 11.2767 2.03101 11.9177 2.07412 12.5141C2.18092 13.9918 3.34251 15.139 4.821 15.2329C5.70519 15.2891 6.78631 15.3333 8 15.3333C9.2137 15.3333 10.2948 15.2891 11.179 15.2329C12.6575 15.139 13.8191 13.9918 13.9259 12.5141C13.969 11.9177 14 11.2767 14 10.6667C14 10.0566 13.969 9.41559 13.9259 8.81921C13.8191 7.34158 12.6575 6.19437 11.179 6.10039C10.2948 6.04419 9.21369 6 8 6C6.78631 6 5.70519 6.04419 4.821 6.10039Z" fill="#777E91"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.66602 11.1553C9.06455 10.9247 9.33268 10.4938 9.33268 10.0003C9.33268 9.26395 8.73573 8.66699 7.99935 8.66699C7.26297 8.66699 6.66602 9.26395 6.66602 10.0003C6.66602 10.4938 6.93415 10.9247 7.33268 11.1553V12.0003C7.33268 12.3685 7.63116 12.667 7.99935 12.667C8.36754 12.667 8.66602 12.3685 8.66602 12.0003V11.1553Z" fill="#777E91"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.66602 4.00033C4.66602 2.15938 6.1584 0.666992 7.99935 0.666992C9.8403 0.666992 11.3327 2.15938 11.3327 4.00033V6.66699C11.3327 7.03518 11.0342 7.33366 10.666 7.33366C10.2978 7.33366 9.99935 7.03518 9.99935 6.66699V4.00033C9.99935 2.89576 9.10392 2.00033 7.99935 2.00033C6.89478 2.00033 5.99935 2.89576 5.99935 4.00033V6.66699C5.99935 7.03518 5.70087 7.33366 5.33268 7.33366C4.96449 7.33366 4.66602 7.03518 4.66602 6.66699V4.00033Z" fill="#777E91"/>
+                        </svg>
+                        
+                    <span class="text-sm font-dmSan not-choice">Login and security</span>                  
+                </a>
+                <a class="fc-choice" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M13.3327 3.33333H2.66602C2.29783 3.33333 1.99935 3.63181 1.99935 4V12C1.99935 12.3682 2.29783 12.6667 2.66602 12.6667H13.3327C13.7009 12.6667 13.9993 12.3682 13.9993 12V4C13.9993 3.63181 13.7009 3.33333 13.3327 3.33333ZM2.66602 2C1.56145 2 0.666016 2.89543 0.666016 4V12C0.666016 13.1046 1.56145 14 2.66602 14H13.3327C14.4373 14 15.3327 13.1046 15.3327 12V4C15.3327 2.89543 14.4373 2 13.3327 2H2.66602Z" fill="#777E91"/>
+                        <path d="M5.33398 10.333C5.33398 10.8853 4.88627 11.333 4.33398 11.333C3.7817 11.333 3.33398 10.8853 3.33398 10.333C3.33398 9.78072 3.7817 9.33301 4.33398 9.33301C4.88627 9.33301 5.33398 9.78072 5.33398 10.333Z" fill="#777E91"/>
+                        <path d="M8.66602 10.333C8.66602 10.8853 8.2183 11.333 7.66602 11.333C7.11373 11.333 6.66602 10.8853 6.66602 10.333C6.66602 9.78072 7.11373 9.33301 7.66602 9.33301C8.2183 9.33301 8.66602 9.78072 8.66602 10.333Z" fill="#777E91"/>
+                        <path d="M0.666016 5.33301H15.3327V6.66634H0.666016V5.33301Z" fill="#777E91"/>
+                        </svg>                    
+                    <span class="text-sm font-dmSan not-choice">Payment</span>                  
+                </a>
+                <a class="fc-choice" href="#">
+                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 10.0155C12 10.3409 11.7362 10.6047 11.4109 10.6047H0.589148C0.26377 10.6047 0 10.3409 0 10.0155C0 9.69013 0.26377 9.42636 0.589147 9.42636H0.6V5.32059C0.6 2.38192 3.018 0 6 0C8.982 0 11.4 2.38192 11.4 5.32059V9.42636H11.4109C11.7362 9.42636 12 9.69013 12 10.0155ZM1.8 9.42636H10.2V5.32059C10.2 3.03293 8.3196 1.17829 6 1.17829C3.6804 1.17829 1.8 3.03293 1.8 5.32059V9.42636ZM4.83101 12.1167C4.48109 11.6894 4.94772 11.1938 5.5 11.1938H6.5C7.05229 11.1938 7.51891 11.6894 7.16899 12.1167C7.13524 12.1579 7.0991 12.1975 7.06066 12.2353C6.77936 12.5115 6.39782 12.6667 6 12.6667C5.60218 12.6667 5.22064 12.5115 4.93934 12.2353C4.9009 12.1975 4.86476 12.1579 4.83101 12.1167Z" fill="#777E91"/>
+                        </svg>
+                                        
+                    <span class="text-sm font-dmSan not-choice">Notification</span>                  
+                </a>
+            </div>
+            <!-- Update profile -->
+            <div class="form-edit_user">
+                <div class="header-form_edit">
+                    <span class="text-xl font-dmSan header-form_title">Personal info</span>
+                    <button class="btn btn-outline">View profile</button>
+                </div>
+                <form class="main-content_form">
+                    <div class="part-accountInfo">
+                        <div class="part-name">
+                            <label class="text-base">Account info</label>
+                        </div>
+                        <table class="table-info">
+                            <tr class="user-info">
+                                <td>
+                                    <label class="name-field_info text-ex">DISPLAY NAME</label>
+                                    <input type="text" class="input-info" placeholder="Enter your display name">
+                                </td>
+                                <td>
+                                    <label class="name-field_info text-ex">REAL NAME</label>
+                                    <input type="text" class="input-info" placeholder="Kohaku Tora">
+                                </td>
+                            </tr>
+                            <tr class="user-info">
+                                <td>
+                                    <label class="name-field_info text-ex">PHONE</label>
+                                    <input type="text" class="input-info" placeholder="Phone number">
+                                </td>
+                                <td>
+                                    <label class="name-field_info text-ex">EMAIL</label>
+                                    <input type="text" class="input-info" placeholder="tam@ui8.net">
+                                </td>
+                            </tr>
+                            <tr class="user-info info-bio">
+                                <td>
+                                    <label class="name-field_info text-ex">BIO</label>
+                                    <textarea  name="BIO" id="BIO" placeholder="About yourself in a few words"></textarea>
+                                </td>
+                            </tr>
+                            <tr class="user-info">
+                                <td>
+                                    <label class="name-field_info text-ex">LIVES IN</label>
+                                    <div class="user-info_select">
+                                        <select name="location" id="location" class="input-info">
+                                            <option class="opt-text text-ex">Location</option>
+                                            <option class="opt-text text-ex">Viet Nam</option>
+                                            <option class="opt-text text-ex">United states</option>
+                                        </select>
+                                    </div>
+                                </td>
+                                <td>
+                                    <label class="name-field_info text-ex">SPEAK</label>
+                                    <div class="user-info_select">
+
+                                        <select name="location" id="location" class="input-info">
+                                            <option class="opt-text text-ex">English (United states)</option>
+                                            <option class="opt-text text-ex">Vietnamese (Viet Nam)</option>
+                                            <option class="opt-text text-ex">Spainese (Spain)</option>
+                                        </select>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="part-social">
+                        <div class="part-name">
+                            <label class="text-base">Social</label>
+                        </div>
+                        <table class="table-info">
+                            <tr class="user-info">
+                                <td>
+                                    <label class="name-field_info text-ex">WEPSITE</label>
+                                    <input type="text" class="input-info" placeholder="Your site URL">
+                                </td>
+                                <td>
+                                    <label class="name-field_info text-ex">TWITTER</label>
+                                    <div class="fc-verify">
+                                        <input type="text" placeholder="@twitter username">
+                                        <button class="btn btn-outline"><span>Verify account</span></button>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="form-footer">
+                            <button class="btn btn-outline" type="submit"><span class="font-dmSan text-base">Update profile</span></button>
+                            <buton class="btn btn-ghost"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52827 3.52827C3.78862 3.26792 4.21073 3.26792 4.47108 3.52827L7.99967 7.05687L11.5283 3.52827C11.7886 3.26792 12.2107 3.26792 12.4711 3.52827C12.7314 3.78862 12.7314 4.21073 12.4711 4.47108L8.94248 7.99967L12.4711 11.5283C12.7314 11.7886 12.7314 12.2107 12.4711 12.4711C12.2107 12.7314 11.7886 12.7314 11.5283 12.4711L7.99967 8.94248L4.47108 12.4711C4.21073 12.7314 3.78862 12.7314 3.52827 12.4711C3.26792 12.2107 3.26792 11.7886 3.52827 11.5283L7.05687 7.99967L3.52827 4.47108C3.26792 4.21073 3.26792 3.78862 3.52827 3.52827Z" fill="#777E91"/>
+                                </svg>
+                                <span>Clear all</span>
+                                </buton>
+                        </div>
+                    </div>
+                </form>
             </div>
         </div>
-        <div class="footer-bottom">
-        </div>
-    </footer>
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-content">
+                    <div class="fc-logo">
+                        <img src="./resources/image/logo/logo.svg" alt="logo">
+                        <span class="text-lg ">fleet</span>
+                    </div>
+                    <div class="fc-item">
+                        <a href="#" class="fc-item_link text-sm font-dmSan">About</a>
+                        <a href="#" class="fc-item_link text-sm font-dmSan">Project</a>
+                    </div>
+                    <div class="fc-item">
+                        <a href="#" class="fc-item_link text-sm font-dmSan">What we do</a>
+                        <a href="#" class="fc-item_link text-sm font-dmSan">press</a>
+                    </div>
+                    <div class="fc-item">
+                        <a href="#" class="fc-item_link text-sm font-dmSan">Jobs</a>
+                        <a href="#" class="fc-item_link text-sm font-dmSan">Download</a>
+                    </div>
+                    <form class="fc-form">
+                        <label class="text-ex">JOIN OUR COMMUNITY 🔥</label>
+                        <div class="fc-send_email">
+                            <input type="email" class="send-email" placeholder="Enter your email "></input>
+                            <button><svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09094 0.265207C9.49676 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49677 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L0.999999 5.49997C0.447714 5.49997 -7.64154e-07 5.05225 -7.86799e-07 4.49997C-8.09444e-07 3.94768 0.447714 3.49997 0.999999 3.49997L10.716 3.49997L9.03443 1.67829C8.65982 1.27247 8.68513 0.639813 9.09094 0.265207Z" fill="#FCFCFD"/>
+                                </svg>
+                            </button>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="footer-bottom">
+                    <p class="text-ex footer-bottom_copyright">Copyright © 2021 UI8 LLC. All rights reserved</p>
+                </div>
+
+        </footer>
+    </div>
 </body>
