@@ -3,140 +3,7 @@
     width: 100%;  
     margin: 0 auto;
 }
-.header-container{
-    width: 100%;
-}
-header{
-    display: flex;
-    max-height: 88px;
-    height: 88px;
-    background-color: var( --neutral-8);
-    overflow: auto;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 80px;
-}
-.header-left{
-    display: flex;
-    gap: 40px;
-    align-items: center;
-    flex-wrap: nowrap;
-   
-}
-.header-left .line{
-    height: 48px;
-    width: 1px;
-    background-color: var(--neutral-6);
-}
-.logo{
-    display: flex;
-    gap: 8px;
-    width: 106px;
-    height: 36px;
-    align-items: center;
-}
-.imgLogo{
-    width: 36px;
-    height: 36px;
-}
-.logoName{
-    font-size: 27px;
-    font-weight: 600;
-    font-family: "Poppins", system-ui;
-    color: var(--neutral-2);
-}
 
-.selectRoles{
-    display: flex;
-    font-family: "DM Sans", sans-serif;
-    background: transparent;
-    color: var(--neutral-4);
-    align-items: center;
-    font-weight: 700;
-    font-size: 14px;
-    border: none;
-    width: 94px;
-    height: 24px;
-    gap: 8px;
-}
-.header-right{
-    align-items: center ;
-    display: flex;
-    gap: 24px;
-    font-family: "DM Sans", sans-serif;
-}
-.iconLanguage{
-    width: 16px;
-    height: 16px;
-}
-.support{
-    font-family: "DM Sans", sans-serif;
-    
-    font-style: normal;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 14px;
-    text-align: center;
-    color: var(--neutral-2);
-      
-}
-.btn{
-    cursor: pointer;
-    outline: none;
-    text-align: center;
-    background-color: transparent;
-    font-size: 14px;
-    font-weight: 700;
-    padding: 10px 16px;
-    border-radius: 9999px;
-    
-}
-.btn-ghost{
-    border: none;
-    display: flex;
-    gap:12px;
-    color: var(--neutral-4);
-    span{
-        font-family: "DM Sans", sans-serif;
-    }
-}
-.btn-outline{
-    font-family: "DM Sans", sans-serif;
-    border: 2px solid var(--neutral-6);
-    span{
-        font-weight: 700;
-        font-size: 14px;
-    }
-}
-.notification{
-    display: flex;
-    position: relative;
-    width: 40px;
-    height: 40px;
-    align-items: center;
-    justify-content: center;
-}
-.notification::before{
-    content: '';
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    border-radius: 99px;
-    background: var(--primary-4);
-    top: 0;
-    right: 0;
-    gap: 10px;
-}
-.notifiIcon{
-    width: 24px;
-    height: 24px;
-
-}
-.avt-header{
-    width: 40px;
-    height: 40px;
-    border-radius: 40px;   
-}
 .background{
     width: 1280px;
     height: 400px;
@@ -152,6 +19,7 @@ header{
     right: 16px;
     gap: 12px;
     border: 2px solid var(--neutral-6);
+    display: flex;
     span{.main-content{
         width: 100%;
     }
@@ -373,6 +241,7 @@ header{
         align-items: center;
         justify-content: center;
         text-align: center;
+        gap: 8px;
     }
 }
 .avt-container .card-avt{
@@ -383,39 +252,30 @@ header{
 .card-name{
     width: 100%;
     text-align: center;
-    span{
-        font-family: "DM Sans", sans-serif;
-        color: var(--neutral-2);
-        font-size: 32px;
-        font-weight: 700;
-        line-height: 40px;
-        text-align: center;
-    }
+    font-family: "DM Sans", sans-serif;
+    color: var(--neutral-2);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1%;
 }
+
 .amount-review {
     width: 100%;
     display: flex;
-    align-items: flex-start;
-    align-content: center;
-    justify-items: center;
+    align-items: center;
     justify-content: center;
     gap: 8px;
-    .icon-reviewStar{
-        width: 17.44px;
-        height: 16.77px;
+    background: var(--neutral-7);
+    border-radius: 40px;
+    padding: 8px ;
+    .amount-review_item{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        justify-content: flex-start;
     }
-    img{
-        width: 12px;
-        height: 8px;
-    }
-    
-
-    .btn-outline {
-        width: 308px;
-
-        background-color: var(--neutral-7);
-    }
-
     span {
         font-family: "Poppins", system-ui;
         font-weight: 400;
@@ -430,26 +290,29 @@ header{
     text-align: center;
     align-items: center;
     justify-content: center;
-    img{
-        width: 13.33px;
-        height: 13.33px;
-    };
+    gap: 8px;
     a{
         font-family: "DM Sans", sans-serif;
         font-size: 14px;
         font-weight: 700;
+        text-decoration: none;
+        color: var(--neutral-2);
     }
 }
 .function-connect-user{
     width: 100%;
+    display: flex;
     align-content: center;
-    text-align: center;
+    justify-content: center;
+    gap: 8px;
+
     .btn-outline{
         background-color: var(--neutral-2);
         width: 92px;
         height: 40px;
         gap :12px;
     }
+
     span{
         font-family: "DM Sans", sans-serif;
         font-size: 14px;
@@ -457,22 +320,19 @@ header{
         text-align: center;
         color: var(--neutral-8);
     }
-    .icon-share{
-        width: 20px;
-        height: 10px;
-    }
-    .icon-other{
-        width: 15px;
-        height: 3.33px;
-    }
 
+    .btn{
+        padding: 0;
+    }
     .btn-rounded{
-        width: 60px;
+        width: 40px;
         height: 40px;
         border-radius: 50%;
+        display: flex;
         align-items: center;
         justify-content: center;
         justify-items: center;
+        border: 2px solid var(--neutral-6);
     }
 }
 .other-profile_site{
@@ -481,18 +341,6 @@ header{
     align-items: center;
     justify-content: center;
     gap: 24px;
-    .icon-twitter{
-        width: 18.2px;
-        height: 15px;
-    }
-    .icon-instagram{
-        width: 16.67px;
-        height: 16.67px;
-    }
-    .icon-facebook{
-        width: 16.67px;
-        height: 16.67px;
-    }
 }
 hr{
     display: flex;
@@ -508,12 +356,10 @@ hr{
     color: var(--neutral-4);
 }
 .fc-report{
+    display: flex;
+    align-items: center;
     gap:8px;
-    img{
-        width: 12px;
-        height: 12px;
 
-    }
     span{
         font-size: 12px;
         font-weight: 400;
