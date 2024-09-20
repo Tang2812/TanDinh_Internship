@@ -56,12 +56,12 @@ header {
     }
 }
 /* form edit user */
-.form-edit_user{
+.form-edit-user{
     max-width: 736px;
     width: 100%;
 }
 
-.header-form_edit {
+.form-edit-user--header {
     width: 100%;
     height: 56px;
     display: flex;
@@ -80,70 +80,72 @@ header {
     gap: 48px;
     margin-top: 64px;
 
+}
 
-    /* part-accountInfo */
-    .part-accountInfo{
-        
-        .part-name{
-            font-weight: 500;
-            line-height: 24px;
-            color: var(--neutral-2);
+
+
+/* part-accountInfo */
+.accountInfo{
+    
+    .accountInfo--name{
+        font-weight: 500;
+        line-height: 24px;
+        color: var(--neutral-2);
+        margin-bottom: 32px;
+    }
+    
+    .accountInfo--table-info{
+        width: 100%;
+    
+        .user-info{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            width: 100%;
             margin-bottom: 32px;
         }
-        
-        .table-info{
-            width: 100%;
-        
-            .user-info{
-                display: flex;
-                flex-direction: row;
-                gap: 20px;
-                width: 100%;
-                margin-bottom: 32px;
+
+        td{
+            display: flex;
+            width: 358px;
+            gap: 12px;
+            flex-direction: column;
+    
+            .name-field_info{
+                font-weight: 700;
+                line-height: 12px;
+                color: var(--neutral-5);
             }
 
-            td{
-                display: flex;
-                width: 358px;
-                gap: 12px;
-                flex-direction: column;
-        
-                .name-field_info{
-                    font-weight: 700;
-                    line-height: 12px;
-                    color: var(--neutral-5);
-                }
+            .input-info{
+                padding: 12px 16px 12px 16px;
+                gap: 10px;
+                border-radius: 12px;
+                border: 2px;
+                opacity: 0px;
+                border: 2px solid var(--neutral-6)
+            }
+        }
 
-                .input-info{
+        .info-bio{
+            display: flex;
+            gap: 12px;
+            opacity: 0px;
+            margin-bottom: 32px;
+    
+            td{
+                width: 100%;
+    
+                textarea{
+                    width: 100%;
                     padding: 12px 16px 12px 16px;
                     gap: 10px;
                     border-radius: 12px;
                     border: 2px;
                     opacity: 0px;
-                    border: 2px solid var(--neutral-6)
-                }
-            }
-
-            .info-bio{
-                display: flex;
-                gap: 12px;
-                opacity: 0px;
-                margin-bottom: 32px;
-        
-                td{
-                    width: 100%;
-        
-                    textarea{
-                        width: 100%;
-                        padding: 12px 16px 12px 16px;
-                        gap: 10px;
-                        border-radius: 12px;
-                        border: 2px;
-                        opacity: 0px;
-                        border: 2px solid var(--neutral-6);
-                        min-height: 156px;
-                        resize: none;   
-                    }
+                    border: 2px solid var(--neutral-6);
+                    min-height: 156px;
+                    resize: none;   
                 }
             }
         }
@@ -196,62 +198,62 @@ header {
     
 }
 
-    /* part-social */
-    .part-social{
+/* part-social */
+.part-social{
+    width: 100%;
+    margin-top: 48px;
+}
+
+    
+.part-social--name{
+    width: 100%;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--neutral-2);
+    margin-bottom: 32px;
+}
+
+.part-social--table-info{
+    width: 100%;
+    .user-info{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
         width: 100%;
-        margin-top: 48px;
-    
-        .part-name{
-            width: 100%;
-            font-weight: 500;
-            line-height: 24px;
-            color: var(--neutral-2);
-            margin-bottom: 32px;
-        }
-    
-        .table-info{
-            width: 100%;
-            .user-info{
-                display: flex;
-                flex-direction: row;
-                gap: 20px;
-                width: 100%;
-                height: 60px;
-                margin-bottom: 32px;
-            }
-
-            td{
-                display: flex;
-                width: 358px;
-                height: 72px;
-                gap: 12px;
-                flex-direction: column;
-                .name-field_info{
-                    font-weight: 700;
-                    line-height: 12px;
-                    color: var(--neutral-5);
-                }
-
-                .input-info{
-                    padding: 12px 16px 12px 16px;
-                    gap: 10px;
-                    border-radius: 12px;
-                    border: 2px;
-                    opacity: 0px;
-                    border: 2px solid var(--neutral-6);
-                    &::placeholder{
-                        font-family: "Poppins", system-ui;
-                        font-size: 14px;
-                        font-weight: 500;
-                        line-height: 24px;
-                        text-align: left;
-
-                    }
-                }
-            }
-        }
-
+        height: 60px;
+        margin-bottom: 32px;
     }
+
+    td{
+        display: flex;
+        width: 358px;
+        height: 72px;
+        gap: 12px;
+        flex-direction: column;
+        .name-field_info{
+            font-weight: 700;
+            line-height: 12px;
+            color: var(--neutral-5);
+        }
+
+        .input-info{
+            padding: 12px 16px 12px 16px;
+            gap: 10px;
+            border-radius: 12px;
+            border: 2px;
+            opacity: 0px;
+            border: 2px solid var(--neutral-6);
+            &::placeholder{
+                font-family: "Poppins", system-ui;
+                font-size: 14px;
+                font-weight: 500;
+                line-height: 24px;
+                text-align: left;
+
+            }
+        }
+    }
+}
 
 .fc-verify{
     display: flex;

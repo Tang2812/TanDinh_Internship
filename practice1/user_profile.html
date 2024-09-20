@@ -16,11 +16,11 @@
             <!-- logo, role -->
             <div class="header-left">
                 <div class="logo">
-                    <img src="/resources/image/logo/logo.png" alt="Logo fleet" class="imgLogo" id="logo">
-                    <label for="logo" class="logoName">fleet</label>
+                    <img src="/resources/image/logo/logo.png" alt="Logo fleet" class="logo--img" id="logo">
+                    <label for="logo" class="logo--name">fleet</label>
                 </div>
                 <div class="line"></div>
-                <select name="select_roles" id="select_roles" class="selectRoles">
+                <select name="select_roles" id="select_roles" class="text-sm font-dmSan flex-aic header-left--selectRoles">
                     <option value="Traveler">Traveler</option>
                     <option value="Traveler">Traveler</option>
                     <option value="Traveler">Traveler</option>
@@ -29,16 +29,16 @@
             </div>
             <!-- avatar, notification, language.. -->
             <div class="header-right">
-                <a href="" class="support">Support</a>
+                <a href="" class="font-dmSan text-sm header-right--support">Support</a>
                 <button class="btn btn-ghost">
-                    <img src="/resources/icons/language.png" alt="iconLanguage" class="iconLanguage">
+                    <img src="/resources/icons/language.png" alt="iconLanguage" class="header-right--iconLanguage">
                     <span>Language</span> 
                 </button>
                 <button class="btn btn-outline"> <span>List your property</span></button>
-                <div class="notification">
-                    <img src="/resources/icons/notification.png" alt="notification" class="notifiIcon">
+                <div class="flex-aic header-right--notification">
+                    <img src="/resources/icons/notification.png" alt="notification" class="notification--notificationImg">
                 </div>
-                <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="avt avt-header">
+                <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
             </div>   
         </header>
     </div>
@@ -47,11 +47,12 @@
 
             <!-- backfround -->
         <div class="profile-background">
-            <img src="/resources/image/profile_background/image.png" alt="backfround" class="background">
-            <button class="btn btn-outline"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <img src="/resources/image/profile_background/image.png" alt="backfround" class="profile-background--background-img">
+            <button class="flex-aic btn btn-outline"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.347856 11.2649L0.830954 9.09097C0.940972 8.59589 1.18989 8.14245 1.5485 7.78384L8.11379 1.21855C9.15518 0.177152 10.8436 0.177149 11.885 1.21855L12.7805 2.11398C13.8219 3.15538 13.8219 4.84382 12.7805 5.88521L6.21517 12.4505C5.85655 12.8091 5.40311 13.058 4.90803 13.1681L2.73409 13.6511C1.30509 13.9687 0.0303015 12.6939 0.347856 11.2649ZM2.13254 9.38021L1.64944 11.5542C1.54359 12.0305 1.96852 12.4554 2.44485 12.3496L4.61879 11.8665C4.85686 11.8136 5.07567 11.6964 5.25157 11.528L2.47097 8.74744C2.30258 8.92334 2.18544 9.14215 2.13254 9.38021ZM3.41355 7.8044L6.1946 10.5855L9.91846 6.86159L7.13741 4.08055L3.41355 7.8044ZM11.8376 4.94241L10.8613 5.91879L8.08022 3.13774L9.0566 2.16136C9.5773 1.64066 10.4215 1.64066 10.9422 2.16136L11.8376 3.05679C12.3583 3.57749 12.3583 4.42171 11.8376 4.94241Z" fill="#FCFCFD"/>
                 </svg><span>Edit cover</span></button>
         </div>
+        <!-- main content -->
         <div class="main-content">
             <div class="profile-card">
                 <div class="avt-container">
@@ -60,26 +61,26 @@
                         <img src="/resources/icons/pencil.png" alt="icon pencil">
                         <span>Update avatar</span> 
                    </div>   
-                   <div class="card-name">
+                   <div class="profile-card--name">
                     Kohaku Tora
                     </div>
                 </div>
 
               <div class="amount-review">
-                <div class="amount-review_item">
+                <div class="amount-review--item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 12L10 16L18 8" stroke="#777E91" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <span class="text-sm">Indentity verified</span>                   
                 </div>
-                <div class="amount-review_item">
+                <div class="amount-review--item">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.93563 7.44443C7.85143 7.64607 7.66159 7.78375 7.44377 7.80115L3.48604 8.11721C2.96819 8.15856 2.75865 8.80523 3.15384 9.14243L6.16586 11.7125C6.33271 11.8549 6.4056 12.0788 6.35452 12.2921L5.43371 16.1374C5.31293 16.6418 5.86114 17.0412 6.30421 16.7716L9.69705 14.7073C9.8833 14.594 10.1172 14.594 10.3035 14.7073L13.6963 16.7716C14.1394 17.0412 14.6876 16.6418 14.5668 16.1374L13.646 12.2921C13.5949 12.0788 13.6678 11.8549 13.8346 11.7125L16.8467 9.14243C17.2419 8.80523 17.0323 8.15856 16.5145 8.11721L12.5567 7.80115C12.3389 7.78375 12.1491 7.64607 12.0649 7.44443L10.5385 3.78891C10.3389 3.31081 9.66159 3.31081 9.46196 3.78891L7.93563 7.44443ZM13.3482 6.19238L12.0765 3.14674C11.3065 1.30264 8.69396 1.30266 7.92398 3.14674L6.65229 6.19238L3.35337 6.45583C1.35593 6.61534 0.547725 9.10963 2.07201 10.4103L4.5791 12.5495L3.81287 15.7493C3.347 17.6947 5.46153 19.2352 7.17051 18.1954L10.0003 16.4737L12.83 18.1954C14.539 19.2352 16.6535 17.6947 16.1876 15.7493L15.4214 12.5495L17.9285 10.4103C19.4528 9.10961 18.6446 6.61534 16.6471 6.45583L13.3482 6.19238Z" fill="#777E91"/>
                     </svg>
                     <span>256 reviews</span>         
                 </div>
               </div>
-              <div class="link-website">
+              <div class="profile-card--link-website">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9987 13.332C10.9442 13.332 13.332 10.9442 13.332 7.9987C13.332 5.05318 10.9442 2.66536 7.9987 2.66536C5.05318 2.66536 2.66536 5.05318 2.66536 7.9987C2.66536 10.9442 5.05318 13.332 7.9987 13.332ZM7.9987 14.6654C11.6806 14.6654 14.6654 11.6806 14.6654 7.9987C14.6654 4.3168 11.6806 1.33203 7.9987 1.33203C4.3168 1.33203 1.33203 4.3168 1.33203 7.9987C1.33203 11.6806 4.3168 14.6654 7.9987 14.6654Z" fill="#777E91"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16575 12.1165C9.65822 11.1315 10.0013 9.67754 10.0013 7.9987C10.0013 6.31986 9.65822 4.86588 9.16575 3.88094C8.63341 2.81625 8.14467 2.66536 8.0013 2.66536C7.85793 2.66536 7.36919 2.81625 6.83685 3.88094C6.34438 4.86588 6.0013 6.31986 6.0013 7.9987C6.0013 9.67754 6.34438 11.1315 6.83685 12.1165C7.36919 13.1811 7.85793 13.332 8.0013 13.332C8.14467 13.332 8.63341 13.1811 9.16575 12.1165ZM8.0013 14.6654C9.84225 14.6654 11.3346 11.6806 11.3346 7.9987C11.3346 4.3168 9.84225 1.33203 8.0013 1.33203C6.16035 1.33203 4.66797 4.3168 4.66797 7.9987C4.66797 11.6806 6.16035 14.6654 8.0013 14.6654Z" fill="#777E91"/>
@@ -87,7 +88,7 @@
                 </svg> 
                 <a>https://ui8.net</a>
               </div>
-              <div class="function-connect-user">
+              <div class="profile-card--function-connect-user">
                 <button class="btn btn-outline"><span>Message</span></button>
                 <button class="btn btn-rounded">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -108,7 +109,7 @@
                     </svg>                 
                 </button>
             </div>
-            <div class="other-profile_site">
+            <div class="profile-card--other-profile_site">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.65115 11.6665C1.27305 11.6704 0.383457 13.2403 1.23245 14.4298C2.4483 16.133 4.6531 17.5 8.33395 17.5C14.0382 17.5 18.617 12.8514 17.976 7.35925L18.9151 5.48108C19.5664 4.17857 18.4347 2.69685 17.0067 2.98245L15.766 3.23057C15.4371 3.05702 15.0967 2.92606 14.8058 2.83117C14.2388 2.64627 13.5525 2.5 12.9173 2.5C11.7762 2.5 10.7914 2.79276 10.0087 3.37994C9.23495 3.96053 8.79911 4.72354 8.55995 5.42421C8.4497 5.74717 8.37628 6.07112 8.32917 6.38203C7.88645 6.24269 7.43502 6.05522 6.99307 5.82629C5.9904 5.30693 5.17961 4.64852 4.72224 4.07126C3.95488 3.10275 2.32868 3.17456 1.75803 4.43351C0.953746 6.20789 1.17437 8.31122 1.89732 10.0108C2.13964 10.5803 2.45485 11.1434 2.83994 11.6652C2.77401 11.666 2.71095 11.6663 2.65115 11.6665ZM8.33386 15.8333C5.11441 15.8333 3.44969 14.6672 2.5889 13.4614C2.55022 13.4072 2.58922 13.3333 2.65578 13.3332C3.53148 13.3307 5.32898 13.2892 6.51448 12.5954C6.57579 12.5595 6.5623 12.4691 6.49496 12.4465C3.73149 11.5173 2.16063 7.58216 3.27595 5.12158C3.30152 5.06517 3.37735 5.05772 3.41583 5.10628C4.68989 6.71432 7.47555 8.28933 9.8992 8.33242C9.95178 8.33333 9.99153 8.28558 9.98353 8.23361C9.88586 7.60044 9.51295 4.16667 12.9172 4.16667C13.7301 4.16667 14.9396 4.56319 15.3851 4.96942C15.4057 4.98819 15.4336 4.99672 15.4609 4.99125L17.3334 4.61675C17.4014 4.60315 17.4554 4.67371 17.4244 4.73573L16.2629 7.05849C16.2549 7.07462 16.2524 7.09312 16.2554 7.11088C17.0689 11.6833 13.3239 15.8333 8.33386 15.8333Z" fill="#777E91"/>
                 </svg>
@@ -123,8 +124,8 @@
                 </svg>
             </div>
               <hr>
-              <p class="time-attended">Member since Mar 15,2017</p>
-              <button class="fc-report btn btn-ghost">
+              <p class="profile-card--time-attended">Member since Mar 15,2017</p>
+              <button class="profile-card--fc-report btn btn-ghost">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_7858_547)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5L9.58504 2.65079C10.141 2.00212 9.68013 1 8.82578 1L2 1L2 8L8.82578 8C9.68013 8 10.141 6.99788 9.58504 6.34921L8 4.5ZM3 7L8.82578 7L6.68292 4.5L8.82578 2L3 2L3 7Z" fill="#777E91"/>
@@ -142,44 +143,44 @@
             <div class="content">
                 <div class="profile">
                     <!-- info -->
-                    <div class="personal-info">
-                        <div class="opener">
+                    <div class="profile--personal-info">
+                        <div class="personal-info--opener">
                             <span>Hi, I'm Kohaku Tora</span>
                             <button class="btn btn-outline">Edit your profile</button>
                         </div>
-                        <div class="Caption">
+                        <div class="personal-info--caption">
                             <span>Described by Queenstown House & Garden magazine as having 'one of the best views we've ever seen' you will love relaxing in this newly built</span>
                         </div>
-                        <div class="information">
+                        <div class="personal-info--infomation">
                             <div class="info-item">
-                                <div class="info-item_label">
+                                <div class="info-item--label">
                                     <img src="/resources/icons/home.png" alt="home icon"> 
                                     <span>Lives in</span>
                                 </div>
-                                <p class="info-item_content">Auckland, New Zealand</p>
+                                <p class="info-item--content">Auckland, New Zealand</p>
                             </div>
 
                             <div class="info-item">
-                                <div class="info-item_label">
+                                <div class="info-item--label">
                                     <img src="/resources/icons/account.png" alt="account icon"> 
                                     <span>Account</span>
                                 </div>
-                                <p class="info-item_content">Verified member</p>
+                                <p class="info-item--content">Verified member</p>
                             </div>
 
                             <div class="info-item">
-                                <div class="info-item_label">
+                                <div class="info-item--label">
                                     <img src="/resources/icons/speak.png" alt="speak icon"> 
                                     <span>Speak</span>
                                 </div>
-                                <p class="info-item_content">English, Vietnamese</p>
+                                <p class="info-item--content">English, Vietnamese</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- review -->
                 <div class="user-part">
-                    <div class="user-review-header">
+                    <div class="user-review--header">
                         <span>1 review</span>
                         <div class="fc-button">
                             <button class="btn btn-outline"><span>Review about you</span></button>
@@ -190,33 +191,33 @@
                     <div class="user-review-container">
                         <div class="user-review">
                             <!-- image user review -->
-                            <div class="img-user_review">
+                            <div class="user_revie--img">
                                 <img src="/resources/image/avatar/TobinHackett.png" alt="avt of user1">
                             </div>
-                            <div class="content-user_review">
+                            <div class="user_revie--content">
                                 <!-- name user review -->
                                 <h4>Tobin Hackett</h4>
                                 <p>I enjoyed my communication with them and wish them only the best!</span>
                                 <div class="footer-user-review">
                                     <span>1 day ago</span>
-                                    <button class="review-action">Like</button>
-                                    <button class="review-action">Reply</button>
+                                    <button class="user-review--action">Like</button>
+                                    <button class="user-review--action">Reply</button>
                                 </div>
                             </div>
                         </div>
                         <div class="user-review">
                             <!-- image user review -->
-                            <div class="img-user_review">
+                            <div class="user_revie--img">
                                 <img src="/resources/image/avatar/MyritieRunoosion.png" alt="avt of user2">
                             </div>
-                            <div class="content-user_review">
+                            <div class="user_revie--content">
                                 <!-- name user review -->
                                 <h4>Myrtie Runolfsson</h4>
                                 <p>Kohaku and her husband were great guests. I enjoyed my communication with them and wish them only the best!</span>
                                 <div class="footer-user-review">
                                     <span>about 1 hour ago</span>
-                                    <button class="review-action">Like</button>
-                                    <button class="review-action">Reply</button>
+                                    <button class="user-review--action">Like</button>
+                                    <button class="user-review--action">Reply</button>
                                 </div>
                             </div>
                         </div>

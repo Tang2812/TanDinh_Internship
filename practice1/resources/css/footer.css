@@ -14,7 +14,7 @@ footer{
     gap: 32px;
     margin-bottom: 32px;
 
-    .fc-logo{
+    .fc--logo{
         display: flex;
         align-items: center;
         gap:8px;
@@ -27,7 +27,7 @@ footer{
         }
     }
 
-    .fc-item{
+    .fc--item{
         max-width: 160px;
         width: 100%;
         gap: 32px;
@@ -45,7 +45,7 @@ footer{
 
     }
 }
-.fc-form{
+.fc--form{
     max-width: 255px;
     width: 100%;
 
@@ -54,7 +54,7 @@ footer{
         line-height: 12px;
     }
     
-    .fc-send_email{
+    .fc--send_email{
         margin-top: 16px;
         width: 100%;
         border: 2px solid var(--neutral-6);
@@ -88,7 +88,7 @@ footer{
     }
 
 }
-.footer-bottom{
+.footer--bottom{
     padding: 25px 24px 0px 0px;
     border-top: 1px solid var(--neutral-7);
     .footer-bottom_copyright{

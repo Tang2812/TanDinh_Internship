@@ -27,12 +27,15 @@
     box-sizing: border-box;
 
 }
+
 body{
     font-family: "Poppins", system-ui;
 }
+
 .text-xl{
     font-size: 48px; 
 }
+
 .text-lg {
     font-size: 24px;
 }
@@ -57,6 +60,7 @@ body{
 .font-dmSan {
     font-family: "DM Sans", sans-serif;
 }
+
 .btn{
     cursor: pointer;
     outline: none;
@@ -68,6 +72,7 @@ body{
     border-radius: 9999px;
     
 }
+
 .btn-ghost{
     border: none;
     display: flex;
@@ -77,6 +82,7 @@ body{
         font-family: "DM Sans", sans-serif;
     }
 }
+
 .btn-outline{
     font-family: "DM Sans", sans-serif;
     border: 2px solid var(--neutral-6);

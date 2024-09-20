@@ -16,11 +16,11 @@
                 <!-- logo, role -->
                 <div class="header-left">
                     <div class="logo">
-                        <img src="/resources/image/logo/logo.png" alt="Logo fleet" class="imgLogo" id="logo">
-                        <label for="logo" class="logoName">fleet</label>
+                        <img src="/resources/image/logo/logo.png" alt="Logo fleet" class="logo--img" id="logo">
+                        <label for="logo" class="logo--name">fleet</label>
                     </div>
                     <div class="line"></div>
-                    <select name="select_roles" id="select_roles" class="selectRoles">
+                    <select name="select_roles" id="select_roles" class="text-sm font-dmSan flex-aic header-left--selectRoles">
                         <option value="Traveler">Traveler</option>
                         <option value="Traveler">Traveler</option>
                         <option value="Traveler">Traveler</option>
@@ -29,16 +29,16 @@
                 </div>
                 <!-- avatar, notification, language.. -->
                 <div class="header-right">
-                    <a href="" class="support">Support</a>
+                    <a href="" class="font-dmSan text-sm header-right--support">Support</a>
                     <button class="btn btn-ghost">
-                        <img src="/resources/icons/language.png" alt="iconLanguage" class="iconLanguage">
+                        <img src="/resources/icons/language.png" alt="iconLanguage" class="header-right--iconLanguage">
                         <span>Language</span> 
                     </button>
                     <button class="btn btn-outline"> <span>List your property</span></button>
-                    <div class="notification">
-                        <img src="/resources/icons/notification.png" alt="notification" class="notifiIcon">
+                    <div class="flex-aic header-right--notification">
+                        <img src="/resources/icons/notification.png" alt="notification" class="notification--notificationImg">
                     </div>
-                    <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="avt avt-header">
+                    <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
                 </div>   
             </header>
         </div>
@@ -79,17 +79,17 @@
                 </a>
             </div>
             <!-- Update profile -->
-            <div class="form-edit_user">
-                <div class="header-form_edit">
+            <div class="form-edit-user">
+                <div class="form-edit-user--header">
                     <span class="text-xl font-dmSan header-form_title">Personal info</span>
                     <button class="btn btn-outline">View profile</button>
                 </div>
                 <form class="main-content_form">
-                    <div class="part-accountInfo">
-                        <div class="part-name">
+                    <div class="accountInfo">
+                        <div class="accountInfo--name">
                             <label class="text-base">Account info</label>
                         </div>
-                        <table class="table-info">
+                        <table class="accountInfo--table-info">
                             <tr class="user-info">
                                 <td>
                                     <label class="name-field_info text-ex">DISPLAY NAME</label>
@@ -141,11 +141,12 @@
                             </tr>
                         </table>
                     </div>
+
                     <div class="part-social">
-                        <div class="part-name">
+                        <div class="part-social--name">
                             <label class="text-base">Social</label>
                         </div>
-                        <table class="table-info">
+                        <table class="part-social--table-info">
                             <tr class="user-info">
                                 <td>
                                     <label class="name-field_info text-ex">WEPSITE</label>
@@ -176,25 +177,25 @@
         <footer class="footer">
             <div class="container footer-container">
                 <div class="footer-content">
-                    <div class="fc-logo">
+                    <div class="fc--logo">
                         <img src="./resources/image/logo/logo.svg" alt="logo">
                         <span class="text-lg ">fleet</span>
                     </div>
-                    <div class="fc-item">
+                    <div class="fc--item">
                         <a href="#" class="fc-item_link text-sm font-dmSan">About</a>
                         <a href="#" class="fc-item_link text-sm font-dmSan">Project</a>
                     </div>
-                    <div class="fc-item">
+                    <div class="fc--item">
                         <a href="#" class="fc-item_link text-sm font-dmSan">What we do</a>
                         <a href="#" class="fc-item_link text-sm font-dmSan">press</a>
                     </div>
-                    <div class="fc-item">
+                    <div class="fc--item">
                         <a href="#" class="fc-item_link text-sm font-dmSan">Jobs</a>
                         <a href="#" class="fc-item_link text-sm font-dmSan">Download</a>
                     </div>
-                    <form class="fc-form">
+                    <form class="fc--form">
                         <label class="text-ex">JOIN OUR COMMUNITY 🔥</label>
-                        <div class="fc-send_email">
+                        <div class="fc--send_email">
                             <input type="email" class="send-email" placeholder="Enter your email "></input>
                             <button><svg width="14" height="9" viewBox="0 0 14 9" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M9.09094 0.265207C9.49676 -0.109399 10.1294 -0.0840962 10.504 0.321722L13.7348 3.82168C14.0884 4.20474 14.0884 4.79518 13.7348 5.17824L10.504 8.67828C10.1294 9.08411 9.49677 9.10941 9.09095 8.73481C8.68513 8.36021 8.65982 7.72755 9.03442 7.32173L10.716 5.49997L0.999999 5.49997C0.447714 5.49997 -7.64154e-07 5.05225 -7.86799e-07 4.49997C-8.09444e-07 3.94768 0.447714 3.49997 0.999999 3.49997L10.716 3.49997L9.03443 1.67829C8.65982 1.27247 8.68513 0.639813 9.09094 0.265207Z" fill="#FCFCFD"/>
@@ -204,7 +205,7 @@
 
                     </form>
                 </div>
-                <div class="footer-bottom">
+                <div class="footer--bottom">
                     <p class="text-ex footer-bottom_copyright">Copyright © 2021 UI8 LLC. All rights reserved</p>
                 </div>
 
