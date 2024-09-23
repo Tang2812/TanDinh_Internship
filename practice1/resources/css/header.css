@@ -1,0 +1,114 @@
+.header-container{
+    width: 100%;
+}
+
+header{
+    display: flex;
+    max-height: 88px;
+    height: 88px;
+    background-color: var( --neutral-8);
+    overflow: auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+}
+
+.header-left{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    flex-wrap: nowrap;
+
+    .line{
+        height: 48px;
+        width: 1px;
+        background-color: var(--neutral-6);
+    } 
+
+    .logo{
+        display: flex;
+        gap: 8px;
+        width: 106px;
+        height: 36px;
+        align-items: center;
+        
+        .logo--img{
+            width: 36px;
+            height: 36px;
+        }
+        
+        .logo--name{
+            font-size: 27px;
+            font-weight: 600;
+            font-family: "Poppins", system-ui;
+            color: var(--neutral-2);
+        }
+    }
+    
+
+    
+    .header-left--selectRoles{
+        background: transparent;
+        color: var(--neutral-4);
+        font-weight: 700;
+        border: none;
+        width: 94px;
+        height: 24px;
+        gap: 8px;
+    }
+}
+
+
+.header-right{
+    align-items: center ;
+    display: flex;
+    gap: 24px;
+    font-family: "DM Sans", sans-serif;
+
+}
+
+    
+.header-right--iconLanguage{
+    width: 16px;
+    height: 16px;
+}
+
+.header-right--support{  
+    font-style: normal;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    color: var(--neutral-2);
+      
+}
+
+.header-right--notification{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+}
+
+.header-right--notification::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 99px;
+    background: var(--primary-4);
+    top: 0;
+    right: 0;
+    gap: 10px;
+}
+
+.notification--notificationImg{
+    width: 24px;
+    height: 24px;
+
+}
+
+.header-right--avt{
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;   
+}

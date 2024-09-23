@@ -1,0 +1,101 @@
+
+.footer-container{
+    padding-top: 80px;
+    margin-top: 136px;
+}
+footer{
+    display: flex;
+
+}
+.footer-content{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    margin-bottom: 32px;
+
+    .fc--logo{
+        display: flex;
+        align-items: center;
+        gap:8px;
+        margin-right: auto;
+        span{
+            font-weight: 600;
+            line-height: 24px;
+            text-align: center;
+            color: var(--neutral-2);
+        }
+    }
+
+    .fc--item{
+        max-width: 160px;
+        width: 100%;
+        gap: 32px;
+        display: flex;
+        flex-direction: column;
+         justify-content: flex-start;
+        
+        .fc-item_link{
+            text-decoration: none;
+            font-weight: 700;
+            line-height: 16px;
+            color: var(--neutral-4);
+            
+        }
+
+    }
+}
+.fc--form{
+    max-width: 255px;
+    width: 100%;
+
+    label{
+    font-weight: 700;
+        line-height: 12px;
+    }
+    
+    .fc--send_email{
+        margin-top: 16px;
+        width: 100%;
+        border: 2px solid var(--neutral-6);
+        padding: 8px 8px 8px 16px;
+        display: flex;
+        border-radius: 99px;
+        justify-content: space-between;
+    
+        input{
+            border: none; 
+            outline: none;
+            &::placeholder{
+                color: var(--neutral-4);
+                font-size: 14px;
+                font-weight: 400px;
+                line-height: 24px;
+            }
+
+        }
+        button{
+            width: Hug (32px)px;
+            height: Hug (32px)px;
+            padding: 4px;
+            gap: 10px;
+            border-radius: 100px;
+            opacity: 0px;
+            background: var(--primary-1);
+            
+        }
+    
+    }
+
+}
+.footer--bottom{
+    padding: 25px 24px 0px 0px;
+    border-top: 1px solid var(--neutral-7);
+    .footer-bottom_copyright{
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+        color: var(--neutral-2);
+    }
+}
