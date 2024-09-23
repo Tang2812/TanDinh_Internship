@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+        {"source": "/", "destination": "/user_profile.html" },
+        {"source": "/account-setting", "destination": "/account_setting.html"},
+        {"source": "/user-profile", "destination": "/user_profile.html" }
+    ]
+}
