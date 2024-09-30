@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resources/css/header.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
 <div class="container">
@@ -24,8 +25,7 @@
                     <option value="Traveler">Traveler</option>
                     <option value="Traveler">Traveler</option>
                     <option value="Traveler">Traveler</option>
-                </select>
-                
+                </select>               
             </div>
             <!-- avatar, notification, language.. -->
             <div class="header-right">
@@ -39,6 +39,33 @@
                     <img src="/resources/icons/notification.png" alt="notification" class="notification--notificationImg">
                 </div>
                 <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
+               
+                <label for="nav-mobile-input" class="header-right--nav-mobile" >
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.66732 10.667C5.93094 10.667 5.33398 11.2639 5.33398 12.0003C5.33398 12.7367 5.93094 13.3337 6.66732 13.3337H25.334C26.0704 13.3337 26.6673 12.7367 26.6673 12.0003C26.6673 11.2639 26.0704 10.667 25.334 10.667H6.66732Z" fill="#777E91"/>
+                        <path d="M6.66732 18.667C5.93094 18.667 5.33398 19.2639 5.33398 20.0003C5.33398 20.7367 5.93094 21.3337 6.66732 21.3337H25.334C26.0704 21.3337 26.6673 20.7367 26.6673 20.0003C26.6673 19.2639 26.0704 18.667 25.334 18.667H6.66732Z" fill="#777E91"/>
+                        </svg>                        
+                </label>
+                <input hidden type="checkbox" class="nav-input" id="nav-mobile-input">
+                <label for="nav-mobile-input" class="nav_overlay"></label>
+                <nav class="nav-mobile">
+                    <label for="nav-mobile-input" class="x-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                    </label>
+                    <div class="nav-account--avt">
+                        <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="nav-mobile--avt"> 
+                        <span class="nav-mobile--name-acount">Kohaku Tora</span>
+                    </div>
+                    <ul class="nav-mobile--list">
+                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">Home</a></li>
+                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">About</a></li>
+                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">Help</a></li>
+                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">Home</a></li>
+                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">About</a></li>
+                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">Help</a></li>
+                    </ul>
+                </nav>
+
             </div>   
         </header>
     </div>
@@ -191,10 +218,10 @@
                     <div class="user-review-container">
                         <div class="user-review">
                             <!-- image user review -->
-                            <div class="user_revie--img">
+                            <div class="user_review--img">
                                 <img src="/resources/image/avatar/TobinHackett.png" alt="avt of user1">
                             </div>
-                            <div class="user_revie--content">
+                            <div class="user_review--content">
                                 <!-- name user review -->
                                 <h4>Tobin Hackett</h4>
                                 <p>I enjoyed my communication with them and wish them only the best!</span>
@@ -207,10 +234,10 @@
                         </div>
                         <div class="user-review">
                             <!-- image user review -->
-                            <div class="user_revie--img">
+                            <div class="user_review--img">
                                 <img src="/resources/image/avatar/MyritieRunoosion.png" alt="avt of user2">
                             </div>
-                            <div class="user_revie--content">
+                            <div class="user_review--content">
                                 <!-- name user review -->
                                 <h4>Myrtie Runolfsson</h4>
                                 <p>Kohaku and her husband were great guests. I enjoyed my communication with them and wish them only the best!</span>

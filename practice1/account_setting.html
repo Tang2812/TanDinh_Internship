@@ -24,8 +24,7 @@
                         <option value="Traveler">Traveler</option>
                         <option value="Traveler">Traveler</option>
                         <option value="Traveler">Traveler</option>
-                    </select>
-                    
+                    </select>               
                 </div>
                 <!-- avatar, notification, language.. -->
                 <div class="header-right">
@@ -39,6 +38,33 @@
                         <img src="/resources/icons/notification.png" alt="notification" class="notification--notificationImg">
                     </div>
                     <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
+                   
+                    <label for="nav-mobile-input" class="header-right--nav-mobile" >
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.66732 10.667C5.93094 10.667 5.33398 11.2639 5.33398 12.0003C5.33398 12.7367 5.93094 13.3337 6.66732 13.3337H25.334C26.0704 13.3337 26.6673 12.7367 26.6673 12.0003C26.6673 11.2639 26.0704 10.667 25.334 10.667H6.66732Z" fill="#777E91"/>
+                            <path d="M6.66732 18.667C5.93094 18.667 5.33398 19.2639 5.33398 20.0003C5.33398 20.7367 5.93094 21.3337 6.66732 21.3337H25.334C26.0704 21.3337 26.6673 20.7367 26.6673 20.0003C26.6673 19.2639 26.0704 18.667 25.334 18.667H6.66732Z" fill="#777E91"/>
+                            </svg>                        
+                    </label>
+                    <input hidden type="checkbox" class="nav-input" id="nav-mobile-input">
+                    <label for="nav-mobile-input" class="nav_overlay"></label>
+                    <nav class="nav-mobile">
+                        <label for="nav-mobile-input" class="x-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
+                        </label>
+                        <div class="nav-account--avt">
+                            <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="nav-mobile--avt"> 
+                            <span class="nav-mobile--name-acount">Kohaku Tora</span>
+                        </div>
+                        <ul class="nav-mobile--list">
+                            <li><a href="#" class="text-base font-dmSan nav-mobile--link">Home</a></li>
+                            <li><a href="#" class="text-base font-dmSan nav-mobile--link">About</a></li>
+                            <li><a href="#" class="text-base font-dmSan nav-mobile--link">Help</a></li>
+                            <li><a href="#" class="text-base font-dmSan nav-mobile--link">Home</a></li>
+                            <li><a href="#" class="text-base font-dmSan nav-mobile--link">About</a></li>
+                            <li><a href="#" class="text-base font-dmSan nav-mobile--link">Help</a></li>
+                        </ul>
+                    </nav>
+    
                 </div>   
             </header>
         </div>
@@ -164,7 +190,7 @@
                         </table>
                         <div class="form-footer">
                             <button class="btn btn-outline" type="submit"><span class="font-dmSan text-base">Update profile</span></button>
-                            <buton class="btn btn-ghost"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <buton class="btn btn-ghost form-footer--clear"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M3.52827 3.52827C3.78862 3.26792 4.21073 3.26792 4.47108 3.52827L7.99967 7.05687L11.5283 3.52827C11.7886 3.26792 12.2107 3.26792 12.4711 3.52827C12.7314 3.78862 12.7314 4.21073 12.4711 4.47108L8.94248 7.99967L12.4711 11.5283C12.7314 11.7886 12.7314 12.2107 12.4711 12.4711C12.2107 12.7314 11.7886 12.7314 11.5283 12.4711L7.99967 8.94248L4.47108 12.4711C4.21073 12.7314 3.78862 12.7314 3.52827 12.4711C3.26792 12.2107 3.26792 11.7886 3.52827 11.5283L7.05687 7.99967L3.52827 4.47108C3.26792 4.21073 3.26792 3.78862 3.52827 3.52827Z" fill="#777E91"/>
                                 </svg>
                                 <span>Clear all</span>
