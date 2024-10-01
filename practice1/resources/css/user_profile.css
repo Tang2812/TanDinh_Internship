@@ -12,21 +12,21 @@
 .profile-background{
     position: relative;
 
-    .btn-outline{
-        position: absolute;
-        bottom: 16px;
-        right: 16px;
-        gap: 12px;
-        border: 2px solid var(--neutral-6);
-       
-        span{
-            font-weight: 700;
-            font-size: 14px;
-            color: var(--neutral-8);
-        }
-    }
 }
 
+.profile-background__btn-edit{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    gap: 12px;
+    border: 2px solid var(--neutral-6);
+   
+    span{
+        font-weight: 700;
+        font-size: 14px;
+        color: var(--neutral-8);
+    }
+}
 
 
 .content-container{
@@ -65,13 +65,7 @@
         gap: 32px;
     }
     
-    .personal-info--opener{
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: c;
-    }
-    
+  
     .personal-info--caption{
         width: 100%;
         span{
@@ -85,15 +79,21 @@
     }
 }
 
+.personal-info--opener{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 
 .personal-info--infomation{
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     gap: 20px;
-    font-family: "Poppins", system-ui;
 }
 
 .info-item{
@@ -118,7 +118,6 @@
     span{
         font-size: 14px;
         color: var(--neutral-4);
-        font-weight: 400;
     }
 }
 
@@ -241,6 +240,10 @@
         }
     }
 }
+
+.btn-contact--mobile{
+    display: none;
+}
 /* Css Card */
 .profile-card{
     display: flex;
@@ -269,13 +272,25 @@
         font-size: 12px;
     }
 
-    .btn-ghost
-    {
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 8px;
+}
+
+.card-avt__mobile{
+    display: none;
+}
+
+.profile--update-avt{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 8px;
+    border: none;
+    display: flex;
+    gap: 12px;
+    color: var(--neutral-4);
+
+    span {
+        font-family: "DM Sans", sans-serif;
     }
 }
 
@@ -303,7 +318,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background: var(--neutral-7);
+    background-color: var(--neutral-7);
     border-radius: 40px;
     padding: 8px ;
 
@@ -418,7 +433,7 @@ hr{
 /* tablets */
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
 
-    
+
     .container{
         width: 100%;
         margin: 0 auto;
@@ -443,4 +458,83 @@ hr{
         justify-content: flex-end;
         align-items: flex-start;
     }
+}
+
+
+/* mobile */
+@media only screen and (min-width: 320px) and (max-width: 739px){ 
+
+    .content{
+        width: 100%;
+        padding: 40px 32px 64px 32px ;
+    }
+    .profile-background{
+     display: none;       
+    }
+
+    .main-content{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .profile-card{
+        transform: none;
+        margin-top: 64px;
+    }
+
+    .btn-contact--mobile{
+        display: block;
+    }
+
+    .btn-message{
+        display: none;
+    }
+
+    .profile--update-avt{
+        display: none;
+    }
+
+    .personal-info--opener{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    .avt-container{
+        display: flex;
+        flex-direction: column;        
+    }
+
+    .card-avt__mobile{
+        display: flex;
+        width: 112px;
+        height: 112px;
+    }
+
+    .card-avt__desktop{
+        display: none;
+    }
+
+    .amount-review{
+        background-color: var(--neutral-8);
+    }
+    
+    .personal-info--infomation{
+        gap: 12px;
+    }
+
+.info-item--content{
+    flex: 2;
+}
+
+.info-item--label{
+    flex:2;
+}
+
 }

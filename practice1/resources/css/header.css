@@ -212,7 +212,7 @@ header{
     }
 
 
-    .btn-ghost{
+    .header-right--btn{
         display: none;
     }
 }
@@ -288,17 +288,24 @@ header{
     }
 
 
-    .btn-ghost{
+    .header-right--btn{
         display: none;
     }
 
 
-    .btn-outline{
+    .header-right--btn_mobile{
         display: none;
     }
 
     
     .header-right--nav-mobile{
         display: flex;
+    }
+
+    .user-review--header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 32px;
     }
 }
