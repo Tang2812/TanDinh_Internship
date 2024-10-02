@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="resources/css/header.css">
     <link rel="stylesheet" href="/resources/css/account_setting.css">
     <link rel="stylesheet" href="/resources/css/footer.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <div class="container">
@@ -106,9 +107,18 @@
             </div>
             <!-- Update profile -->
             <div class="form-edit-user">
+                <div class="table__user-info_select header-form__selector">
+
+                    <select name="list-function" id="function" class="input-info">
+                        <option class="opt-text text-ex">Personal info</option>
+                        <option class="opt-text text-ex">Login and security</option>
+                        <option class="opt-text text-ex">Payments</option>
+                        <option class="opt-text text-ex">Notification</option>
+                    </select>
+                </div>
                 <div class="form-edit-user--header">
                     <span class="text-xl font-dmSan header-form_title">Personal info</span>
-                    <button class="btn btn-outline">View profile</button>
+                    <button class="btn btn-outline btn--mobile">View profile</button>
                 </div>
                 <form class="main-content_form">
                     <div class="accountInfo">
@@ -116,7 +126,7 @@
                             <label class="text-base">Account info</label>
                         </div>
                         <table class="accountInfo--table-info">
-                            <tr class="user-info">
+                            <tr class="table__user-info">
                                 <td>
                                     <label class="name-field_info text-ex">DISPLAY NAME</label>
                                     <input type="text" class="input-info" placeholder="Enter your display name">
@@ -126,7 +136,7 @@
                                     <input type="text" class="input-info" placeholder="Kohaku Tora">
                                 </td>
                             </tr>
-                            <tr class="user-info">
+                            <tr class="table__user-info">
                                 <td>
                                     <label class="name-field_info text-ex">PHONE</label>
                                     <input type="text" class="input-info" placeholder="Phone number">
@@ -136,16 +146,16 @@
                                     <input type="text" class="input-info" placeholder="tam@ui8.net">
                                 </td>
                             </tr>
-                            <tr class="user-info info-bio">
+                            <tr class="table__user-info info-bio">
                                 <td>
                                     <label class="name-field_info text-ex">BIO</label>
                                     <textarea  name="BIO" id="BIO" placeholder="About yourself in a few words"></textarea>
                                 </td>
                             </tr>
-                            <tr class="user-info">
+                            <tr class="table__user-info">
                                 <td>
                                     <label class="name-field_info text-ex">LIVES IN</label>
-                                    <div class="user-info_select">
+                                    <div class="table__user-info_select">
                                         <select name="location" id="location" class="input-info">
                                             <option class="opt-text text-ex">Location</option>
                                             <option class="opt-text text-ex">Viet Nam</option>
@@ -155,7 +165,7 @@
                                 </td>
                                 <td>
                                     <label class="name-field_info text-ex">SPEAK</label>
-                                    <div class="user-info_select">
+                                    <div class="table__user-info_select">
 
                                         <select name="location" id="location" class="input-info">
                                             <option class="opt-text text-ex">English (United states)</option>
@@ -173,7 +183,7 @@
                             <label class="text-base">Social</label>
                         </div>
                         <table class="part-social--table-info">
-                            <tr class="user-info">
+                            <tr class="part-social__table-info">
                                 <td>
                                     <label class="name-field_info text-ex">WEPSITE</label>
                                     <input type="text" class="input-info" placeholder="Your site URL">
