@@ -22,6 +22,7 @@ header{
     background-color: rgba(0,0,0,0.3);
     display: none;
     animation: fadeIn linear 0.3s;
+    z-index: 3;
 }
 
 @keyframes fadeIn {
@@ -58,6 +59,7 @@ header{
 
 .nav-input:checked ~ .nav-mobile{
     transform: translateX(0%);
+    z-index: 3;
     /* opacity: 1; */
 }
 
@@ -200,7 +202,9 @@ header{
 
    /* tablets */
 @media only screen and (min-width: 740px) and (max-width: 1024px) {
- 
+    header {
+        padding: 20px 40px;
+    }
     .header-right--iconLanguage{
         display: none;
     }
@@ -302,10 +306,5 @@ header{
         display: flex;
     }
 
-    .user-review--header{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 32px;
-    }
+
 }
