@@ -8,7 +8,6 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="resources/css/header.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
 <body>
 <div class="container">
@@ -25,47 +24,21 @@
                     <option value="Traveler">Traveler</option>
                     <option value="Traveler">Traveler</option>
                     <option value="Traveler">Traveler</option>
-                </select>               
+                </select>
+                
             </div>
             <!-- avatar, notification, language.. -->
             <div class="header-right">
                 <a href="" class="font-dmSan text-sm header-right--support">Support</a>
-                <button class="btn btn-ghost header-right--btn">
+                <button class="btn btn-ghost">
                     <img src="/resources/icons/language.png" alt="iconLanguage" class="header-right--iconLanguage">
                     <span>Language</span> 
                 </button>
-                <button class="btn btn-outline header-right--btn_mobile"> <span>List your property</span></button>
+                <button class="btn btn-outline"> <span>List your property</span></button>
                 <div class="flex-aic header-right--notification">
                     <img src="/resources/icons/notification.png" alt="notification" class="notification--notificationImg">
                 </div>
                 <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
-               
-                <label for="nav-mobile-input" class="header-right--nav-mobile" >
-                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M6.66732 10.667C5.93094 10.667 5.33398 11.2639 5.33398 12.0003C5.33398 12.7367 5.93094 13.3337 6.66732 13.3337H25.334C26.0704 13.3337 26.6673 12.7367 26.6673 12.0003C26.6673 11.2639 26.0704 10.667 25.334 10.667H6.66732Z" fill="#777E91"/>
-                        <path d="M6.66732 18.667C5.93094 18.667 5.33398 19.2639 5.33398 20.0003C5.33398 20.7367 5.93094 21.3337 6.66732 21.3337H25.334C26.0704 21.3337 26.6673 20.7367 26.6673 20.0003C26.6673 19.2639 26.0704 18.667 25.334 18.667H6.66732Z" fill="#777E91"/>
-                        </svg>                        
-                </label>
-                <input hidden type="checkbox" class="nav-input" id="nav-mobile-input">
-                <label for="nav-mobile-input" class="nav_overlay"></label>
-                <nav class="nav-mobile">
-                    <label for="nav-mobile-input" class="x-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
-                    </label>
-                    <div class="nav-account--avt">
-                        <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="nav-mobile--avt"> 
-                        <span class="nav-mobile--name-acount">Kohaku Tora</span>
-                    </div>
-                    <ul class="nav-mobile--list">
-                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">Support</a></li>
-                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">Language</a></li>
-                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">List your property</a></li>
-                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">Home</a></li>
-                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">About</a></li>
-                        <li><a href="#" class="text-base font-dmSan nav-mobile--link">Help</a></li>
-                    </ul>
-                </nav>
-
             </div>   
         </header>
     </div>
@@ -74,8 +47,8 @@
 
             <!-- backfround -->
         <div class="profile-background">
-            <img src="/resources/image/profile_background/image.png" alt="backfround" class="profile-background__background-img">
-            <button class="flex-aic btn btn-outline profile-background__btn-edit"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <img src="/resources/image/profile_background/image.png" alt="backfround" class="profile-background--background-img">
+            <button class="flex-aic btn btn-outline"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0.347856 11.2649L0.830954 9.09097C0.940972 8.59589 1.18989 8.14245 1.5485 7.78384L8.11379 1.21855C9.15518 0.177152 10.8436 0.177149 11.885 1.21855L12.7805 2.11398C13.8219 3.15538 13.8219 4.84382 12.7805 5.88521L6.21517 12.4505C5.85655 12.8091 5.40311 13.058 4.90803 13.1681L2.73409 13.6511C1.30509 13.9687 0.0303015 12.6939 0.347856 11.2649ZM2.13254 9.38021L1.64944 11.5542C1.54359 12.0305 1.96852 12.4554 2.44485 12.3496L4.61879 11.8665C4.85686 11.8136 5.07567 11.6964 5.25157 11.528L2.47097 8.74744C2.30258 8.92334 2.18544 9.14215 2.13254 9.38021ZM3.41355 7.8044L6.1946 10.5855L9.91846 6.86159L7.13741 4.08055L3.41355 7.8044ZM11.8376 4.94241L10.8613 5.91879L8.08022 3.13774L9.0566 2.16136C9.5773 1.64066 10.4215 1.64066 10.9422 2.16136L11.8376 3.05679C12.3583 3.57749 12.3583 4.42171 11.8376 4.94241Z" fill="#FCFCFD"/>
                 </svg><span>Edit cover</span></button>
         </div>
@@ -83,35 +56,31 @@
         <div class="main-content">
             <div class="profile-card">
                 <div class="avt-container">
-                    <picture>
-                        <source media="(min-width: 740px)" srcset="/resources/image/avatar/KohakuTora_avt.png" />
-                        <source media="(max-width: 739px)" srcset="/resources/image/avatar/KohakuTora_avt__mobile.svg" width="112" height="112"/>
-                        <img src="/resources/image/avatar/KohakuTora_avt.png" alt="card avt" class="card-avt">
-                      </picture>                        
-                    <div class="profile__update-avt btn">
+                    <img src="/resources/image/avatar/KohakuTora_avt.png" alt="card avt" class="card-avt">
+                   <div class="btn btn-ghost">
                         <img src="/resources/icons/pencil.png" alt="icon pencil">
                         <span>Update avatar</span> 
                    </div>   
-                   <div class="profile-card__name">
+                   <div class="profile-card--name">
                     Kohaku Tora
                     </div>
                 </div>
 
               <div class="amount-review">
-                <div class="amount-review__item">
+                <div class="amount-review--item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M6 12L10 16L18 8" stroke="#777E91" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     <span class="text-sm">Indentity verified</span>                   
                 </div>
-                <div class="amount-review__item">
+                <div class="amount-review--item">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.93563 7.44443C7.85143 7.64607 7.66159 7.78375 7.44377 7.80115L3.48604 8.11721C2.96819 8.15856 2.75865 8.80523 3.15384 9.14243L6.16586 11.7125C6.33271 11.8549 6.4056 12.0788 6.35452 12.2921L5.43371 16.1374C5.31293 16.6418 5.86114 17.0412 6.30421 16.7716L9.69705 14.7073C9.8833 14.594 10.1172 14.594 10.3035 14.7073L13.6963 16.7716C14.1394 17.0412 14.6876 16.6418 14.5668 16.1374L13.646 12.2921C13.5949 12.0788 13.6678 11.8549 13.8346 11.7125L16.8467 9.14243C17.2419 8.80523 17.0323 8.15856 16.5145 8.11721L12.5567 7.80115C12.3389 7.78375 12.1491 7.64607 12.0649 7.44443L10.5385 3.78891C10.3389 3.31081 9.66159 3.31081 9.46196 3.78891L7.93563 7.44443ZM13.3482 6.19238L12.0765 3.14674C11.3065 1.30264 8.69396 1.30266 7.92398 3.14674L6.65229 6.19238L3.35337 6.45583C1.35593 6.61534 0.547725 9.10963 2.07201 10.4103L4.5791 12.5495L3.81287 15.7493C3.347 17.6947 5.46153 19.2352 7.17051 18.1954L10.0003 16.4737L12.83 18.1954C14.539 19.2352 16.6535 17.6947 16.1876 15.7493L15.4214 12.5495L17.9285 10.4103C19.4528 9.10961 18.6446 6.61534 16.6471 6.45583L13.3482 6.19238Z" fill="#777E91"/>
                     </svg>
                     <span>256 reviews</span>         
                 </div>
               </div>
-              <div class="profile-card__link-website">
+              <div class="profile-card--link-website">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.9987 13.332C10.9442 13.332 13.332 10.9442 13.332 7.9987C13.332 5.05318 10.9442 2.66536 7.9987 2.66536C5.05318 2.66536 2.66536 5.05318 2.66536 7.9987C2.66536 10.9442 5.05318 13.332 7.9987 13.332ZM7.9987 14.6654C11.6806 14.6654 14.6654 11.6806 14.6654 7.9987C14.6654 4.3168 11.6806 1.33203 7.9987 1.33203C4.3168 1.33203 1.33203 4.3168 1.33203 7.9987C1.33203 11.6806 4.3168 14.6654 7.9987 14.6654Z" fill="#777E91"/>
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16575 12.1165C9.65822 11.1315 10.0013 9.67754 10.0013 7.9987C10.0013 6.31986 9.65822 4.86588 9.16575 3.88094C8.63341 2.81625 8.14467 2.66536 8.0013 2.66536C7.85793 2.66536 7.36919 2.81625 6.83685 3.88094C6.34438 4.86588 6.0013 6.31986 6.0013 7.9987C6.0013 9.67754 6.34438 11.1315 6.83685 12.1165C7.36919 13.1811 7.85793 13.332 8.0013 13.332C8.14467 13.332 8.63341 13.1811 9.16575 12.1165ZM8.0013 14.6654C9.84225 14.6654 11.3346 11.6806 11.3346 7.9987C11.3346 4.3168 9.84225 1.33203 8.0013 1.33203C6.16035 1.33203 4.66797 4.3168 4.66797 7.9987C4.66797 11.6806 6.16035 14.6654 8.0013 14.6654Z" fill="#777E91"/>
@@ -119,9 +88,8 @@
                 </svg> 
                 <a>https://ui8.net</a>
               </div>
-              <div class="profile-card__function-connect-user">
-                <button class="btn btn-outline btn-contact__mobile"><span>Contact</span></button>
-                <button class="btn btn-outline btn-message"><span>Message</span></button>
+              <div class="profile-card--function-connect-user">
+                <button class="btn btn-outline"><span>Message</span></button>
                 <button class="btn btn-rounded">
                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M7.49882 8.36614C7.52332 8.82573 7.17061 9.21815 6.71103 9.24265C6.08379 9.27609 5.587 9.31699 5.19878 9.35794C4.67743 9.41292 4.36065 9.73316 4.30799 10.1938C4.23238 10.8552 4.16667 11.8561 4.16667 13.3329C4.16667 14.8098 4.23238 15.8107 4.30799 16.472C4.36074 16.9335 4.67672 17.2528 5.19729 17.3078C6.10898 17.404 7.61604 17.4996 10 17.4996C12.384 17.4996 13.891 17.404 14.8027 17.3078C15.3233 17.2528 15.6393 16.9335 15.692 16.472C15.7676 15.8107 15.8333 14.8098 15.8333 13.3329C15.8333 11.8561 15.7676 10.8552 15.692 10.1938C15.6394 9.73316 15.3226 9.41292 14.8012 9.35794C14.413 9.31699 13.9162 9.27609 13.289 9.24265C12.8294 9.21815 12.4767 8.82573 12.5012 8.36614C12.5257 7.90656 12.9181 7.55385 13.3777 7.57835C14.0301 7.61313 14.5558 7.65614 14.976 7.70046C16.213 7.83092 17.1997 8.7085 17.3479 10.0045C17.4323 10.7432 17.5 11.8092 17.5 13.3329C17.5 14.8567 17.4323 15.9227 17.3479 16.6613C17.1998 17.9566 16.2154 18.8346 14.9776 18.9652C13.9933 19.0691 12.4257 19.1663 10 19.1663C7.57435 19.1663 6.00672 19.0691 5.02236 18.9652C3.78459 18.8346 2.80017 17.9566 2.65211 16.6613C2.56767 15.9227 2.5 14.8567 2.5 13.3329C2.5 11.8092 2.56767 10.7432 2.65211 10.0045C2.80026 8.7085 3.78697 7.83092 5.02397 7.70046C5.44422 7.65614 5.96994 7.61313 6.6223 7.57835C7.08189 7.55385 7.47432 7.90656 7.49882 8.36614Z" fill="#777E91"/>
@@ -141,7 +109,7 @@
                     </svg>                 
                 </button>
             </div>
-            <div class="profile-card__other-profile_site">
+            <div class="profile-card--other-profile_site">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M2.65115 11.6665C1.27305 11.6704 0.383457 13.2403 1.23245 14.4298C2.4483 16.133 4.6531 17.5 8.33395 17.5C14.0382 17.5 18.617 12.8514 17.976 7.35925L18.9151 5.48108C19.5664 4.17857 18.4347 2.69685 17.0067 2.98245L15.766 3.23057C15.4371 3.05702 15.0967 2.92606 14.8058 2.83117C14.2388 2.64627 13.5525 2.5 12.9173 2.5C11.7762 2.5 10.7914 2.79276 10.0087 3.37994C9.23495 3.96053 8.79911 4.72354 8.55995 5.42421C8.4497 5.74717 8.37628 6.07112 8.32917 6.38203C7.88645 6.24269 7.43502 6.05522 6.99307 5.82629C5.9904 5.30693 5.17961 4.64852 4.72224 4.07126C3.95488 3.10275 2.32868 3.17456 1.75803 4.43351C0.953746 6.20789 1.17437 8.31122 1.89732 10.0108C2.13964 10.5803 2.45485 11.1434 2.83994 11.6652C2.77401 11.666 2.71095 11.6663 2.65115 11.6665ZM8.33386 15.8333C5.11441 15.8333 3.44969 14.6672 2.5889 13.4614C2.55022 13.4072 2.58922 13.3333 2.65578 13.3332C3.53148 13.3307 5.32898 13.2892 6.51448 12.5954C6.57579 12.5595 6.5623 12.4691 6.49496 12.4465C3.73149 11.5173 2.16063 7.58216 3.27595 5.12158C3.30152 5.06517 3.37735 5.05772 3.41583 5.10628C4.68989 6.71432 7.47555 8.28933 9.8992 8.33242C9.95178 8.33333 9.99153 8.28558 9.98353 8.23361C9.88586 7.60044 9.51295 4.16667 12.9172 4.16667C13.7301 4.16667 14.9396 4.56319 15.3851 4.96942C15.4057 4.98819 15.4336 4.99672 15.4609 4.99125L17.3334 4.61675C17.4014 4.60315 17.4554 4.67371 17.4244 4.73573L16.2629 7.05849C16.2549 7.07462 16.2524 7.09312 16.2554 7.11088C17.0689 11.6833 13.3239 15.8333 8.33386 15.8333Z" fill="#777E91"/>
                 </svg>
@@ -156,8 +124,8 @@
                 </svg>
             </div>
               <hr>
-              <p class="profile-card__time-attended">Member since Mar 15,2017</p>
-              <button class="profile-card__fc-report btn btn-ghost">
+              <p class="profile-card--time-attended">Member since Mar 15,2017</p>
+              <button class="profile-card--fc-report btn btn-ghost">
                 <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_7858_547)">
                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8 4.5L9.58504 2.65079C10.141 2.00212 9.68013 1 8.82578 1L2 1L2 8L8.82578 8C9.68013 8 10.141 6.99788 9.58504 6.34921L8 4.5ZM3 7L8.82578 7L6.68292 4.5L8.82578 2L3 2L3 7Z" fill="#777E91"/>
@@ -175,44 +143,44 @@
             <div class="content">
                 <div class="profile">
                     <!-- info -->
-                    <div class="profile__personal-info">
-                        <div class="personal-info__opener">
+                    <div class="profile--personal-info">
+                        <div class="personal-info--opener">
                             <span>Hi, I'm Kohaku Tora</span>
-                           <a href="/account_setting.html"> <button class="btn btn-outline">Edit your profile</button></a>
+                            <button class="btn btn-outline">Edit your profile</button>
                         </div>
-                        <div class="personal-info__caption">
+                        <div class="personal-info--caption">
                             <span>Described by Queenstown House & Garden magazine as having 'one of the best views we've ever seen' you will love relaxing in this newly built</span>
                         </div>
-                        <div class="personal-info__infomation">
+                        <div class="personal-info--infomation">
                             <div class="info-item">
-                                <div class="info-item__label">
+                                <div class="info-item--label">
                                     <img src="/resources/icons/home.png" alt="home icon"> 
                                     <span>Lives in</span>
                                 </div>
-                                <p class="info-item__content">Auckland, New Zealand</p>
+                                <p class="info-item--content">Auckland, New Zealand</p>
                             </div>
 
                             <div class="info-item">
-                                <div class="info-item__label">
+                                <div class="info-item--label">
                                     <img src="/resources/icons/account.png" alt="account icon"> 
                                     <span>Account</span>
                                 </div>
-                                <p class="info-item__content">Verified member</p>
+                                <p class="info-item--content">Verified member</p>
                             </div>
 
                             <div class="info-item">
-                                <div class="info-item__label">
+                                <div class="info-item--label">
                                     <img src="/resources/icons/speak.png" alt="speak icon"> 
                                     <span>Speak</span>
                                 </div>
-                                <p class="info-item__content">English, Vietnamese</p>
+                                <p class="info-item--content">English, Vietnamese</p>
                             </div>
                         </div>
                     </div>
                 </div>
                 <!-- review -->
                 <div class="user-part">
-                    <div class="user-review__header">
+                    <div class="user-review--header">
                         <span>1 review</span>
                         <div class="fc-button">
                             <button class="btn btn-outline"><span>Review about you</span></button>
@@ -223,33 +191,33 @@
                     <div class="user-review-container">
                         <div class="user-review">
                             <!-- image user review -->
-                            <div class="user_review__img">
+                            <div class="user_revie--img">
                                 <img src="/resources/image/avatar/TobinHackett.png" alt="avt of user1">
                             </div>
-                            <div class="user_review__content">
+                            <div class="user_revie--content">
                                 <!-- name user review -->
                                 <h4>Tobin Hackett</h4>
                                 <p>I enjoyed my communication with them and wish them only the best!</span>
                                 <div class="footer-user-review">
                                     <span>1 day ago</span>
-                                    <button class="user-review__action">Like</button>
-                                    <button class="user-review__action">Reply</button>
+                                    <button class="user-review--action">Like</button>
+                                    <button class="user-review--action">Reply</button>
                                 </div>
                             </div>
                         </div>
                         <div class="user-review">
                             <!-- image user review -->
-                            <div class="user_review__img">
+                            <div class="user_revie--img">
                                 <img src="/resources/image/avatar/MyritieRunoosion.png" alt="avt of user2">
                             </div>
-                            <div class="user_review__content">
+                            <div class="user_revie--content">
                                 <!-- name user review -->
                                 <h4>Myrtie Runolfsson</h4>
                                 <p>Kohaku and her husband were great guests. I enjoyed my communication with them and wish them only the best!</span>
                                 <div class="footer-user-review">
                                     <span>about 1 hour ago</span>
-                                    <button class="user-review__action">Like</button>
-                                    <button class="user-review__action">Reply</button>
+                                    <button class="user-review--action">Like</button>
+                                    <button class="user-review--action">Reply</button>
                                 </div>
                             </div>
                         </div>
