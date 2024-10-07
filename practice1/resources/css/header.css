@@ -122,7 +122,7 @@ header{
         .logo--name{
             font-size: 27px;
             font-weight: 600;
-            font-family: "Poppins", system-ui;
+            font-family: var(--font-secondary);
             color: var(--neutral-2);
         }
     }
@@ -145,7 +145,7 @@ header{
     align-items: center ;
     display: flex;
     gap: 24px;
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-primary);
 
 }
 
@@ -252,7 +252,7 @@ header{
             .logo--name{
                 font-size: 24px;
                 font-weight: 600;
-                font-family: "Poppins", system-ui;
+                font-family: var(--font-secondary);
                 color: var(--neutral-2);
             }
     

@@ -9,18 +9,17 @@ header {
     padding-right: 0;
 }
 
-.main-form_edit{
+.main-form_edit {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;;
+    width: 100%;
     margin-top: 80px;
 }
 
-.list-function{
+.list-function {
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
     justify-items: flex-start;
     align-items: center;
     width: 256px;
@@ -30,39 +29,39 @@ header {
     border: 1px 0px 0px 0px;
     background-color: var(--neutral-8);
     border: 1px solid var(--neutral-7);
-    /* box-shadow: 0px 64px 64px -48px #0F0F0F14; */
     box-shadow: 0px 64px 64px -48px rgba(15, 15, 15, 0.08);
 
 
-    .fc-choice{
+    .fc-choice {
         width: 100%;
         display: flex;
         text-decoration: none;
-       
-       
-        span{
+
+
+        span {
             line-height: 16px;
             font-weight: 700;
         }
 
-        gap: 16px;      
-  
-        .has-choice{
+        gap: 16px;
+
+        .has-choice {
             color: var(--neutral-2);
         }
 
-        .not-choice{
+        .not-choice {
             color: var(--neutral-4);
         }
     }
 }
+
 /* form edit user */
 
-.header-form__selector{
+.header-form__selector {
     display: none;
 }
 
-.form-edit-user{
+.form-edit-user {
     max-width: 736px;
     width: 100%;
 }
@@ -80,40 +79,42 @@ header {
     color: var(--neutral-2);
 }
 
-.main-content_form{
+.main-content_form {
     width: 100%;
     gap: 48px;
     margin-top: 64px;
 }
 
 /* part-accountInfo */
-    
-.accountInfo--name{
+
+.accountInfo--name {
     font-weight: 500;
     line-height: 24px;
     color: var(--neutral-2);
 }
 
-.accountInfo{
+.accountInfo {
 
 
-    .accountInfo--table-info{
+    .accountInfo--table-info {
         width: 100%;
 
 
-        td{
+        td {
             display: flex;
             width: 100%;
             gap: 12px;
             flex-direction: column;
-    
-            .name-field_info{
+
+            .name-field_info {
                 font-weight: 700;
                 line-height: 12px;
                 color: var(--neutral-5);
             }
 
-            .input-info{
+            .input-info {
+                width: 358px;
+                height: 48px;
                 padding: 12px 16px 12px 16px;
                 gap: 10px;
                 border-radius: 12px;
@@ -122,15 +123,15 @@ header {
             }
         }
 
-        .info-bio{
+        .info-bio {
             display: flex;
             gap: 12px;
             margin-bottom: 32px;
-    
-            td{
+
+            td {
                 width: 100%;
-    
-                textarea{
+
+                textarea {
                     width: 100%;
                     padding: 12px 16px 12px 16px;
                     gap: 10px;
@@ -138,14 +139,14 @@ header {
                     border: 2px;
                     border: 2px solid var(--neutral-6);
                     min-height: 156px;
-                    resize: none;   
+                    resize: none;
                 }
             }
         }
     }
 }
 
-.table__user-info{
+.table__user-info {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -153,12 +154,14 @@ header {
     margin-top: 32px;
 }
 
-.table__user-info_select{
+.table__user-info_select {
     position: relative;
     width: 100%;
 
 
-    select{
+    select {
+        width: 358px;
+        height: 48px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -181,30 +184,33 @@ header {
 
 }
 
-.table__user-info_select::after{
+.table__user-info_select::after {
     display: flex;
     content: "";
     position: absolute;
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
-    width: 24px; /* Width of the SVG */
-    height: 24px; /* Height of the SVG */
+    width: 24px;
+    /* Width of the SVG */
+    height: 24px;
+    /* Height of the SVG */
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="1" y="1" width="30" height="30" rx="15" stroke="%23E6E8EC" stroke-width="2"/><path fill-rule="evenodd" clip-rule="evenodd" d="M20.2071 13.7929C19.8166 13.4024 19.1834 13.4024 18.7929 13.7929L16 16.5858L13.2071 13.7929C12.8166 13.4024 12.1834 13.4024 11.7929 13.7929C11.4024 14.1834 11.4024 14.8166 11.7929 15.2071L15.2929 18.7071C15.6834 19.0976 16.3166 19.0976 16.7071 18.7071L20.2071 15.2071C20.5976 14.8166 20.5976 14.1834 20.2071 13.7929Z" fill="%23777E91"/></svg>');
     background-size: contain;
     background-repeat: no-repeat;
-    pointer-events: none; /* Prevent arrow from blocking clicks */
-    
+    pointer-events: none;
+    /* Prevent arrow from blocking clicks */
+
 }
 
 /* part-social */
-.part-social{
+.part-social {
     width: 100%;
     margin-top: 48px;
 }
 
-    
-.part-social--name{
+
+.part-social--name {
     width: 100%;
     font-weight: 500;
     line-height: 24px;
@@ -212,32 +218,32 @@ header {
     margin-bottom: 32px;
 }
 
-.part-social__table-info{
+.part-social__table-info {
     display: flex;
     flex-direction: row;
     gap: 20px;
     width: 100%;
-
 }
 
-.part-social--table-info{
+.part-social--table-info {
     width: 100%;
 
 
-    td{
+    td {
         display: flex;
         width: 100%;
         height: 72px;
         gap: 12px;
         flex-direction: column;
 
-        .name-field_info{
+        .name-field_info {
             font-weight: 700;
             line-height: 12px;
             color: var(--neutral-5);
         }
 
-        .input-info{
+        .input-info {
+            height: 48px;
             padding: 12px 16px 12px 16px;
             gap: 10px;
             border-radius: 12px;
@@ -245,8 +251,8 @@ header {
 
             border: 2px solid var(--neutral-6);
 
-            &::placeholder{
-                font-family: "Poppins", system-ui;
+            &::placeholder {
+                font-family: var(--font-secondary);
                 font-size: 14px;
                 font-weight: 500;
                 line-height: 24px;
@@ -257,7 +263,7 @@ header {
     }
 }
 
-.fc-verify{
+.fc-verify {
     display: flex;
     width: 100%;
     height: 48px;
@@ -268,19 +274,21 @@ header {
     justify-content: space-between;
 
 
-    input{ 
+    input {
         border: none;
         outline: none;
     }
 
-    button{  
+    button {
         height: 32px;
-       display: flex;
-       align-items: center;
+        display: flex;
+        align-items: center;
         border-radius: 90px;
-        padding: 8px 8px 8px 12px;;
+        padding: 8px 8px 8px 12px;
+        ;
         border: 2px solid var(--neutral-6);
-        span{
+
+        span {
             font-size: 14px;
             font-weight: 700;
             line-height: 16px;
@@ -290,7 +298,7 @@ header {
     }
 }
 
-.form-footer{
+.form-footer {
     width: 100%;
     display: flex;
     margin-top: 48px;
@@ -301,15 +309,15 @@ header {
     gap: 16px;
 
 
-    .btn-outline{
-        width: Hug (159px)px;
-        height: Hug (48px)px;
+    .btn-outline {
+        width: 159px;
+        height: 48px;
         padding: 16px 24px 16px 24px;
         gap: 12px;
         border-radius: 90px;
-        background-color:var(--primary-1);
-        
-        span{
+        background-color: var(--primary-1);
+
+        span {
             line-height: 16px;
             font-weight: 700;
             text-align: center;
@@ -318,9 +326,11 @@ header {
 
     }
 
-    .btn-ghost{
+    .btn-ghost {
+        width: 139px;
+        height: 48px;
 
-        span{
+        span {
 
             font-family: DM Sans;
             font-size: 16px;
@@ -335,13 +345,21 @@ header {
 
 
 /* tablets */
-@media only screen and (min-width: 740px) and (max-width: 1024px) {   
-    .container{
+@media only screen and (min-width: 740px) and (max-width: 1024px) {
+    .container {
         width: 100%;
         margin: 0 auto;
     }
 
-    header{
+    .accountInfo .accountInfo--table-info {
+        td {
+            .input-info {
+                width: 278px;
+            }
+        }
+    }
+
+    header {
         padding: 20px 80px;
     }
 
@@ -351,12 +369,12 @@ header {
         gap: 32px;
     }
 
-    .form-edit-user{
+    .form-edit-user {
         max-width: 576px;
         width: 100%;
     }
 
-    .form-footer--clear{
+    .form-footer--clear {
         display: flex;
     }
 }
@@ -364,37 +382,43 @@ header {
 
 /* mobile */
 @media only screen and (min-width: 320px) and (max-width: 739px) {
-    .main-content_form{
+    .main-content_form {
         margin-top: 32px;
     }
 
-    .list-function{
+    .list-function {
         display: none;
     }
 
-    .header-form__selector{
+    .header-form__selector {
         display: flex;
         margin-top: 8px;
         margin-bottom: 32px;
     }
 
-    .main-form_edit{
+    .main-form_edit {
         width: 85%;
-        margin: 32px;
+        margin: 8px 32px 32px 32px;
     }
 
-    .accountInfo--name{
+    .accountInfo--name {
         margin-bottom: 0;
     }
 
-    .accountInfo--table-info{
-        .table__user-info{
+    .accountInfo--table-info {
+        .table__user-info {
             flex-direction: column;
+
+            td {
+                .input-info {
+                    width: 311px;
+                }
+            }
         }
-        
     }
-    
-    .table__user-info{
+
+
+    .table__user-info {
         margin-top: 32px;
         margin-bottom: 0;
     }
@@ -407,14 +431,32 @@ header {
         color: var(--neutral-2);
     }
 
-    .btn--mobile{
+    .btn--mobile {
         padding: 12px 16px;
         font-size: 12px;
         line-height: 16px;
     }
 
-    .part-social__table-info{
+    .part-social__table-info {
         flex-direction: column;
     }
 
+
+    .table__user-info_select {
+        select {
+            width: 311px;
+        }
+    }
+
+    .part-social--table-info {
+        td {
+            .input-info {
+                width: 311px;
+            }
+        }
+    }
+
+    .fc-verify {
+        width: 311px;
+    }
 }

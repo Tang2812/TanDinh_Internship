@@ -19,7 +19,9 @@
     --neutral-7:#F4F5F6;
     --neutral-8: #FCFCFD;
 
-
+    /* font */
+    --font-primary:  "DM Sans", sans-serif;
+    --font-secondary: "Poppins", system-ui;
 }
 
 
@@ -27,12 +29,13 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border-spacing: 0px;
 
 }
 
 
 body {
-    font-family: "Poppins", system-ui;
+    font-family: var(--font-secondary);
 }
 
 .text-xl{
@@ -60,8 +63,8 @@ body {
     align-items: center;
 }
 
-.font-dmSan {
-    font-family: "DM Sans", sans-serif;
+.font-primary {
+    font-family: var(--font-primary);
 }
 
 .btn {
@@ -83,12 +86,12 @@ body {
     color: var(--neutral-4);
 
     span {
-        font-family: "DM Sans", sans-serif;
+        font-family: var(--font-primary);
     }
 }
 
 .btn-outline {
-    font-family: "DM Sans", sans-serif;
+    font-family: var(--font-primary);
     border: 2px solid var(--neutral-6);
 
     span{
