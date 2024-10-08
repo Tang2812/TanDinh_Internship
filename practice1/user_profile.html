@@ -83,11 +83,24 @@
         <div class="main-content">
             <div class="profile-card">
                 <div class="avt-container">
-                    <picture>
-                        <source media="(min-width: 740px)" srcset="/resources/image/avatar/KohakuTora_avt.png" />
-                        <source media="(max-width: 739px)" srcset="/resources/image/avatar/KohakuTora_avt__mobile.svg" width="112px" height="112px"/>
-                        <img src="/resources/image/avatar/KohakuTora_avt.png" alt="card avt" class="card-avt">
-                      </picture>                        
+                    <div class="avt_image-box">
+                        <picture>
+                            <source media="(min-width: 740px)" srcset="./resources/image/avatar/KohakuTora_avt.png" />
+                            <source media="(max-width: 739px)" srcset="./resources/image/avatar/KohakuTora_avt.png" width="112px" height="112px"/>
+                            <img src="/resources/image/avatar/KohakuTora_avt.png" alt="card avt" class="card-avt">
+                        </picture>
+                        <svg class="icon_verify-avt" width="43" height="42" viewBox="0 0 43 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_9704_1794)">
+                                <rect x="0.5" width="42" height="42" rx="21" fill="#58C27D"/>
+                                <path d="M11 21L18 28L32 14" stroke="#FCFCFD" stroke-width="3.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_9704_1794">
+                                    <rect x="0.5" width="42" height="42" rx="21" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>                                                   
+                    </div>  
                     <div class="profile__update-avt btn">
                         <img src="/resources/icons/pencil.png" alt="icon pencil">
                         <span>Update avatar</span> 

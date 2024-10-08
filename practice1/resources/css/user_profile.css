@@ -44,7 +44,7 @@
 }
 
 .content {
-    
+
     max-width: 848px;
     width: 100%;
     padding: 80px;
@@ -62,7 +62,7 @@
         font-family: var(--font-secondary);
     }
 
-    .personal-info__caption {   
+    .personal-info__caption {
         width: 100%;
 
 
@@ -77,7 +77,7 @@
     }
 }
 
-.profile__personal-info {  
+.profile__personal-info {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -154,6 +154,9 @@
     display: flex;
     gap: 8px;
 
+    .btn {
+        padding: 6px 12px;
+    }
 
     .btn-outline {
         background-color: var(--neutral-3);
@@ -164,6 +167,7 @@
             color: var(--neutral-8);
             font-size: 14px;
             font-weight: 700;
+            line-height: 16px;
         }
     }
 
@@ -198,8 +202,8 @@
 .user_review__img {
     width: 48px;
     height: 48px;
-    flex-shrink: 0;     
-    
+    flex-shrink: 0;
+
 
     img {
         width: 100%;
@@ -264,32 +268,27 @@
     width: 100%;
     border-radius: 24px;
     gap: 32px;
-    padding: 32px;
-    border: 1px;
+    padding: 32px 22px;
     background-color: var(--neutral-8);
     box-shadow: 0px 64px 64px -48px #0F0F0F14;
     flex-direction: column;
     transform: translateY(-125px);
     align-items: center;
+    border: 1px solid hsla(216, 13%, 91%, 1);
 }
 
 .avt-container {
     width: 100%;
-    height: fit-content;
+    /* height: fit-content; */
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    text-align: center;
 
-
-    span {
-        font-family: var(--font-secondary);
-        font-weight: 600;
-        font-size: 12px;
-    }
 }
 
-/* .card-avt__mobile {
+.icon_verify-avt {
     display: none;
-} */
+}
 
 .profile__update-avt {
     width: 100%;
@@ -301,16 +300,30 @@
     display: flex;
     gap: 12px;
     color: var(--neutral-4);
+    padding-top: 12px;
 
     span {
         font-family: var(--font-primary);
+        line-height: 20px;
+        font-size: 12px;
+        font-weight: 600px;
     }
 }
 
-.avt-container .card-avt {
-    width: 160px;
-    height: 160px;
-    border-radius: 40px;
+.avt-container {
+    picture {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        overflow: hidden;
+        border-radius: 999px;
+    
+        .card-avt {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
 }
 
 .profile-card__name {
@@ -320,8 +333,7 @@
     color: var(--neutral-2);
     font-size: 32px;
     font-weight: 700;
-    line-height: 40px;
-    text-align: center;
+    line-height: 34px;
     letter-spacing: -1%;
 }
 
@@ -330,16 +342,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 8px;
+    gap: 16px;
     background-color: var(--neutral-7);
     border-radius: 40px;
-    padding: 8px;
+    padding: 8px 16px;
 
     .amount-review__item {
         display: flex;
         gap: 8px;
         align-items: center;
         justify-content: flex-start;
+
+        svg {
+            flex-shrink: 0;
+        }
     }
 
     span {
@@ -371,27 +387,26 @@
 .profile-card__function-connect-user {
     width: 100%;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
     gap: 8px;
 
+    .btn {
+        padding: 0;
+    }
+
     .btn-outline {
         background-color: var(--neutral-2);
-        width: 92px;
-        height: 40px;
-        gap: 12px;
+        gap: 12px 16px;
+        padding: 12px 16px;
     }
 
     span {
         font-family: var(--font-primary);
         font-size: 14px;
         font-weight: 700;
-        text-align: center;
         color: var(--neutral-8);
-    }
-
-    .btn {
-        padding: 0;
+        line-height: 16px;
     }
 
     .btn-rounded {
@@ -433,6 +448,8 @@ hr {
     display: flex;
     align-items: center;
     gap: 8px;
+    padding-top: 0;
+    padding-bottom: 0;
 
     span {
         font-size: 12px;
@@ -466,13 +483,13 @@ hr {
 
     .main-content {
         width: 100%;
-        padding-left: 40px;  
+        padding-left: 40px;
         display: flex;
         justify-content: flex-end;
         align-items: flex-start;
     }
-    
-    .content{
+
+    .content {
         padding-top: 80px;
         padding-left: 42px;
         padding-right: 0;
@@ -482,16 +499,23 @@ hr {
         padding: 6px 12px;
         font-size: 14px;
     }
-    
+
     .info-item {
         gap: 10px;
     }
-    .info-item__label{
+
+    .info-item__label {
         flex: 2;
     }
 
-    .info-item__content{
+    .info-item__content {
         flex: 5;
+    }
+
+    .user-review__header {
+        display: flex;
+        align-items: flex-start;
+        gap: 24px;
     }
 }
 
@@ -513,12 +537,15 @@ hr {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        flex-direction: column;       
+        flex-direction: column;
     }
 
     .profile-card {
         transform: none;
-        margin-top: 40px;
+        margin-top: 64px;
+        max-width: 311px;
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .btn-contact__mobile {
@@ -529,7 +556,7 @@ hr {
         display: none;
     }
 
-    .profile__personal-info{
+    .profile__personal-info {
         gap: 24px;
     }
 
@@ -550,11 +577,33 @@ hr {
     .avt-container {
         display: flex;
         flex-direction: column;
-        gap:14px;
+        gap: 22px;
 
-        .card-avt {
+        .avt_image-box {
+            position: relative;
             width: 112px;
             height: 112px;
+        }
+
+        picture {
+            height: 112px;
+            width: 112px;
+
+            .card-avt {
+                scale: 1.8;
+            }
+        }
+
+        .icon_verify-avt {
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        .profile-card__name {
+            margin-top: 0;
+            line-height: 40px;
         }
     }
 
@@ -572,20 +621,31 @@ hr {
         gap: 12px;
     }
 
-    .info-item__content {
-        flex: 2;
+    .info-item {
+        gap: 12px;
+
+        .info-item__content {
+            flex: 6;
+        }
+        
+        .info-item__label {
+            flex: 4;
+        }
     }
 
-    .info-item__label {
-        flex: 2;
-    }
-
-    .user-review__header{
+    .user-review__header {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         gap: 32px;
 
     }
+
+    .content {
+        .profile {
+            margin-bottom: 40px;
+        }
+    }
+
 
 }
