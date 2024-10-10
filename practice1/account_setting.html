@@ -8,9 +8,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="resources/css/header.css">
-    <link rel="stylesheet" href="/resources/css/account_setting.css">
-    <link rel="stylesheet" href="/resources/css/footer.css">
+        <link rel="stylesheet" href="resources/css/header.css">
+        <link rel="stylesheet" href="/resources/css/account_setting.css">
+        <link rel="stylesheet" href="/resources/css/footer.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -25,49 +25,41 @@
                         <label for="logo" class="logo--name">fleet</label>
                     </div>
                     <div class="line"></div>
-                    <select name="select_roles" id="select_roles"
-                        class="text-sm font-primary flex-aic header-left--selectRoles">
+                    <select name="select_roles" id="select_roles" class="text-sm font-primary flex-aic header-left--selectRoles">
                         <option value="Traveler">Traveler</option>
                         <option value="Traveler">Traveler</option>
                         <option value="Traveler">Traveler</option>
-                    </select>
+                    </select>               
                 </div>
                 <!-- avatar, notification, language.. -->
                 <div class="header-right">
-                    <a href="" class="font-primary text-sm header-right--support">Support</a>
+                    <button class="btn btn-ghost font-primary text-sm header-right--support">Support</button>
                     <button class="btn btn-ghost header-right--btn">
                         <img src="/resources/icons/language.png" alt="iconLanguage" class="header-right--iconLanguage">
-                        <span>Language</span>
+                        <span>Language</span> 
                     </button>
                     <button class="btn btn-outline header-right--btn_mobile"> <span>List your property</span></button>
-                    <div class="flex-aic header-right--notification">
-                        <img src="/resources/icons/notification.png" alt="notification"
-                            class="notification--notificationImg">
-                    </div>
-                    <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
-
-                    <label for="nav-mobile-input" class="header-right--nav-mobile">
+                    <button class="flex-aic header-right--notification">
+                        <img src="/resources/icons/notification.png" alt="notification" class="notification--notificationImg">
+                    </button>
+                    <button class="header-right--avt_info">
+                        <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
+                    </button>
+                   
+                    <label for="nav-mobile-input" class="header-right--nav-mobile" >
                         <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.66732 10.667C5.93094 10.667 5.33398 11.2639 5.33398 12.0003C5.33398 12.7367 5.93094 13.3337 6.66732 13.3337H25.334C26.0704 13.3337 26.6673 12.7367 26.6673 12.0003C26.6673 11.2639 26.0704 10.667 25.334 10.667H6.66732Z"
-                                fill="#777E91" />
-                            <path
-                                d="M6.66732 18.667C5.93094 18.667 5.33398 19.2639 5.33398 20.0003C5.33398 20.7367 5.93094 21.3337 6.66732 21.3337H25.334C26.0704 21.3337 26.6673 20.7367 26.6673 20.0003C26.6673 19.2639 26.0704 18.667 25.334 18.667H6.66732Z"
-                                fill="#777E91" />
-                        </svg>
+                            <path d="M6.66732 10.667C5.93094 10.667 5.33398 11.2639 5.33398 12.0003C5.33398 12.7367 5.93094 13.3337 6.66732 13.3337H25.334C26.0704 13.3337 26.6673 12.7367 26.6673 12.0003C26.6673 11.2639 26.0704 10.667 25.334 10.667H6.66732Z" fill="#777E91"/>
+                            <path d="M6.66732 18.667C5.93094 18.667 5.33398 19.2639 5.33398 20.0003C5.33398 20.7367 5.93094 21.3337 6.66732 21.3337H25.334C26.0704 21.3337 26.6673 20.7367 26.6673 20.0003C26.6673 19.2639 26.0704 18.667 25.334 18.667H6.66732Z" fill="#777E91"/>
+                            </svg>                        
                     </label>
                     <input hidden type="checkbox" class="nav-input" id="nav-mobile-input">
                     <label for="nav-mobile-input" class="nav_overlay"></label>
                     <nav class="nav-mobile">
                         <label for="nav-mobile-input" class="x-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path
-                                    d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z" />
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M64 32C28.7 32 0 60.7 0 96L0 416c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-320c0-35.3-28.7-64-64-64L64 32zm79 143c9.4-9.4 24.6-9.4 33.9 0l47 47 47-47c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-47 47 47 47c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-47-47-47 47c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l47-47-47-47c-9.4-9.4-9.4-24.6 0-33.9z"/></svg>
                         </label>
                         <div class="nav-account--avt">
-                            <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="nav-mobile--avt">
+                            <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="nav-mobile--avt"> 
                             <span class="nav-mobile--name-acount">Kohaku Tora</span>
                         </div>
                         <ul class="nav-mobile--list">
@@ -79,7 +71,96 @@
                             <li><a href="#" class="text-base font-primary nav-mobile--link">Help</a></li>
                         </ul>
                     </nav>
-
+                    <!-- avt function -->
+                    <div class="header__list-property">
+                        <div class="property__primary">
+                            <a href="#" class="property__choice">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 15.9013V18.9951L12.0622 16.0038L12.5913 15.9951C14.6952 15.9607 16.5886 15.7488 18.0044 15.5334C18.8979 15.3975 19.5187 14.7739 19.6536 13.9909C19.8406 12.9049 20 11.5289 20 10C20 8.47108 19.8406 7.09512 19.6536 6.00907C19.5187 5.22608 18.8979 4.60252 18.0044 4.46657C16.4559 4.23096 14.3383 4 12 4C9.66167 4 7.54408 4.23096 5.99562 4.46657C5.10214 4.60252 4.4813 5.22608 4.34643 6.00907C4.15936 7.09512 4 8.47108 4 10C4 11.5289 4.15936 12.9049 4.34643 13.9909C4.46355 14.6709 4.93854 15.2158 5.63108 15.4461L7 15.9013ZM2.37546 5.66957C2.66565 3.98488 4.00472 2.74648 5.69477 2.48932C7.31411 2.24293 9.53559 2 12 2C14.4644 2 16.6859 2.24293 18.3052 2.48932C19.9953 2.74648 21.3344 3.98488 21.6245 5.66957C21.8268 6.84372 22 8.33525 22 10C22 11.6647 21.8268 13.1563 21.6245 14.3304C21.3344 16.0151 19.9953 17.2535 18.3052 17.5107C16.8238 17.7361 14.8384 17.9586 12.6241 17.9949L6.50873 21.6085C5.84211 22.0024 5 21.5219 5 20.7476V17.344C3.64656 16.8939 2.62456 15.7766 2.37546 14.3304C2.17321 13.1563 2 11.6647 2 10C2 8.33525 2.17321 6.84372 2.37546 5.66957Z" fill="#777E91"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 7C6.44772 7 6 7.44772 6 8C6 8.55228 6.44772 9 7 9H17C17.5523 9 18 8.55228 18 8C18 7.44772 17.5523 7 17 7H7ZM7 11C6.44772 11 6 11.4477 6 12C6 12.5523 6.44772 13 7 13H11C11.5523 13 12 12.5523 12 12C12 11.4477 11.5523 11 11 11H7Z" fill="#777E91"/>
+                                    </svg>
+                                <span>Message</span>                            
+                            </a>
+                
+                            <a href="#" class="property__choice">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M11.9918 4.17242L12.0001 4.16808L12.0089 4.17261L16.4623 6.84467L18.0001 7.7712V18.8013C18.0001 19.3943 17.9986 19.7188 17.9795 19.952L17.9772 19.9784L17.9509 19.9807C17.7177 19.9997 17.3932 20.0013 16.8001 20.0013H7.20012C6.60707 20.0013 6.28256 19.9997 6.04939 19.9807L6.02302 19.9784L6.02073 19.952C6.00168 19.7188 6.00012 19.3943 6.00012 18.8013V7.77122L7.53229 6.8481L11.9918 4.17242ZM6.50181 5.134L1.48566 8.1437C1.01208 8.42785 0.85851 9.04211 1.14266 9.51569C1.42681 9.98927 2.04107 10.1428 2.51465 9.85868L4.00012 8.9674V18.8013C4.00012 19.9214 4.00012 20.4814 4.21811 20.9092C4.40986 21.2856 4.71582 21.5915 5.09214 21.7833C5.51996 22.0013 6.08002 22.0013 7.20012 22.0013H16.8001C17.9202 22.0013 18.4803 22.0013 18.9081 21.7833C19.2844 21.5915 19.5904 21.2856 19.7821 20.9092C20.0001 20.4814 20.0001 19.9214 20.0001 18.8013V8.96737L21.4857 9.85868C21.9592 10.1428 22.5735 9.98927 22.8576 9.51569C23.1418 9.04211 22.9882 8.42785 22.5146 8.1437L17.4927 5.13054L13.6515 2.81626C13.3723 2.648 13.158 2.51888 12.9763 2.42179C12.9339 2.39808 12.8909 2.37602 12.8473 2.35563C12.6962 2.28187 12.5651 2.23277 12.4305 2.20311C12.147 2.14063 11.8533 2.14063 11.5697 2.20311C11.4348 2.23285 11.3034 2.28213 11.1518 2.35621C11.109 2.37627 11.0667 2.39793 11.0251 2.42118C10.8432 2.51834 10.6286 2.64765 10.3487 2.81626L6.50181 5.134Z" fill="#777E91"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M13 20V16C13 15.4477 12.5523 15 12 15C11.4477 15 11 15.4477 11 16V20H13ZM12 13C10.3431 13 9 14.3431 9 16V22H15V16C15 14.3431 13.6569 13 12 13Z" fill="#777E91"/>
+                                    </svg>                            
+                                <span>Bookings</span>                            
+                            </a>
+                
+                            <a href="#" class="property__choice">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20 5H4C3.44772 5 3 5.44772 3 6V18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18V6C21 5.44772 20.5523 5 20 5ZM4 3C2.34315 3 1 4.34315 1 6V18C1 19.6569 2.34315 21 4 21H20C21.6569 21 23 19.6569 23 18V6C23 4.34315 21.6569 3 20 3H4Z" fill="#777E91"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.2318 7.35984C5.58537 6.93556 6.21593 6.87824 6.64021 7.2318L11.3598 11.1648C11.7307 11.4739 12.2694 11.4739 12.6402 11.1648L17.3598 7.2318C17.7841 6.87824 18.4147 6.93556 18.7682 7.35984C19.1218 7.78412 19.0645 8.41468 18.6402 8.76825L13.9206 12.7013C12.808 13.6284 11.192 13.6284 10.0795 12.7013L5.35984 8.76825C4.93556 8.41468 4.87824 7.78412 5.2318 7.35984Z" fill="#777E91"/>
+                                    </svg>                            
+                                <span>Wishlists</span>                            
+                            </a>
+                        </div>
+                        <div class="property__primary">
+                            <a href="#" class="property__choice">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19 12H14V20H19C19.5523 20 20 19.5523 20 19V13C20 12.4477 19.5523 12 19 12ZM12 10V22H19C20.6569 22 22 20.6569 22 19V13C22 11.3431 20.6569 10 19 10H12Z" fill="#777E91"/>
+                                    <path d="M18 15C18 14.4477 17.5523 14 17 14C16.4477 14 16 14.4477 16 15C16 15.5523 16.4477 16 17 16C17.5523 16 18 15.5523 18 15Z" fill="#777E91"/>
+                                    <path d="M18 18C18 17.4477 17.5523 17 17 17C16.4477 17 16 17.4477 16 18C16 18.5523 16.4477 19 17 19C17.5523 19 18 18.5523 18 18Z" fill="#777E91"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 22C3.34315 22 2 20.6569 2 19V5C2 3.34315 3.34315 2 5 2H11C12.6569 2 14 3.34315 14 5V22H5ZM5 4H11C11.5523 4 12 4.44772 12 5V20H10V19C10 18.4477 9.55229 18 9 18H7C6.44772 18 6 18.4477 6 19V20H5C4.44772 20 4 19.5523 4 19V5C4 4.44772 4.44771 4 5 4Z" fill="#777E91"/>
+                                    <path d="M9 6C9.55229 6 10 6.44772 10 7C10 7.55228 9.55228 8 9 8H7C6.44772 8 6 7.55228 6 7C6 6.44772 6.44772 6 7 6H9Z" fill="#777E91"/>
+                                    <path d="M9 10C9.55229 10 10 10.4477 10 11C10 11.5523 9.55228 12 9 12H7C6.44772 12 6 11.5523 6 11C6 10.4477 6.44772 10 7 10H9Z" fill="#777E91"/>
+                                    <path d="M10 15C10 14.4477 9.55229 14 9 14H7C6.44772 14 6 14.4477 6 15C6 15.5523 6.44772 16 7 16H9C9.55228 16 10 15.5523 10 15Z" fill="#777E91"/>
+                                    </svg>                                                      
+                                <span>List your property</span>                            
+                            </a>
+                            <a href="#" class="property__choice">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_8202_4299)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M16 9L19.1701 5.30158C20.2821 4.00424 19.3603 2 17.6516 2L4 2L4 16L17.6516 16C19.3603 16 20.2821 13.9958 19.1701 12.6984L16 9ZM6 14L17.6516 14L13.3658 9L17.6516 4L6 4L6 14Z" fill="#777E91"/>
+                                    <path d="M4 1C4 0.447716 4.44772 0 5 0C5.55228 0 6 0.447715 6 1L6 23C6 23.5523 5.55228 24 5 24C4.44772 24 4 23.5523 4 23L4 1Z" fill="#777E91"/>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_8202_4299">
+                                    <rect width="24" height="24" fill="white"/>
+                                    </clipPath>
+                                    </defs>
+                                    </svg>
+                                                                                        
+                                <span>Host an experience</span>                            
+                            </a>
+                
+                        </div>
+                        <div class="property__list-fc">
+                            <button class="btn btn-outline property__btn">Account</button>
+                            <button class="btn btn-outline property__btn">Log out</button>
+                        </div>
+                
+                    </div>
+                    <!-- notification function -->
+                    <div class="header__notification">
+                        <h2>Notification</h2>
+                        <div class="notification__container">
+                            <div class="notification__message">
+                                <img src="/resources/image/avatar/TobinHackett.png" alt="avt Message" class="message__user-avt">
+                                <div class="message">
+                                    <span class="message__user-name">Kohaku Tora</span>
+                                    <span class="message__content">just sent you a message</span>
+                                    <span class="message__time">1 minute ago</span>
+                                </div>
+                            </div>
+                            <div class="notification__active"></div>
+                        </div>
+                        <div class="notification__container">
+                            <div class="notification__message">
+                                <img src="/resources/image/avatar/TobinHackett.png" alt="avt Message" class="message__user-avt">
+                                <div class="message">
+                                    <span class="message__user-name">Kohaku Tora</span>
+                                    <span class="message__content">just sent you a message</span>
+                                    <span class="message__time">1 minute ago</span>
+                                </div>
+                            </div>
+                            <div class="notification__active"></div>
+                        </div>
+                    </div>
+                
                 </div>
             </header>
         </div>
@@ -95,7 +176,7 @@
                             d="M8 7.33366C9.47276 7.33366 10.6667 6.13975 10.6667 4.66699C10.6667 3.19423 9.47276 2.00033 8 2.00033C6.52724 2.00033 5.33333 3.19423 5.33333 4.66699C5.33333 6.13975 6.52724 7.33366 8 7.33366ZM8 8.66699C10.2091 8.66699 12 6.87613 12 4.66699C12 2.45785 10.2091 0.666992 8 0.666992C5.79086 0.666992 4 2.45785 4 4.66699C4 6.87613 5.79086 8.66699 8 8.66699Z"
                             fill="#23262F" />
                     </svg>
-                    <span class="text-sm font-primary has-choice">Personal info</span>
+                    <span class="text-sm font-primary">Personal info</span>
                 </a>
                 <a class="fc-choice" href="#">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,7 +191,7 @@
                             fill="#777E91" />
                     </svg>
 
-                    <span class="text-sm font-primary not-choice">Login and security</span>
+                    <span class="text-sm font-primary">Login and security</span>
                 </a>
                 <a class="fc-choice" href="#">
                     <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -125,7 +206,7 @@
                             fill="#777E91" />
                         <path d="M0.666016 5.33301H15.3327V6.66634H0.666016V5.33301Z" fill="#777E91" />
                     </svg>
-                    <span class="text-sm font-primary not-choice">Payment</span>
+                    <span class="text-sm font-primary">Payment</span>
                 </a>
                 <a class="fc-choice" href="#">
                     <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,7 +240,7 @@
                         </div>
                         <table class="accountInfo--table-info">
                             <tr class="table__user-info">
-                                <td>
+                                <td class="input-field">
                                     <label class="name-field_info text-ex">DISPLAY NAME</label>
                                     <input type="text" class="input-info" placeholder="Enter your display name">
                                 </td>
@@ -217,7 +298,7 @@
                         </div>
                         <table class="part-social--table-info">
                             <tr class="part-social__table-info">
-                                <td>
+                                <td class="input-field">
                                     <label class="name-field_info text-ex">WEPSITE</label>
                                     <input type="text" class="input-info" placeholder="Your site URL">
                                 </td>
@@ -232,13 +313,13 @@
                             </tr>
                         </table>
                         <div class="form-footer">
-                            <button class="btn btn-outline" type="submit"><span class="font-primary text-base">Update
+                            <button class="btn btn-ghost" type="submit"><span class="font-primary text-base">Update
                                     profile</span></button>
                             <buton class="btn btn-ghost form-footer--clear"><svg width="16" height="16"
                                     viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd"
                                         d="M3.52827 3.52827C3.78862 3.26792 4.21073 3.26792 4.47108 3.52827L7.99967 7.05687L11.5283 3.52827C11.7886 3.26792 12.2107 3.26792 12.4711 3.52827C12.7314 3.78862 12.7314 4.21073 12.4711 4.47108L8.94248 7.99967L12.4711 11.5283C12.7314 11.7886 12.7314 12.2107 12.4711 12.4711C12.2107 12.7314 11.7886 12.7314 11.5283 12.4711L7.99967 8.94248L4.47108 12.4711C4.21073 12.7314 3.78862 12.7314 3.52827 12.4711C3.26792 12.2107 3.26792 11.7886 3.52827 11.5283L7.05687 7.99967L3.52827 4.47108C3.26792 4.21073 3.26792 3.78862 3.52827 3.52827Z"
-                                        fill="#777E91" />
+                                        fill="currentColor" />
                                 </svg>
                                 <span>Clear all</span>
                             </buton>

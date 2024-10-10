@@ -1,8 +1,8 @@
-:root{
-    --primary-1:#3B71FE;
-    --primary-2:#8BC5E5;
-    --primary-3:#92A5EF;
-    --primary-4:#58C27D;
+:root {
+    --primary-1: #3B71FE;
+    --primary-2: #8BC5E5;
+    --primary-3: #92A5EF;
+    --primary-4: #58C27D;
 
     --secondary-1: #A4CDE3;
     --secondary-2: #E4D7CF;
@@ -10,28 +10,44 @@
     --secondary-4: #FA8F54;
 
 
-    --neutral-1:#141416;
-    --neutral-2:#23262F;
-    --neutral-3:#353945;
-    --neutral-4:#777E90;
-    --neutral-5:#B1B5C3;
-    --neutral-6:#E6E8EC;
-    --neutral-7:#F4F5F6;
+    --neutral-1: #141416;
+    --neutral-2: #23262F;
+    --neutral-3: #353945;
+    --neutral-4: #777E90;
+    --neutral-5: #B1B5C3;
+    --neutral-6: #E6E8EC;
+    --neutral-7: #F4F5F6;
     --neutral-8: #FCFCFD;
 
     /* font */
-    --font-primary:  "DM Sans", sans-serif;
+    --font-primary: "DM Sans", sans-serif;
     --font-secondary: "Poppins", system-ui;
+
+    /* font-size  */
+    --font-size-xsm: 12px;
+    --font-size-sm: 14px;
+    --font-size-medium: 16px;
+    --font-size-l: 24px;
+    --font-size-xl: 32px;
+    --font-size-xxl: 48px
 }
 
 
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     border-spacing: 0px;
 
 }
+
+input:focus {
+    outline: none;
+  }
+
+textarea:focus {
+    outline: none;
+  }
 
 #select_roles {
     padding: 0;
@@ -44,24 +60,24 @@ body {
     font-family: var(--font-secondary);
 }
 
-.text-xl{
-    font-size: 48px; 
+.text-xl {
+    font-size: var(--font-size-xxl);
 }
 
 .text-lg {
-    font-size: 24px;
+    font-size: var(--font-size-l);
 }
 
 .text-base {
-    font-size: 16px;
+    font-size: var(--font-size-medium);
 }
 
 .text-sm {
-    font-size: 14px;
+    font-size: var(--font-size-sm);
 }
 
 .text-ex {
-    font-size: 12px;
+    font-size: var(--font-size-xsm);
 }
 
 .flex-aic {
@@ -78,11 +94,11 @@ body {
     outline: none;
     text-align: center;
     background-color: transparent;
-    font-size: 14px;
+    font-size: var(--font-size-sm);
     font-weight: 700;
     padding: 10px 16px;
     border-radius: 99px;
-    
+
 }
 
 .btn-ghost {
@@ -96,12 +112,26 @@ body {
     }
 }
 
+.btn-ghost:hover,
+.btn-ghost:focus {
+    color: var(--neutral-2);
+}
+
+
+
 .btn-outline {
     font-family: var(--font-primary);
     border: 2px solid var(--neutral-6);
     line-height: 16px;
-    span{
+
+    span {
         font-weight: 700;
-        font-size: 14px;
+        font-size: var(--font-size-sm);
     }
+}
+
+.btn-outline:hover,
+.btn-outline:focus {
+    background: var(--neutral-2);
+    color: var(--neutral-8);
 }
