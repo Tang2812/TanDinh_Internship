@@ -168,9 +168,11 @@
         }
     }
 
-    .btn-ghost:hover, .btn-ghost:focus{
+    .btn-ghost:hover,
+    .btn-ghost:focus {
         background-color: var(--neutral-3);
-        span{
+
+        span {
             color: var(--neutral-8);
         }
     }
@@ -250,7 +252,8 @@
             color: var(--neutral-2);
         }
 
-        .user-review__action:hover, .user-review__action:focus{
+        .user-review__action:hover,
+        .user-review__action:focus {
             color: var(--primary-1);
         }
     }
@@ -316,7 +319,7 @@
         height: 160px;
         overflow: hidden;
         border-radius: 999px;
-    
+
         .card-avt {
             width: 100%;
             height: 100%;
@@ -379,8 +382,14 @@
         font-size: var(--font-size-sm);
         font-weight: 700;
         text-decoration: none;
-        color: var(--neutral-2);
+        color: var(--neutral-4);
     }
+}
+
+.profile-card__link-website a:hover,
+.profile-card__link-website:focus {
+    cursor: pointer;
+    color: var(--neutral-2);
 }
 
 .profile-card__function-connect-user {
@@ -401,7 +410,8 @@
         padding: 12px 16px;
     }
 
-    .btn-outline:hover, .btn-outline:focus {
+    .btn-outline:hover,
+    .btn-outline:focus {
         background-color: var(--neutral-2);
         color: var(--neutral-8);
     }
@@ -424,7 +434,8 @@
         border: 2px solid var(--neutral-6);
     }
 
-    .btn-rounded:hover, .btn-rounded:focus {
+    .btn-rounded:hover,
+    .btn-rounded:focus {
         background-color: var(--neutral-2);
         color: var(--neutral-8);
     }
@@ -436,12 +447,14 @@
     align-items: center;
     justify-content: center;
     gap: 24px;
-    color: var(--neutral-4);
+
 }
-.profile-card__other-profile svg:hover, .profile-card__other-profile_site:focus {
+
+.profile-card__other-profile img:hover {
     cursor: pointer;
-    color: var(--neutral-2);
+    color: var(--neutral-8);
 }
+
 hr {
     display: flex;
     width: 199px;
@@ -640,7 +653,7 @@ hr {
         .info-item__content {
             flex: 6;
         }
-        
+
         .info-item__label {
             flex: 4;
         }
