@@ -1,306 +1,441 @@
 <!DOCTYPE html>
 
 <head>
-    <title>Account setting</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
+  <title>Account setting</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="resources/css/reset.css">
-    <link rel="stylesheet" href="/resources/css/base.css">
-    <link rel="stylesheet" href="resources/css/header.css">
-    <link rel="stylesheet" href="/resources/css/account_setting.css">
-    <link rel="stylesheet" href="/resources/css/footer.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="resources/css/reset.css" />
+  <link rel="stylesheet" href="/resources/css/base.css" />
+  <link rel="stylesheet" href="resources/css/header.css" />
+  <link rel="stylesheet" href="/resources/css/account_setting.css" />
+  <link rel="stylesheet" href="/resources/css/footer.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
 <body>
-    <div class="container">
-        <div class="header-container">
-            <header>
-                <!-- logo, role -->
-                <div class="header-left">
-                    <div class="logo">
-                        <img src="/resources/image/logo/logo.png" alt="Logo fleet" class="logo--img" id="logo">
-                        <label for="logo" class="logo--name">fleet</label>
-                    </div>
-                    <div class="line"></div>
-                    <select name="select_roles" id="select_roles"
-                        class="text-sm font-primary flex-aic header-left--selectRoles">
-                        <option value="Traveler">Traveler</option>
-                        <option value="Traveler">Traveler</option>
-                        <option value="Traveler">Traveler</option>
-                    </select>
-                </div>
-                <!-- avatar, notification, language.. -->
-                <div class="header-right">
-                    <button class="btn btn-ghost font-primary text-sm header-right--support">Support</button>
-                    <button class="btn btn-ghost header-right--btn">
-                        <img src="/resources/icons/language.png" alt="iconLanguage" class="header-right--iconLanguage">
-                        <span>Language</span>
-                    </button>
-                    <button class="btn btn-outline header-right--btn_mobile"> <span>List your property</span></button>
-                    <button class="flex-aic header-right--notification">
-                        <img src="/resources/icons/notification.png" alt="notification"
-                            class="notification--notificationImg">
-                    </button>
-                    <button class="header-right--avt_info">
-                        <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
-                    </button>
-
-                    <label for="nav-mobile-input" class="header-right--nav-mobile">
-                        <img src="resources/icons/nav_mobile.svg" alt="nav mobile icon">
-                    </label>
-                    <input hidden type="checkbox" class="nav-input" id="nav-mobile-input">
-                    <label for="nav-mobile-input" class="nav_overlay"></label>
-                    <nav class="nav-mobile">
-                        <label for="nav-mobile-input" class="x-icon">
-                            <img src="resources/icons/x_icon.svg" alt="x-icon">
-                        </label>
-                        <div class="nav-account--avt">
-                            <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="nav-mobile--avt">
-                            <span class="nav-mobile--name-acount">Kohaku Tora</span>
-                        </div>
-                        <ul class="nav-mobile--list">
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">Support</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">Language</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">List your property</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">Home</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">About</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">Help</a></li>
-                        </ul>
-                    </nav>
-                    <!-- avt function -->
-                    <div class="header__list-property">
-                        <div class="property__primary">
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/choice_message.svg" alt="message icon">
-                                <span>Message</span>
-                            </a>
-
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/choice_booking.svg" alt="booking icon">
-                                <span>Bookings</span>
-                            </a>
-
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/choice_wishlists.svg" alt="Wishlists icon">
-                                <span>Wishlists</span>
-                            </a>
-                        </div>
-                        <div class="property-line"></div>
-                        <div class="property__primary">
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/choice_list-property.svg" alt="list property icon">
-                                <span>List your property</span>
-                            </a>
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/host_experience.svg" alt="Host experience icon">
-                                <span>Host an experience</span>
-                            </a>
-
-                        </div>
-                        <div class="property__list-fc">
-                            <button class="btn btn-outline property__btn">Account</button>
-                            <button class="btn btn-outline property__btn">Log out</button>
-                        </div>
-
-                    </div>
-                    <!-- notification function -->
-                    <div class="header__notification">
-                        <h2>Notification</h2>
-                        <div class="notification__container">
-                            <div class="notification__message">
-                                <img src="/resources/image/avatar/TobinHackett.png" alt="avt Message"
-                                    class="message__user-avt">
-                                <div class="message">
-                                    <span class="message__user-name">Kohaku Tora</span>
-                                    <span class="message__content">just sent you a message</span>
-                                    <span class="message__time">1 minute ago</span>
-                                </div>
-                            </div>
-                            <div class="notification__active"></div>
-                        </div>
-                        <div class="notification__container">
-                            <div class="notification__message">
-                                <img src="/resources/image/avatar/TobinHackett.png" alt="avt Message"
-                                    class="message__user-avt">
-                                <div class="message">
-                                    <span class="message__user-name">Kohaku Tora</span>
-                                    <span class="message__content">just sent you a message</span>
-                                    <span class="message__time">1 minute ago</span>
-                                </div>
-                            </div>
-                            <div class="notification__active"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </header>
+  <div class="container">
+    <div class="header-container">
+      <header>
+        <!-- logo, role -->
+        <div class="header-left">
+          <div class="logo">
+            <img
+              src="/resources/image/logo/logo.png"
+              alt="Logo fleet"
+              class="logo--img"
+              id="logo"
+            />
+            <label for="logo" class="logo--name">fleet</label>
+          </div>
+          <div class="line"></div>
+          <select
+            name="select_roles"
+            id="select_roles"
+            class="text-sm font-primary flex-aic header-left--selectRoles"
+          >
+            <option value="Traveler">Traveler</option>
+            <option value="Traveler">Traveler</option>
+            <option value="Traveler">Traveler</option>
+          </select>
         </div>
-        <div class="main-form_edit">
-            <!-- list function on the left -->
-            <div class="list-function">
-                <a class="fc-choice" href="#">
-                    <img src="resources/icons/fc_personal_info.svg" alt="personal info icon">
-                    <span class="text-sm font-primary">Personal info</span>
-                </a>
-                <a class="fc-choice" href="#">
-                    <img src="resources/icons/fc_login&security.svg" alt="login and security icon">
-                    <span class="text-sm font-primary">Login and security</span>
-                </a>
-                <a class="fc-choice" href="#">
-                    <img src="resources/icons/payment.svg" alt="payment icon">
-                    <span class="text-sm font-primary">Payment</span>
-                </a>
-                <a class="fc-choice" href="#">
-                    <img src="resources/icons/fc_notification.svg" alt="notification icon">
-                    <span class="text-sm font-primary not-choice">Notification</span>
-                </a>
+        <!-- avatar, notification, language.. -->
+        <div class="header-right">
+          <button
+            class="btn btn-ghost font-primary text-sm header-right--support"
+          >
+            Support
+          </button>
+          <button class="btn btn-ghost header-right--btn">
+            <img
+              src="/resources/icons/language.png"
+              alt="iconLanguage"
+              class="header-right--iconLanguage"
+            />
+            <span>Language</span>
+          </button>
+          <button class="btn btn-outline header-right--btn_mobile">
+            <span>List your property</span>
+          </button>
+          <button class="flex-aic header-right--notification">
+            <img
+              src="/resources/icons/notification.png"
+              alt="notification"
+              class="notification--notificationImg"
+            />
+          </button>
+          <button class="header-right--avt_info">
+            <img
+              src="/resources/image/avatar/KohakuTora_avt.png"
+              alt=""
+              class="header-right--avt"
+            />
+          </button>
+
+          <label for="nav-mobile-input" class="header-right--nav-mobile">
+            <img src="resources/icons/nav_mobile.svg" alt="nav mobile icon" />
+          </label>
+          <input
+            hidden
+            type="checkbox"
+            class="nav-input"
+            id="nav-mobile-input"
+          />
+          <label for="nav-mobile-input" class="nav_overlay"></label>
+          <nav class="nav-mobile">
+            <label for="nav-mobile-input" class="x-icon">
+              <img src="resources/icons/x_icon.svg" alt="x-icon" />
+            </label>
+            <div class="nav-account--avt">
+              <img
+                src="/resources/image/avatar/KohakuTora_avt.png"
+                alt=""
+                class="nav-mobile--avt"
+              />
+              <span class="nav-mobile--name-acount">Kohaku Tora</span>
             </div>
-            <!-- Update profile -->
-            <div class="form-edit-user">
-                <div class="table__user-info_select header-form__selector">
+            <ul class="nav-mobile--list">
+              <li>
+                <a href="#" class="text-base font-primary nav-mobile--link"
+                  >Support</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-base font-primary nav-mobile--link"
+                  >Language</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-base font-primary nav-mobile--link"
+                  >List your property</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-base font-primary nav-mobile--link"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-base font-primary nav-mobile--link"
+                  >About</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-base font-primary nav-mobile--link"
+                  >Help</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <!-- avt function -->
+          <div class="header__list-property">
+            <div class="property__primary">
+              <a href="#" class="property__choice">
+                <img
+                  src="resources/icons/choice_message.svg"
+                  alt="message icon"
+                />
+                <span>Message</span>
+              </a>
 
-                    <select name="list-function" id="function" class="">
-                        <option class="opt-text text-ex">Personal info</option>
-                        <option class="opt-text text-ex">Login and security</option>
-                        <option class="opt-text text-ex">Payments</option>
-                        <option class="opt-text text-ex">Notification</option>
-                    </select>
-                </div>
-                <div class="form-edit-user--header">
-                    <span class="text-xl font-primary header-form_title">Personal info</span>
-                    <a href="/user_profile.html"><button class="btn btn-outline btn--mobile">View profile</button></a>
-                </div>
-                <form class="main-content_form">
-                    <div class="accountInfo">
-                        <div class="accountInfo--name">
-                            <label class="text-base">Account info</label>
-                        </div>
-                        <table class="accountInfo--table-info">
-                            <tr class="table__user-info">
-                                <td class="input-field">
-                                    <label class="name-field_info text-ex">DISPLAY NAME</label>
-                                    <input type="text" class="input-info" placeholder="Enter your display name">
-                                </td>
-                                <td>
-                                    <label class="name-field_info text-ex">REAL NAME</label>
-                                    <input type="text" class="input-info" placeholder="Kohaku Tora">
-                                </td>
-                            </tr>
-                            <tr class="table__user-info">
-                                <td>
-                                    <label class="name-field_info text-ex">PHONE</label>
-                                    <input type="text" class="input-info" placeholder="Phone number">
-                                </td>
-                                <td>
-                                    <label class="name-field_info text-ex">EMAIL</label>
-                                    <input type="text" class="input-info" placeholder="tam@ui8.net">
-                                </td>
-                            </tr>
-                            <tr class="table__user-info info-bio">
-                                <td>
-                                    <label class="name-field_info text-ex">BIO</label>
-                                    <textarea name="BIO" id="BIO"
-                                        placeholder="About yourself in a few words"></textarea>
-                                </td>
-                            </tr>
-                            <tr class="table__user-info">
-                                <td>
-                                    <label class="name-field_info text-ex">LIVES IN</label>
-                                    <div class="table__user-info_select">
-                                        <select name="location" id="location" class="">
-                                            <option class="opt-text text-ex">Location</option>
-                                            <option class="opt-text text-ex">Viet Nam</option>
-                                            <option class="opt-text text-ex">United states</option>
-                                        </select>
-                                    </div>
-                                </td>
-                                <td>
-                                    <label class="name-field_info text-ex">SPEAK</label>
-                                    <div class="table__user-info_select">
+              <a href="#" class="property__choice">
+                <img
+                  src="resources/icons/choice_booking.svg"
+                  alt="booking icon"
+                />
+                <span>Bookings</span>
+              </a>
 
-                                        <select name="location" id="location" class="">
-                                            <option class="opt-text text-ex">English (United states)</option>
-                                            <option class="opt-text text-ex">Vietnamese (Viet Nam)</option>
-                                            <option class="opt-text text-ex">Spainese (Spain)</option>
-                                        </select>
-                                    </div>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <div class="part-social">
-                        <div class="part-social--name">
-                            <label class="text-base">Social</label>
-                        </div>
-                        <table class="part-social--table-info">
-                            <tr class="part-social__table-info">
-                                <td class="input-field">
-                                    <label class="name-field_info text-ex">WEPSITE</label>
-                                    <input type="text" class="input-info" placeholder="Your site URL">
-                                </td>
-                                <td>
-                                    <label class="name-field_info text-ex">TWITTER</label>
-                                    <div class="fc-verify">
-                                        <input type="text" placeholder="@twitter username">
-                                        <button class="btn btn-outline btn-verify"><span>Verify account</span></button>
-                                    </div>
-
-                                </td>
-                            </tr>
-                        </table>
-                        <div class="form-footer">
-                            <button class="btn btn-ghost" type="submit"><span class="font-primary text-base">Update
-                                    profile</span></button>
-                            <buton class="btn btn-ghost form-footer--clear">
-                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M3.52827 3.52827C3.78862 3.26792 4.21073 3.26792 4.47108 3.52827L7.99967 7.05687L11.5283 3.52827C11.7886 3.26792 12.2107 3.26792 12.4711 3.52827C12.7314 3.78862 12.7314 4.21073 12.4711 4.47108L8.94248 7.99967L12.4711 11.5283C12.7314 11.7886 12.7314 12.2107 12.4711 12.4711C12.2107 12.7314 11.7886 12.7314 11.5283 12.4711L7.99967 8.94248L4.47108 12.4711C4.21073 12.7314 3.78862 12.7314 3.52827 12.4711C3.26792 12.2107 3.26792 11.7886 3.52827 11.5283L7.05687 7.99967L3.52827 4.47108C3.26792 4.21073 3.26792 3.78862 3.52827 3.52827Z"
-                                        fill="currentColor" />
-                                </svg>
-                                <span>Clear all</span>
-                            </buton>
-                        </div>
-                    </div>
-                </form>
+              <a href="#" class="property__choice">
+                <img
+                  src="resources/icons/choice_wishlists.svg"
+                  alt="Wishlists icon"
+                />
+                <span>Wishlists</span>
+              </a>
             </div>
+            <div class="property-line"></div>
+            <div class="property__primary">
+              <a href="#" class="property__choice">
+                <img
+                  src="resources/icons/choice_list-property.svg"
+                  alt="list property icon"
+                />
+                <span>List your property</span>
+              </a>
+              <a href="#" class="property__choice">
+                <img
+                  src="resources/icons/host_experience.svg"
+                  alt="Host experience icon"
+                />
+                <span>Host an experience</span>
+              </a>
+            </div>
+            <div class="property__list-fc">
+              <button class="btn btn-outline property__btn">Account</button>
+              <button class="btn btn-outline property__btn">Log out</button>
+            </div>
+          </div>
+          <!-- notification function -->
+          <div class="header__notification">
+            <h2>Notification</h2>
+            <div class="notification__container">
+              <div class="notification__message">
+                <img
+                  src="/resources/image/avatar/TobinHackett.png"
+                  alt="avt Message"
+                  class="message__user-avt"
+                />
+                <div class="message">
+                  <span class="message__user-name">Kohaku Tora</span>
+                  <span class="message__content">just sent you a message</span>
+                  <span class="message__time">1 minute ago</span>
+                </div>
+              </div>
+              <div class="notification__active"></div>
+            </div>
+            <div class="notification__container">
+              <div class="notification__message">
+                <img
+                  src="/resources/image/avatar/TobinHackett.png"
+                  alt="avt Message"
+                  class="message__user-avt"
+                />
+                <div class="message">
+                  <span class="message__user-name">Kohaku Tora</span>
+                  <span class="message__content">just sent you a message</span>
+                  <span class="message__time">1 minute ago</span>
+                </div>
+              </div>
+              <div class="notification__active"></div>
+            </div>
+          </div>
         </div>
-        <footer class="footer">
-            <div class="container footer-container">
-                <div class="footer-content">
-                    <div class="fc--logo">
-                        <img src="./resources/image/logo/logo.svg" alt="logo">
-                        <span class="text-lg ">fleet</span>
-                    </div>
-
-                    <div class="fc--item">
-                        <a href="#" class="fc-item_link text-sm font-primary">About</a>
-                        <a href="#" class="fc-item_link text-sm font-primary">Project</a>
-                        <a href="#" class="fc-item_link text-sm font-primary">What we do</a>
-                        <a href="#" class="fc-item_link text-sm font-primary">Press</a>
-                        <a href="#" class="fc-item_link text-sm font-primary">Jobs</a>
-                        <a href="#" class="fc-item_link text-sm font-primary">Download</a>
-                    </div>
-                    <form class="fc--form">
-                        <label class="text-ex">JOIN OUR COMMUNITY 🔥</label>
-                        <div class="fc--send_email">
-                            <input type="email" class="send-email" placeholder="Enter your email "></input>
-                            <button>
-                                <img src="resources/icons/send_maiol.svg" alt="send-email icon">
-                            </button>
-                        </div>
-
-                    </form>
-                </div>
-                <div class="footer--bottom">
-                    <p class="text-ex footer-bottom_copyright">Copyright © 2021 UI8 LLC. All rights reserved</p>
-                </div>
-
-        </footer>
+      </header>
     </div>
+    <div class="main-form_edit">
+      <!-- list function on the left -->
+      <div class="list-function">
+        <a class="fc-choice" href="#">
+          <img
+            src="resources/icons/fc_personal_info.svg"
+            alt="personal info icon"
+          />
+          <span class="text-sm font-primary">Personal info</span>
+        </a>
+        <a class="fc-choice" href="#">
+          <img
+            src="resources/icons/fc_login&security.svg"
+            alt="login and security icon"
+          />
+          <span class="text-sm font-primary">Login and security</span>
+        </a>
+        <a class="fc-choice" href="#">
+          <img src="resources/icons/payment.svg" alt="payment icon" />
+          <span class="text-sm font-primary">Payment</span>
+        </a>
+        <a class="fc-choice" href="#">
+          <img
+            src="resources/icons/fc_notification.svg"
+            alt="notification icon"
+          />
+          <span class="text-sm font-primary not-choice">Notification</span>
+        </a>
+      </div>
+      <!-- Update profile -->
+      <div class="form-edit-user">
+        <div class="table__user-info_select header-form__selector">
+          <select name="list-function" id="function" class="">
+            <option class="opt-text text-ex">Personal info</option>
+            <option class="opt-text text-ex">Login and security</option>
+            <option class="opt-text text-ex">Payments</option>
+            <option class="opt-text text-ex">Notification</option>
+          </select>
+        </div>
+        <div class="form-edit-user--header">
+          <span class="text-xl font-primary header-form_title"
+            >Personal info</span
+          >
+          <a href="/user_profile.html"
+            ><button class="btn btn-outline btn--mobile">
+              View profile
+            </button></a
+          >
+        </div>
+        <form class="main-content_form">
+          <div class="accountInfo">
+            <div class="accountInfo--name">
+              <label class="text-base">Account info</label>
+            </div>
+            <table class="accountInfo--table-info">
+              <tr class="table__user-info">
+                <td class="input-field">
+                  <label class="name-field_info text-ex">DISPLAY NAME</label>
+                  <input
+                    type="text"
+                    class="input-info"
+                    placeholder="Enter your display name"
+                  />
+                </td>
+                <td>
+                  <label class="name-field_info text-ex">REAL NAME</label>
+                  <input
+                    type="text"
+                    class="input-info"
+                    placeholder="Kohaku Tora"
+                  />
+                </td>
+              </tr>
+              <tr class="table__user-info">
+                <td>
+                  <label class="name-field_info text-ex">PHONE</label>
+                  <input
+                    type="text"
+                    class="input-info"
+                    placeholder="Phone number"
+                  />
+                </td>
+                <td>
+                  <label class="name-field_info text-ex">EMAIL</label>
+                  <input
+                    type="text"
+                    class="input-info"
+                    placeholder="tam@ui8.net"
+                  />
+                </td>
+              </tr>
+              <tr class="table__user-info info-bio">
+                <td>
+                  <label class="name-field_info text-ex">BIO</label>
+                  <textarea
+                    name="BIO"
+                    id="BIO"
+                    placeholder="About yourself in a few words"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr class="table__user-info">
+                <td>
+                  <label class="name-field_info text-ex">LIVES IN</label>
+                  <div class="table__user-info_select">
+                    <select name="location" id="location" class="">
+                      <option class="opt-text text-ex">Location</option>
+                      <option class="opt-text text-ex">Viet Nam</option>
+                      <option class="opt-text text-ex">United states</option>
+                    </select>
+                  </div>
+                </td>
+                <td>
+                  <label class="name-field_info text-ex">SPEAK</label>
+                  <div class="table__user-info_select">
+                    <select name="location" id="location" class="">
+                      <option class="opt-text text-ex">
+                        English (United states)
+                      </option>
+                      <option class="opt-text text-ex">
+                        Vietnamese (Viet Nam)
+                      </option>
+                      <option class="opt-text text-ex">Spainese (Spain)</option>
+                    </select>
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="part-social">
+            <div class="part-social--name">
+              <label class="text-base">Social</label>
+            </div>
+            <table class="part-social--table-info">
+              <tr class="part-social__table-info">
+                <td class="input-field">
+                  <label class="name-field_info text-ex">WEPSITE</label>
+                  <input
+                    type="text"
+                    class="input-info"
+                    placeholder="Your site URL"
+                  />
+                </td>
+                <td>
+                  <label class="name-field_info text-ex">TWITTER</label>
+                  <div class="fc-verify">
+                    <input type="text" placeholder="@twitter username" />
+                    <button class="btn btn-outline btn-verify">
+                      <span>Verify account</span>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </table>
+            <div class="form-footer">
+              <button class="btn btn-ghost" type="submit">
+                <span class="font-primary text-base">Update profile</span>
+              </button>
+              <buton class="btn btn-ghost form-footer--clear">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M3.52827 3.52827C3.78862 3.26792 4.21073 3.26792 4.47108 3.52827L7.99967 7.05687L11.5283 3.52827C11.7886 3.26792 12.2107 3.26792 12.4711 3.52827C12.7314 3.78862 12.7314 4.21073 12.4711 4.47108L8.94248 7.99967L12.4711 11.5283C12.7314 11.7886 12.7314 12.2107 12.4711 12.4711C12.2107 12.7314 11.7886 12.7314 11.5283 12.4711L7.99967 8.94248L4.47108 12.4711C4.21073 12.7314 3.78862 12.7314 3.52827 12.4711C3.26792 12.2107 3.26792 11.7886 3.52827 11.5283L7.05687 7.99967L3.52827 4.47108C3.26792 4.21073 3.26792 3.78862 3.52827 3.52827Z"
+                    fill="currentColor"
+                  />
+                </svg>
+                <span>Clear all</span>
+              </buton>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-content">
+          <div class="fc--logo">
+            <img src="./resources/image/logo/logo.svg" alt="logo" />
+            <span class="text-lg">fleet</span>
+          </div>
+
+          <div class="fc--item">
+            <a href="#" class="fc-item_link text-sm font-primary">About</a>
+            <a href="#" class="fc-item_link text-sm font-primary">Project</a>
+            <a href="#" class="fc-item_link text-sm font-primary">What we do</a>
+            <a href="#" class="fc-item_link text-sm font-primary">Press</a>
+            <a href="#" class="fc-item_link text-sm font-primary">Jobs</a>
+            <a href="#" class="fc-item_link text-sm font-primary">Download</a>
+          </div>
+          <form class="fc--form">
+            <label class="text-ex">JOIN OUR COMMUNITY 🔥</label>
+            <div class="fc--send_email">
+              <input
+                type="email"
+                class="send-email"
+                placeholder="Enter your email "
+              />
+              <button>
+                <img
+                  src="resources/icons/send_maiol.svg"
+                  alt="send-email icon"
+                />
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="footer--bottom">
+          <p class="text-ex footer-bottom_copyright">
+            Copyright © 2021 UI8 LLC. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>

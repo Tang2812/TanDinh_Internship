@@ -1,305 +1,438 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>User profile</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/resources/css/reset.css">
-    <link rel="stylesheet" href="/resources/css/base.css">
-    <link rel="stylesheet" href="/resources/css/user_profile.css">
-    <link rel="stylesheet" href="resources/css/header.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/resources/css/reset.css" />
+    <link rel="stylesheet" href="/resources/css/base.css" />
+    <link rel="stylesheet" href="/resources/css/user_profile.css" />
+    <link rel="stylesheet" href="resources/css/header.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="header-container">
-            <header>
-                <!-- logo, role -->
-                <div class="header-left">
-                    <div class="logo">
-                        <img src="/resources/image/logo/logo.png" alt="Logo fleet" class="logo--img" id="logo">
-                        <label for="logo" class="logo--name">fleet</label>
-                    </div>
-                    <div class="line"></div>
-                    <select name="select_roles" id="select_roles"
-                        class="text-sm font-primary flex-aic header-left--selectRoles">
-                        <option value="Traveler">Traveler</option>
-                        <option value="Traveler">Traveler</option>
-                        <option value="Traveler">Traveler</option>
-                    </select>
-                </div>
-                <!-- avatar, notification, language.. -->
-                <div class="header-right">
-                    <button class="btn btn-ghost font-primary text-sm header-right--support">Support</button>
-                    <button class="btn btn-ghost header-right--btn">
-                        <img src="/resources/icons/language.png" alt="iconLanguage" class="header-right--iconLanguage">
-                        <span>Language</span>
-                    </button>
-                    <button class="btn btn-outline header-right--btn_mobile"> <span>List your property</span></button>
-                    <button class="flex-aic header-right--notification">
-                        <img src="/resources/icons/notification.png" alt="notification"
-                            class="notification--notificationImg">
-                    </button>
-                    <button class="header-right--avt_info">
-                        <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="header-right--avt">
-                    </button>
-
-                    <label for="nav-mobile-input" class="header-right--nav-mobile">
-                        <img src="resources/icons/nav_mobile.svg" alt="nav mobile icon">
-                    </label>
-                    <input hidden type="checkbox" class="nav-input" id="nav-mobile-input">
-                    <label for="nav-mobile-input" class="nav_overlay"></label>
-                    <nav class="nav-mobile">
-                        <label for="nav-mobile-input" class="x-icon">
-                            <img src="resources/icons/x_icon.svg" alt="x-icon">
-                        </label>
-                        <div class="nav-account--avt">
-                            <img src="/resources/image/avatar/KohakuTora_avt.png" alt="" class="nav-mobile--avt">
-                            <span class="nav-mobile--name-acount">Kohaku Tora</span>
-                        </div>
-                        <ul class="nav-mobile--list">
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">Support</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">Language</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">List your property</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">Home</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">About</a></li>
-                            <li><a href="#" class="text-base font-primary nav-mobile--link">Help</a></li>
-                        </ul>
-                    </nav>
-                    <!-- avt function -->
-                    <div class="header__list-property">
-                        <div class="property__primary">
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/choice_message.svg" alt="message icon">
-                                <span>Message</span>
-                            </a>
-
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/choice_booking.svg" alt="booking icon">
-                                <span>Bookings</span>
-                            </a>
-
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/choice_wishlists.svg" alt="Wishlists icon">
-                                <span>Wishlists</span>
-                            </a>
-                        </div>
-                        <div class="property-line"></div>
-                        <div class="property__primary">
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/choice_list-property.svg" alt="list property icon">
-                                <span>List your property</span>
-                            </a>
-                            <a href="#" class="property__choice">
-                                <img src="resources/icons/host_experience.svg" alt="Host experience icon">
-                                <span>Host an experience</span>
-                            </a>
-
-                        </div>
-                        <div class="property__list-fc">
-                            <button class="btn btn-outline property__btn">Account</button>
-                            <button class="btn btn-outline property__btn">Log out</button>
-                        </div>
-
-                    </div>
-                    <!-- notification function -->
-                    <div class="header__notification">
-                        <h2>Notification</h2>
-                        <div class="notification__container">
-                            <div class="notification__message">
-                                <img src="/resources/image/avatar/TobinHackett.png" alt="avt Message"
-                                    class="message__user-avt">
-                                <div class="message">
-                                    <span class="message__user-name">Kohaku Tora</span>
-                                    <span class="message__content">just sent you a message</span>
-                                    <span class="message__time">1 minute ago</span>
-                                </div>
-                            </div>
-                            <div class="notification__active"></div>
-                        </div>
-                        <div class="notification__container">
-                            <div class="notification__message">
-                                <img src="/resources/image/avatar/TobinHackett.png" alt="avt Message"
-                                    class="message__user-avt">
-                                <div class="message">
-                                    <span class="message__user-name">Kohaku Tora</span>
-                                    <span class="message__content">just sent you a message</span>
-                                    <span class="message__time">1 minute ago</span>
-                                </div>
-                            </div>
-                            <div class="notification__active"></div>
-                        </div>
-                    </div>
-
-                </div>
-            </header>
-        </div>
-
-        <div class="content-container">
-
-            <!-- backfround -->
-            <div class="profile-background">
-                <img src="/resources/image/profile_background/image.png" alt="backfround"
-                    class="profile-background__img">
-                <button class="flex-aic btn btn-outline profile-background__btn-edit">
-                    <img src="resources/icons/edit_background.svg" alt="edit background icon">
-                    <span>Edit cover</span></button>
+      <div class="header-container">
+        <header>
+          <!-- logo, role -->
+          <div class="header-left">
+            <div class="logo">
+              <img
+                src="/resources/image/logo/logo.png"
+                alt="Logo fleet"
+                class="logo--img"
+                id="logo"
+              />
+              <label for="logo" class="logo--name">fleet</label>
             </div>
-            <!-- main content -->
-            <div class="main-content">
-                <div class="profile-card">
-                    <div class="avt-container">
-                        <div class="avt_image-box">
-                            <picture>
-                                <source media="(min-width: 740px)"
-                                    srcset="./resources/image/avatar/KohakuTora_avt.png" />
-                                <source media="(max-width: 739px)" srcset="./resources/image/avatar/KohakuTora_avt.png"
-                                    width="112px" height="112px" />
-                                <img src="/resources/image/avatar/KohakuTora_avt.png" alt="card avt" class="card-avt">
-                            </picture>
-                            <img class="icon_verify-avt" src="/resources/icons/tick_avt_mobile.svg" alt="green tick">
-                        </div>
-                        <div class="btn-ghost profile__update-avt btn">
-                            <img src="/resources/icons/pencil.png" alt="icon pencil">
-                            <span>Update avatar</span>
-                        </div>
-                        <div class="profile-card__name">
-                            Kohaku Tora
-                        </div>
-                    </div>
+            <div class="line"></div>
+            <select
+              name="select_roles"
+              id="select_roles"
+              class="text-sm font-primary flex-aic header-left--selectRoles"
+            >
+              <option value="Traveler">Traveler</option>
+              <option value="Traveler">Traveler</option>
+              <option value="Traveler">Traveler</option>
+            </select>
+          </div>
+          <!-- avatar, notification, language.. -->
+          <div class="header-right">
+            <button
+              class="btn btn-ghost font-primary text-sm header-right--support"
+            >
+              Support
+            </button>
+            <button class="btn btn-ghost header-right--btn">
+              <img
+                src="/resources/icons/language.png"
+                alt="iconLanguage"
+                class="header-right--iconLanguage"
+              />
+              <span>Language</span>
+            </button>
+            <button class="btn btn-outline header-right--btn_mobile">
+              <span>List your property</span>
+            </button>
+            <button class="flex-aic header-right--notification">
+              <img
+                src="/resources/icons/notification.png"
+                alt="notification"
+                class="notification--notificationImg"
+              />
+            </button>
+            <button class="header-right--avt_info">
+              <img
+                src="/resources/image/avatar/KohakuTora_avt.png"
+                alt=""
+                class="header-right--avt"
+              />
+            </button>
 
-                    <div class="amount-review">
-                        <div class="amount-review__item">
-                            <img src="resources/icons/indentity_verified.svg" alt="indentity verified icon">
-                            <span class="text-sm">Indentity verified</span>
-                        </div>
-                        <div class="amount-review__item">
-                            <img src="resources/icons/amount_review.svg" alt="amount review item">
-                            <span>256 reviews</span>
-                        </div>
-                    </div>
-                    <div class="profile-card__link-website">
-                        <img src="resources/icons/link.svg" alt="link icon">
-                        <a>https://ui8.net</a>
-                    </div>
-                    <div class="profile-card__function-connect-user">
-                        <button class="btn btn-contact__mobile btn-outline "><span>Contact</span></button>
-                        <button class="btn btn-outline btn-message"><span>Message</span></button>
-                        <button class="btn btn-rounded">
-                            <img src="resources/icons/fc_share.svg" alt="share icon">
-                        </button>
-                        <button class="btn btn-rounded">
-                            <img src="resources/icons/other_fc.svg" alt="other fc">
-                        </button>
-                    </div>
-                    <div class="profile-card__other-profile">
-                        <img src="resources/icons/skyper.svg" alt="skyper icon">
-                        <img src="resources/icons/instagram.svg" alt="instagram icon">
-                        <img src="resources/icons/facebook.svg" alt="facebook icon">
-                    </div>
-                    <hr>
-                    <p class="profile-card__time-attended">Member since Mar 15,2017</p>
-                    <button class="profile-card__fc-report btn btn-ghost">
-                    <img src="resources/icons/report_flag.svg" alt="report_flag icon">
-                        <span>Report this host</span>
-                    </button>
-                </div>
-                <div class="content">
-                    <div class="profile">
-                        <!-- info -->
-                        <div class="profile__personal-info">
-                            <div class="personal-info__opener">
-                                <span>Hi, I'm Kohaku Tora</span>
-                                <a href="/account_setting.html"> <button class="btn btn-outline">Edit your
-                                        profile</button></a>
-                            </div>
-                            <div class="personal-info__caption">    
-                                <span>Described by Queenstown House & Garden magazine as having 'one of the best views
-                                    we've ever seen' you will love relaxing in this newly built</span>
-                            </div>
-                            <div class="personal-info__infomation">
-                                <div class="info-item">
-                                    <div class="info-item__label">
-                                        <img src="/resources/icons/home.png" alt="home icon">
-                                        <span>Lives in</span>
-                                    </div>
-                                    <p class="info-item__content">Auckland, New Zealand</p>
-                                </div>
+            <label for="nav-mobile-input" class="header-right--nav-mobile">
+              <img src="resources/icons/nav_mobile.svg" alt="nav mobile icon" />
+            </label>
+            <input
+              hidden
+              type="checkbox"
+              class="nav-input"
+              id="nav-mobile-input"
+            />
+            <label for="nav-mobile-input" class="nav_overlay"></label>
+            <nav class="nav-mobile">
+              <label for="nav-mobile-input" class="x-icon">
+                <img src="resources/icons/x_icon.svg" alt="x-icon" />
+              </label>
+              <div class="nav-account--avt">
+                <img
+                  src="/resources/image/avatar/KohakuTora_avt.png"
+                  alt=""
+                  class="nav-mobile--avt"
+                />
+                <span class="nav-mobile--name-acount">Kohaku Tora</span>
+              </div>
+              <ul class="nav-mobile--list">
+                <li>
+                  <a href="#" class="text-base font-primary nav-mobile--link"
+                    >Support</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-base font-primary nav-mobile--link"
+                    >Language</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-base font-primary nav-mobile--link"
+                    >List your property</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-base font-primary nav-mobile--link"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-base font-primary nav-mobile--link"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="text-base font-primary nav-mobile--link"
+                    >Help</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- avt function -->
+            <div class="header__list-property">
+              <div class="property__primary">
+                <a href="#" class="property__choice">
+                  <img
+                    src="resources/icons/choice_message.svg"
+                    alt="message icon"
+                  />
+                  <span>Message</span>
+                </a>
 
-                                <div class="info-item">
-                                    <div class="info-item__label">
-                                        <img src="/resources/icons/account.png" alt="account icon">
-                                        <span>Account</span>
-                                    </div>
-                                    <p class="info-item__content">Verified member</p>
-                                </div>
+                <a href="#" class="property__choice">
+                  <img
+                    src="resources/icons/choice_booking.svg"
+                    alt="booking icon"
+                  />
+                  <span>Bookings</span>
+                </a>
 
-                                <div class="info-item">
-                                    <div class="info-item__label">
-                                        <img src="/resources/icons/speak.png" alt="speak icon">
-                                        <span>Speak</span>
-                                    </div>
-                                    <p class="info-item__content">English, Vietnamese</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- review -->
-                    <div class="user-part">
-                        <div class="user-review__header">
-                            <span>1 review</span>
-                            <div class="fc-button">
-                                <button class="btn btn-ghost"><span>Review about you</span></button>
-                                <button class="btn btn-ghost"><Span>Reviews by you</Span></button>
-                            </div>
-                            <!-- <div class="horizontal-line"></div> -->
-                        </div>
-                        <div class="user-review-container">
-                            <div class="user-review">
-                                <!-- image user review -->
-                                <div class="user_review__img">
-                                    <img src="/resources/image/avatar/TobinHackett.png" alt="avt of user1">
-                                </div>
-                                <div class="user_review__content">
-                                    <!-- name user review -->
-                                    <h4>Tobin Hackett</h4>
-                                    <p>I enjoyed my communication with them and wish them only the best!</span>
-                                    <div class="footer-user-review">
-                                        <span>1 day ago</span>
-                                        <button class="user-review__action">Like</button>
-                                        <button class="user-review__action">Reply</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="user-review">
-                                <!-- image user review -->
-                                <div class="user_review__img">
-                                    <img src="/resources/image/avatar/MyritieRunoosion.png" alt="avt of user2">
-                                </div>
-                                <div class="user_review__content">
-                                    <!-- name user review -->
-                                    <h4>Myrtie Runolfsson</h4>
-                                    <p>Kohaku and her husband were great guests. I enjoyed my communication with them
-                                        and wish them only the best!</span>
-                                    <div class="footer-user-review">
-                                        <span>about 1 hour ago</span>
-                                        <button class="user-review__action">Like</button>
-                                        <button class="user-review__action">Reply</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <a href="#" class="property__choice">
+                  <img
+                    src="resources/icons/choice_wishlists.svg"
+                    alt="Wishlists icon"
+                  />
+                  <span>Wishlists</span>
+                </a>
+              </div>
+              <div class="property-line"></div>
+              <div class="property__primary">
+                <a href="#" class="property__choice">
+                  <img
+                    src="resources/icons/choice_list-property.svg"
+                    alt="list property icon"
+                  />
+                  <span>List your property</span>
+                </a>
+                <a href="#" class="property__choice">
+                  <img
+                    src="resources/icons/host_experience.svg"
+                    alt="Host experience icon"
+                  />
+                  <span>Host an experience</span>
+                </a>
+              </div>
+              <div class="property__list-fc">
+                <button class="btn btn-outline property__btn">Account</button>
+                <button class="btn btn-outline property__btn">Log out</button>
+              </div>
             </div>
-        </div>
+            <!-- notification function -->
+            <div class="header__notification">
+              <h2>Notification</h2>
+              <div class="notification__container">
+                <div class="notification__message">
+                  <img
+                    src="/resources/image/avatar/TobinHackett.png"
+                    alt="avt Message"
+                    class="message__user-avt"
+                  />
+                  <div class="message">
+                    <span class="message__user-name">Kohaku Tora</span>
+                    <span class="message__content"
+                      >just sent you a message</span
+                    >
+                    <span class="message__time">1 minute ago</span>
+                  </div>
+                </div>
+                <div class="notification__active"></div>
+              </div>
+              <div class="notification__container">
+                <div class="notification__message">
+                  <img
+                    src="/resources/image/avatar/TobinHackett.png"
+                    alt="avt Message"
+                    class="message__user-avt"
+                  />
+                  <div class="message">
+                    <span class="message__user-name">Kohaku Tora</span>
+                    <span class="message__content"
+                      >just sent you a message</span
+                    >
+                    <span class="message__time">1 minute ago</span>
+                  </div>
+                </div>
+                <div class="notification__active"></div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
 
+      <div class="content-container">
+        <!-- backfround -->
+        <div class="profile-background">
+          <img
+            src="/resources/image/profile_background/image.png"
+            alt="backfround"
+            class="profile-background__img"
+          />
+          <button class="flex-aic btn btn-outline profile-background__btn-edit">
+            <img
+              src="resources/icons/edit_background.svg"
+              alt="edit background icon"
+            />
+            <span>Edit cover</span>
+          </button>
+        </div>
+        <!-- main content -->
+        <div class="main-content">
+          <div class="profile-card">
+            <div class="avt-container">
+              <div class="avt_image-box">
+                <picture>
+                  <source
+                    media="(min-width: 740px)"
+                    srcset="./resources/image/avatar/KohakuTora_avt.png"
+                  />
+                  <source
+                    media="(max-width: 739px)"
+                    srcset="./resources/image/avatar/KohakuTora_avt.png"
+                    width="112px"
+                    height="112px"
+                  />
+                  <img
+                    src="/resources/image/avatar/KohakuTora_avt.png"
+                    alt="card avt"
+                    class="card-avt"
+                  />
+                </picture>
+                <img
+                  class="icon_verify-avt"
+                  src="/resources/icons/tick_avt_mobile.svg"
+                  alt="green tick"
+                />
+              </div>
+              <div class="btn-ghost profile__update-avt btn">
+                <img src="/resources/icons/pencil.png" alt="icon pencil" />
+                <span>Update avatar</span>
+              </div>
+              <div class="profile-card__name">Kohaku Tora</div>
+            </div>
+
+            <div class="amount-review">
+              <div class="amount-review__item">
+                <img
+                  src="resources/icons/indentity_verified.svg"
+                  alt="indentity verified icon"
+                />
+                <span class="text-sm">Indentity verified</span>
+              </div>
+              <div class="amount-review__item">
+                <img
+                  src="resources/icons/amount_review.svg"
+                  alt="amount review item"
+                />
+                <span>256 reviews</span>
+              </div>
+            </div>
+            <div class="profile-card__link-website">
+              <img src="resources/icons/link.svg" alt="link icon" />
+              <a>https://ui8.net</a>
+            </div>
+            <div class="profile-card__function-connect-user">
+              <button class="btn btn-contact__mobile btn-outline">
+                <span>Contact</span>
+              </button>
+              <button class="btn btn-outline btn-message">
+                <span>Message</span>
+              </button>
+              <button class="btn btn-rounded">
+                <img src="resources/icons/fc_share.svg" alt="share icon" />
+              </button>
+              <button class="btn btn-rounded">
+                <img src="resources/icons/other_fc.svg" alt="other fc" />
+              </button>
+            </div>
+            <div class="profile-card__other-profile">
+              <img src="resources/icons/skyper.svg" alt="skyper icon" />
+              <img src="resources/icons/instagram.svg" alt="instagram icon" />
+              <img src="resources/icons/facebook.svg" alt="facebook icon" />
+            </div>
+            <hr />
+            <p class="profile-card__time-attended">Member since Mar 15,2017</p>
+            <button class="profile-card__fc-report btn btn-ghost">
+              <img
+                src="resources/icons/report_flag.svg"
+                alt="report_flag icon"
+              />
+              <span>Report this host</span>
+            </button>
+          </div>
+          <div class="content">
+            <div class="profile">
+              <!-- info -->
+              <div class="profile__personal-info">
+                <div class="personal-info__opener">
+                  <span>Hi, I'm Kohaku Tora</span>
+                  <a href="/account_setting.html">
+                    <button class="btn btn-outline">
+                      Edit your profile
+                    </button></a
+                  >
+                </div>
+                <div class="personal-info__caption">
+                  <span
+                    >Described by Queenstown House & Garden magazine as having
+                    'one of the best views we've ever seen' you will love
+                    relaxing in this newly built</span
+                  >
+                </div>
+                <div class="personal-info__infomation">
+                  <div class="info-item">
+                    <div class="info-item__label">
+                      <img src="/resources/icons/home.png" alt="home icon" />
+                      <span>Lives in</span>
+                    </div>
+                    <p class="info-item__content">Auckland, New Zealand</p>
+                  </div>
+
+                  <div class="info-item">
+                    <div class="info-item__label">
+                      <img
+                        src="/resources/icons/account.png"
+                        alt="account icon"
+                      />
+                      <span>Account</span>
+                    </div>
+                    <p class="info-item__content">Verified member</p>
+                  </div>
+
+                  <div class="info-item">
+                    <div class="info-item__label">
+                      <img src="/resources/icons/speak.png" alt="speak icon" />
+                      <span>Speak</span>
+                    </div>
+                    <p class="info-item__content">English, Vietnamese</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- review -->
+            <div class="user-part">
+              <div class="user-review__header">
+                <span>1 review</span>
+                <div class="fc-button">
+                  <button class="btn btn-ghost">
+                    <span>Review about you</span>
+                  </button>
+                  <button class="btn btn-ghost">
+                    <span>Reviews by you</span>
+                  </button>
+                </div>
+                <!-- <div class="horizontal-line"></div> -->
+              </div>
+              <div class="user-review-container">
+                <div class="user-review">
+                  <!-- image user review -->
+                  <div class="user_review__img">
+                    <img
+                      src="/resources/image/avatar/TobinHackett.png"
+                      alt="avt of user1"
+                    />
+                  </div>
+                  <div class="user_review__content">
+                    <!-- name user review -->
+                    <h4>Tobin Hackett</h4>
+                    <p>
+                      I enjoyed my communication with them and wish them only
+                      the best!
+                    </p>
+                    <div class="footer-user-review">
+                      <span>1 day ago</span>
+                      <button class="user-review__action">Like</button>
+                      <button class="user-review__action">Reply</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="user-review">
+                  <!-- image user review -->
+                  <div class="user_review__img">
+                    <img
+                      src="/resources/image/avatar/MyritieRunoosion.png"
+                      alt="avt of user2"
+                    />
+                  </div>
+                  <div class="user_review__content">
+                    <!-- name user review -->
+                    <h4>Myrtie Runolfsson</h4>
+                    <p>
+                      Kohaku and her husband were great guests. I enjoyed my
+                      communication with them and wish them only the best!
+                    </p>
+                    <div class="footer-user-review">
+                      <span>about 1 hour ago</span>
+                      <button class="user-review__action">Like</button>
+                      <button class="user-review__action">Reply</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
