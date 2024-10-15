@@ -147,7 +147,7 @@
   padding: 6px 12px;
 }
 
-.fc-button .btn-ghost {
+.fc-button .btn--ghost {
   span {
     font-family: var(--font-primary);
     color: var(--neutral-4);
@@ -156,8 +156,8 @@
   }
 }
 
-.fc-button .btn-ghost:hover,
-.fc-button .btn-ghost:focus {
+.fc-button .btn--ghost:hover,
+.fc-button .btn--ghost:focus {
   background-color: var(--neutral-3);
 
   span {
@@ -182,32 +182,32 @@
   border-top: 1px solid var(--neutral-6);
 }
 
-.user_review__img {
+.user-review__img {
   width: 48px;
   height: 48px;
   flex-shrink: 0;
 }
 
-.user_review__img img {
+.user-review__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.user_review__content {
+.user-review__content {
   width: 100%;
   height: 100%;
   padding: 0;
 }
 
-.user_review__content h4 {
+.user-review__content h4 {
   font-size: var(--font-size-sm);
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 4px;
 }
 
-.user_review__content p {
+.user-review__content p {
   font-weight: 400;
   font-size: var(--font-size-sm);
   line-height: 24px;
@@ -215,7 +215,7 @@
   margin-bottom: 8px;
 }
 
-.footer-user-review {
+.user-review__footer {
   display: flex;
   gap: 16px;
   align-items: center;
@@ -228,7 +228,7 @@
   }
 }
 
-.footer-user-review .user-review__action {
+.user-review__footer .user-review__action {
   cursor: pointer;
   outline: none;
   border: none;
@@ -238,8 +238,8 @@
   color: var(--neutral-2);
 }
 
-.footer-user-review .user-review__action:hover,
-.footer-user-review .user-review__action:focus {
+.user-review__footer .user-review__action:hover,
+.user-review__footer .user-review__action:focus {
   color: var(--primary-1);
 }
 
@@ -271,7 +271,7 @@
   align-items: center;
 }
 
-.icon_verify-avt {
+.avt__icon-verify {
   display: none;
 }
 
@@ -302,7 +302,7 @@
   overflow: hidden;
   border-radius: 999px;
 
-  .card-avt {
+  .card__avt {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -385,15 +385,15 @@
   padding: 0;
 }
 
-.profile-card__function-connect-user .btn-outline {
+.profile-card__function-connect-user .btn--outline {
   background-color: var(--neutral-8);
   color: var(--neutral-2);
   gap: 12px 16px;
   padding: 12px 16px;
 }
 
-.profile-card__function-connect-user .btn-outline:hover,
-.profile-card__function-connect-user .btn-outline:focus {
+.profile-card__function-connect-user .btn--outline:hover,
+.profile-card__function-connect-user .btn--outline:focus {
   background-color: var(--neutral-2);
   color: var(--neutral-8);
 }
@@ -405,7 +405,7 @@
   line-height: 16px;
 }
 
-.profile-card__function-connect-user .btn-rounded {
+.profile-card__function-connect-user .btn--rounded {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -416,8 +416,8 @@
   border: 2px solid var(--neutral-6);
 }
 
-.profile-card__function-connect-user .btn-rounded:hover,
-.profile-card__function-connect-user .btn-rounded:focus {
+.profile-card__function-connect-user .btn--rounded:hover,
+.profile-card__function-connect-user .btn--rounded:focus {
   background-color: var(--neutral-2);
   color: var(--neutral-8);
 }
@@ -577,7 +577,7 @@ hr {
     gap: 22px;
   }
 
-  .avt-container .avt_image-box {
+  .avt-container .avt-image__box {
     position: relative;
     width: 112px;
     height: 112px;
@@ -587,12 +587,12 @@ hr {
     height: 112px;
     width: 112px;
 
-    .card-avt {
+    .card__avt {
       scale: 1.8;
     }
   }
 
-  .avt-container .icon_verify-avt {
+  .avt-container .avt__icon-verify {
     display: block;
     position: absolute;
     top: 0;

@@ -35,27 +35,27 @@ body {
   font-family: var(--font-secondary);
 }
 
-.text-xl {
+.text--xl {
   font-size: var(--font-size-xxl);
 }
 
-.text-lg {
+.text--lg {
   font-size: var(--font-size-l);
 }
 
-.text-base {
+.text--base {
   font-size: var(--font-size-medium);
 }
 
-.text-sm {
+.text--sm {
   font-size: var(--font-size-sm);
 }
 
-.text-ex {
+.text--ex {
   font-size: var(--font-size-xsm);
 }
 
-.flex-aic {
+.flex--aic {
   display: flex;
   align-items: center;
 }
@@ -75,7 +75,7 @@ body {
   border-radius: 99px;
 }
 
-.btn-ghost {
+.btn--ghost {
   border: none;
   display: flex;
   gap: 12px;
@@ -86,12 +86,12 @@ body {
   }
 }
 
-.btn-ghost:hover,
-.btn-ghost:focus {
+.btn--ghost:hover,
+.btn--ghost:focus {
   color: var(--neutral-2);
 }
 
-.btn-outline {
+.btn--outline {
   font-family: var(--font-primary);
   border: 2px solid var(--neutral-6);
   line-height: 16px;
@@ -102,8 +102,8 @@ body {
   }
 }
 
-.btn-outline:hover,
-.btn-outline:focus {
+.btn--outline:hover,
+.btn--outline:focus {
   background: var(--neutral-2);
   color: var(--neutral-8);
 }

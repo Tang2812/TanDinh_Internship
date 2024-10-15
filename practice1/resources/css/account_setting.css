@@ -10,7 +10,7 @@ header {
   padding-right: 0;
 }
 
-.main-form_edit {
+.main__form-edit {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -61,14 +61,14 @@ header {
   width: 100%;
 }
 
-.form-edit-user--header {
+.form-edit-user__header {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.header-form_title {
+.header-form__title {
   font-weight: 700;
   line-height: 56px;
   color: var(--neutral-2);
@@ -77,7 +77,7 @@ header {
   text-align: center;
 }
 
-.main-content_form {
+.main-content__form {
   width: 100%;
   gap: 48px;
   margin-top: 64px;
@@ -85,24 +85,24 @@ header {
 
 /* part-accountInfo */
 
-.accountInfo--name {
+.accountInfo__name {
   font-weight: 500;
   line-height: 24px;
   color: var(--neutral-2);
 }
 
-.accountInfo--table-info {
+.accountInfo__table-info {
   width: 100%;
 }
 
-.accountInfo--table-info td {
+.accountInfo__table-info td {
   display: flex;
   width: 100%;
   gap: 12px;
   flex-direction: column;
 }
 
-.accountInfo--table-info .input-info {
+.accountInfo__table-info .input-info {
   /* width: 358px; */
   width: 100%;
   height: 48px;
@@ -113,21 +113,21 @@ header {
   border: 2px solid var(--neutral-6);
 }
 
-.accountInfo--table-info .input-info:hover,
-.accountInfo--table-info .input-info:focus,
-.accountInfo--table-info .input-info:active,
-.accountInfo--table-info .input-info:target,
-.accountInfo--table-info .input-info:focus-visible {
+.accountInfo__table-info .input-info:hover,
+.accountInfo__table-info .input-info:focus,
+.accountInfo__table-info .input-info:active,
+.accountInfo__table-info .input-info:target,
+.accountInfo__table-info .input-info:focus-visible {
   border: 2px solid var(--primary-1);
 }
 
-.accountInfo--table-info .name-field_info {
+.accountInfo__table-info .input-field__name {
   font-weight: 700;
   line-height: 12px;
   color: var(--neutral-5);
 }
 
-.accountInfo--table-info .info-bio {
+.accountInfo__table-info .info-bio {
   display: flex;
   gap: 12px;
   margin-bottom: 32px;
@@ -163,12 +163,12 @@ header {
   margin-top: 32px;
 }
 
-.table__user-info_select {
+.table__user-info__select {
   position: relative;
   width: 100%;
 }
 
-.table__user-info_select select {
+.table__user-info__select select {
   width: 358px;
   height: 48px;
   display: flex;
@@ -182,13 +182,13 @@ header {
   background-color: white;
 }
 
-.table__user-info_select select:hover,
-.table__user-info_select select:focus,
-.table__user-info_select select:active {
+.table__user-info__select select:hover,
+.table__user-info__select select:focus,
+.table__user-info__select select:active {
   border: 2px solid var(--primary-1);
 }
 
-.table__user-info_select .opt-text {
+.table__user-info__select .opt-text {
   font-size: var(--font-size-sm);
   font-weight: 500;
   line-height: 24px;
@@ -196,7 +196,7 @@ header {
   color: var(--neutral-2);
 }
 
-.table__user-info_select::after {
+.table__user-info__select::after {
   display: flex;
   content: "";
   position: absolute;
@@ -228,18 +228,18 @@ header {
   margin-bottom: 32px;
 }
 
-.part-social__table-info {
+.table-info__tr {
   display: flex;
   flex-direction: row;
   gap: 20px;
   width: 100%;
 }
 
-.part-social--table-info {
+.part-social__table-info {
   width: 100%;
 }
 
-.part-social--table-info td {
+.part-social__table-info td {
   display: flex;
   width: 100%;
   height: 72px;
@@ -247,13 +247,13 @@ header {
   flex-direction: column;
 }
 
-.part-social--table-info .name-field_info {
+.part-social__table-info .input-field__name {
   font-weight: 700;
   line-height: 12px;
   color: var(--neutral-5);
 }
 
-.part-social--table-info .input-info {
+.part-social__table-info .input-info {
   height: 48px;
   padding: 12px 16px 12px 16px;
   gap: 10px;
@@ -271,11 +271,11 @@ header {
   }
 }
 
-.part-social--table-info .input-info:hover,
-.part-social--table-info .input-info:focus,
-.part-social--table-info .input-info:active,
-.part-social--table-info .input-info:target,
-.part-social--table-info .input-info:focus-visible {
+.part-social__table-info .input-info:hover,
+.part-social__table-info .input-info:focus,
+.part-social__table-info .input-info:active,
+.part-social__table-info .input-info:target,
+.part-social__table-info .input-info:focus-visible {
   border: 2px solid var(--primary-1);
 }
 
@@ -305,7 +305,7 @@ header {
   width: max-content;
 }
 
-.fc-verify .btn-verify {
+.fc-verify .btn--verify {
   position: absolute;
   top: 50%;
   right: 10px;
@@ -322,7 +322,7 @@ header {
   }
 }
 
-.form-footer {
+.form__footer {
   width: 100%;
   display: flex;
   margin-top: 48px;
@@ -333,12 +333,12 @@ header {
   gap: 16px;
 }
 
-.form-footer .btn {
+.form__footer .btn {
   padding: 16px 24px;
   border-radius: 90px;
 }
 
-.form-footer .btn-ghost {
+.form__footer .btn--ghost {
   color: var(--neutral-4);
 
   span {
@@ -351,8 +351,8 @@ header {
   }
 }
 
-.form-footer .btn-ghost:hover,
-.form-footer .btn-ghost:focus {
+.form__footer .btn--ghost:hover,
+.form__footer .btn--ghost:focus {
   background-color: var(--primary-1);
   color: var(--neutral-8);
 
@@ -369,7 +369,7 @@ header {
     padding: 0;
   }
 
-  .accountInfo .accountInfo--table-info {
+  .accountInfo .accountInfo__table-info {
     td {
       .input-info {
         width: 100%;
@@ -381,7 +381,7 @@ header {
     padding: 20px 80px;
   }
 
-  .main-form_edit {
+  .main__form-edit {
     margin-top: 64px;
     padding: 0 80px;
     gap: 32px;
@@ -392,7 +392,7 @@ header {
     width: 100%;
   }
 
-  .form-footer--clear {
+  .form__footer--clear {
     display: flex;
   }
 }
@@ -412,7 +412,7 @@ header {
     height: 100%;
   }
 
-  .main-content_form {
+  .main-content__form {
     margin-top: 32px;
   }
 
@@ -426,7 +426,7 @@ header {
     width: 100%;
   }
 
-  .main-form_edit {
+  .main__form-edit {
     width: 85%;
     margin: 8px 32px 32px 32px;
   }
@@ -435,11 +435,11 @@ header {
     margin-top: 24px;
   }
 
-  .accountInfo--name {
+  .accountInfo__name {
     margin-bottom: 0;
   }
 
-  .accountInfo--table-info {
+  .accountInfo__table-info {
     .table__user-info {
       flex-direction: column;
 
@@ -456,7 +456,7 @@ header {
     margin-bottom: 0;
   }
 
-  .header-form_title {
+  .header-form__title {
     max-width: 131px;
     font-size: var(--font-size-xl);
     font-weight: 700;
@@ -471,11 +471,11 @@ header {
     line-height: 16px;
   }
 
-  .part-social__table-info {
+  .table-info__tr {
     flex-direction: column;
   }
 
-  .form-footer {
+  .form__footer {
     .btn {
       padding: 16px 20px;
     }
