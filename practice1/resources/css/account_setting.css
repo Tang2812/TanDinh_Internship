@@ -220,7 +220,7 @@ header {
   margin-top: 48px;
 }
 
-.part-social--name {
+.part-social__name {
   width: 100%;
   font-weight: 500;
   line-height: 24px;
