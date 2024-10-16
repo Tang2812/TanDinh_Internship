@@ -86,7 +86,7 @@
   align-items: center;
 }
 
-.personal-info__infomation {
+.personal-info__information {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -608,7 +608,7 @@ hr {
     background-color: var(--neutral-8);
   }
 
-  .personal-info__infomation {
+  .personal-info__information {
     gap: 12px;
   }
 

@@ -145,7 +145,7 @@ header {
     }
   }
 
-  .header-left__selectRoles {
+  .header-left__select-roles {
     background: transparent;
     color: var(--neutral-4);
     font-weight: 700;
@@ -163,7 +163,7 @@ header {
   font-family: var(--font-primary);
 }
 
-.header-right__iconLanguage {
+.header-right__icon-language {
   width: 16px;
   height: 16px;
 }
@@ -201,7 +201,7 @@ header {
   gap: 10px;
 }
 
-.notification__notificationImg {
+.notification__notification-img {
   width: 24px;
   height: 24px;
 }
@@ -395,7 +395,7 @@ header {
     padding: 20px 40px;
   }
 
-  .header-right__iconLanguage {
+  .header-right__icon-language {
     display: none;
   }
 
@@ -456,7 +456,7 @@ header {
     display: none;
   }
 
-  .header-left__selectRoles {
+  .header-left__select-roles {
     display: none;
   }
 
@@ -464,7 +464,7 @@ header {
     gap: 20px;
   }
 
-  .header-right__iconLanguage {
+  .header-right__icon-language {
     display: none;
   }
 
