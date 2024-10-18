@@ -143,9 +143,6 @@ footer {
   }
 
   .footer-container {
-    /* padding-top: 80px;
-        margin-top: 136px;
-        */
     display: flex;
     flex-direction: column;
     justify-content: center;
