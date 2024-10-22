@@ -1,4 +1,5 @@
 .header-container {
+  position: relative;
   width: 100%;
 }
 
@@ -109,7 +110,7 @@ header {
 }
 
 .nav-mobile__link:hover,
-.nav-mobile__link:focus {
+.nav-mobile__link:focus-visible {
   color: var(--neutral-1);
 }
 
@@ -218,7 +219,7 @@ header {
   z-index: 9999;
   /* on top of the layout */
   top: 96px;
-  right: 160px;
+  right: 0px;
   max-width: 292px;
   width: 100%;
   display: flex;
@@ -258,7 +259,7 @@ header {
 }
 
 .property__choice:hover,
-.property__choice:focus {
+.property__choice:focus-visible {
   color: var(--neutral-1);
 }
 
@@ -280,7 +281,7 @@ header {
 }
 
 .property__btn:hover,
-.property__btn:focus {
+.property__btn:focus-visible {
   background-color: var(--primary-1);
 }
 
@@ -305,7 +306,7 @@ header {
   z-index: 9999;
   /* on top of the layout */
   top: 96px;
-  right: 160px;
+  right: 40px;
   max-width: 354px;
   width: 100%;
   display: flex;

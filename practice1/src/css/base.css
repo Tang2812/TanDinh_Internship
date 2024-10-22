@@ -87,23 +87,17 @@ body {
 }
 
 .btn--ghost:hover,
-.btn--ghost:focus {
+.btn--ghost:focus-visible {
   color: var(--neutral-2);
 }
 
 .btn--outline {
   font-family: var(--font-primary);
   border: 2px solid var(--neutral-6);
-  line-height: 16px;
-
-  span {
-    font-weight: 700;
-    font-size: var(--font-size-sm);
-  }
 }
 
 .btn--outline:hover,
-.btn--outline:focus {
+.btn--outline:focus-visible {
   background: var(--neutral-2);
   color: var(--neutral-8);
 }
