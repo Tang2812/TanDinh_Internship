@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>User profile</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -8,10 +8,10 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/resources/css/reset.css" />
-    <link rel="stylesheet" href="/resources/css/base.css" />
-    <link rel="stylesheet" href="/resources/css/user_profile.css" />
-    <link rel="stylesheet" href="resources/css/header.css" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/base.css" />
+    <link rel="stylesheet" href="/src/css/user_profile.css" />
+    <link rel="stylesheet" href="/src/css/header.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
@@ -23,16 +23,17 @@
           <div class="header-left">
             <div class="logo">
               <img
-                src="/resources/image/logo/logo.png"
+                src="/src/images/logos/logo.png"
                 alt="Logo fleet"
                 class="logo__img"
                 id="logo"
               />
-              <label for="logo" class="logo__name">fleet</label>
+              <span class="logo__name">fleet</span>
             </div>
             <div class="line"></div>
             <select
               name="roles"
+              title="select role"
               id="roles"
               class="text--sm font-primary flex--aic header-left__select-roles"
             >
@@ -50,7 +51,7 @@
             </button>
             <button class="btn btn--ghost header-right__btn">
               <img
-                src="/resources/icons/language.png"
+                src="/src/icons/language.png"
                 alt="icon language"
                 class="header-right__icon-language"
               />
@@ -59,23 +60,27 @@
             <button class="btn btn--outline header-right__btn-mobile">
               <span>List your property</span>
             </button>
-            <button class="flex--aic header-right__notification">
+            <button class="flex--aic header-right__notification" type="button" title="notification">
               <img
-                src="/resources/icons/notification.png"
+                src="/src/icons/notification.png"
                 alt="notification"
                 class="notification__notification-img"
               />
             </button>
-            <button class="header-right__avt-info">
+            <button
+              class="header-right__avt-info"
+              type="button"
+              title="avt button"
+            >
               <img
-                src="/resources/image/avatar/KohakuTora_avt.png"
-                alt="avt user"
+                src="/src/images/avatars/KohakuTora_avt.png"
+                alt=""
                 class="header-right__avt"
               />
             </button>
 
             <label for="nav-mobile-input" class="header-right__nav-mobile">
-              <img src="resources/icons/nav_mobile.svg" alt="nav mobile icon" />
+              <img src="/src/icons/nav_mobile.svg" alt="nav mobile icon" />
             </label>
             <input
               hidden
@@ -86,11 +91,11 @@
             <label for="nav-mobile-input" class="nav__overlay"></label>
             <nav class="nav-mobile">
               <label for="nav-mobile-input" class="x-icon">
-                <img src="resources/icons/x_icon.svg" alt="x-icon" />
+                <img src="/src/icons/x_icon.svg" alt="x-icon" />
               </label>
               <div class="nav-account__avt">
                 <img
-                  src="/resources/image/avatar/KohakuTora_avt.png"
+                  src="/src/images/avatars/KohakuTora_avt.png"
                   alt=""
                   class="nav-mobile__avt"
                 />
@@ -133,24 +138,18 @@
             <div class="header__list-property">
               <div class="property__primary">
                 <a href="#" class="property__choice">
-                  <img
-                    src="resources/icons/choice_message.svg"
-                    alt="message icon"
-                  />
+                  <img src="/src/icons/choice_message.svg" alt="message icon" />
                   <span>Message</span>
                 </a>
 
                 <a href="#" class="property__choice">
-                  <img
-                    src="resources/icons/choice_booking.svg"
-                    alt="booking icon"
-                  />
+                  <img src="/src/icons/choice_booking.svg" alt="booking icon" />
                   <span>Bookings</span>
                 </a>
 
                 <a href="#" class="property__choice">
                   <img
-                    src="resources/icons/choice_wishlists.svg"
+                    src="/src/icons/choice_wishlists.svg"
                     alt="Wishlists icon"
                   />
                   <span>Wishlists</span>
@@ -160,14 +159,14 @@
               <div class="property__primary">
                 <a href="#" class="property__choice">
                   <img
-                    src="resources/icons/choice_list-property.svg"
+                    src="/src/icons/choice_list-property.svg"
                     alt="list property icon"
                   />
                   <span>List your property</span>
                 </a>
                 <a href="#" class="property__choice">
                   <img
-                    src="resources/icons/host_experience.svg"
+                    src="/src/icons/host_experience.svg"
                     alt="Host experience icon"
                   />
                   <span>Host an experience</span>
@@ -184,7 +183,7 @@
               <div class="notification__container">
                 <div class="notification__message">
                   <img
-                    src="/resources/image/avatar/TobinHackett.png"
+                    src="/src/images/avatars/TobinHackett.png"
                     alt="avt Message"
                     class="message__user-avt"
                   />
@@ -201,7 +200,7 @@
               <div class="notification__container">
                 <div class="notification__message">
                   <img
-                    src="/resources/image/avatar/TobinHackett.png"
+                    src="/src/images/avatars/TobinHackett.png"
                     alt="avt Message"
                     class="message__user-avt"
                   />
@@ -217,14 +216,14 @@
               </div>
             </div>
           </div>
-        </header>
+        </header>             
       </div>
 
       <div class="content-container">
         <!-- backfround -->
         <div class="profile-background">
           <img
-            src="/resources/image/profile_background/image.png"
+            src="/src/images/profile_backgrounds/image.png"
             alt="backfround"
             class="profile-background__img"
           />
@@ -232,7 +231,7 @@
             class="flex--aic btn btn--outline profile-background__btn-edit"
           >
             <img
-              src="resources/icons/edit_background.svg"
+              src="/src/icons/edit_background.svg"
               alt="edit background icon"
             />
             <span>Edit cover</span>
@@ -246,28 +245,28 @@
                 <picture>
                   <source
                     media="(min-width: 740px)"
-                    srcset="./resources/image/avatar/KohakuTora_avt.png"
+                    srcset="/src/images/avatars/KohakuTora_avt.png"
                   />
                   <source
                     media="(max-width: 739px)"
-                    srcset="./resources/image/avatar/KohakuTora_avt.png"
+                    srcset="/src/images/avatars/KohakuTora_avt.png"
                     width="112px"
                     height="112px"
                   />
                   <img
-                    src="/resources/image/avatar/KohakuTora_avt.png"
+                    src="/src/images/avatars/KohakuTora_avt.png"
                     alt="card avt"
                     class="card__avt"
                   />
                 </picture>
                 <img
                   class="avt__icon-verify"
-                  src="/resources/icons/tick_avt_mobile.svg"
+                  src="/src/icons/tick_avt_mobile.svg"
                   alt="green tick"
                 />
               </div>
               <div class="btn--ghost profile__update-avt btn">
-                <img src="/resources/icons/pencil.png" alt="icon pencil" />
+                <img src="/src/icons/pencil.png" alt="icon pencil" />
                 <span>Update avatar</span>
               </div>
               <div class="profile-card__name">Kohaku Tora</div>
@@ -276,21 +275,21 @@
             <div class="amount-review">
               <div class="amount-review__item">
                 <img
-                  src="resources/icons/indentity_verified.svg"
+                  src="/src/icons/indentity_verified.svg"
                   alt="indentity verified icon"
                 />
                 <span class="text--sm">Indentity verified</span>
               </div>
               <div class="amount-review__item">
                 <img
-                  src="resources/icons/amount_review.svg"
+                  src="/src/icons/amount_review.svg"
                   alt="amount review item"
                 />
                 <span>256 reviews</span>
               </div>
             </div>
             <div class="profile-card__link-website">
-              <img src="resources/icons/link.svg" alt="link icon" />
+              <img src="/src/icons/link.svg" alt="link icon" />
               <a>https://ui8.net</a>
             </div>
             <div class="profile-card__function-connect-user">
@@ -301,22 +300,22 @@
                 <span>Message</span>
               </button>
               <button class="btn btn--rounded">
-                <img src="resources/icons/fc_share.svg" alt="share icon" />
+                <img src="/src/icons/fc_share.svg" alt="share icon" />
               </button>
               <button class="btn btn--rounded">
-                <img src="resources/icons/other_fc.svg" alt="other fc" />
+                <img src="/src/icons/other_fc.svg" alt="other fc" />
               </button>
             </div>
             <div class="profile-card__other-profile">
-              <img src="resources/icons/skyper.svg" alt="skyper icon" />
-              <img src="resources/icons/instagram.svg" alt="instagram icon" />
-              <img src="resources/icons/facebook.svg" alt="facebook icon" />
+              <img src="/src/icons/skyper.svg" alt="skyper icon" />
+              <img src="/src/icons/instagram.svg" alt="instagram icon" />
+              <img src="/src/icons/facebook.svg" alt="facebook icon" />
             </div>
             <hr />
             <p class="profile-card__time-attended">Member since Mar 15,2017</p>
             <button class="profile-card__fc-report btn btn--ghost">
               <img
-                src="resources/icons/report_flag.svg"
+                src="/src/icons/report_flag.svg"
                 alt="report flag icon"
               />
               <span>Report this host</span>
@@ -328,7 +327,7 @@
               <div class="profile__personal-info">
                 <div class="personal-info__opener">
                   <span>Hi, I'm Kohaku Tora</span>
-                  <a href="/account_setting.html">
+                  <a href="/layouts/account_setting.html">
                     <button class="btn btn--outline">
                       Edit your profile
                     </button></a
@@ -344,7 +343,7 @@
                 <div class="personal-info__information">
                   <div class="info-item">
                     <div class="info-item__label">
-                      <img src="/resources/icons/home.png" alt="home icon" />
+                      <img src="/src/icons/home.png" alt="home icon" />
                       <span>Lives in</span>
                     </div>
                     <p class="info-item__content">Auckland, New Zealand</p>
@@ -353,7 +352,7 @@
                   <div class="info-item">
                     <div class="info-item__label">
                       <img
-                        src="/resources/icons/account.png"
+                        src="/src/icons/account.png"
                         alt="account icon"
                       />
                       <span>Account</span>
@@ -363,7 +362,7 @@
 
                   <div class="info-item">
                     <div class="info-item__label">
-                      <img src="/resources/icons/speak.png" alt="speak icon" />
+                      <img src="/src/icons/speak.png" alt="speak icon" />
                       <span>Speak</span>
                     </div>
                     <p class="info-item__content">English, Vietnamese</p>
@@ -386,10 +385,10 @@
               </div>
               <div class="user-review-container">
                 <div class="user-review">
-                  <!-- image user review -->
+                  <!-- images user review -->
                   <div class="user-review__img">
                     <img
-                      src="/resources/image/avatar/TobinHackett.png"
+                      src="/src/images/avatars/TobinHackett.png"
                       alt="avt of user "
                     />
                   </div>
@@ -408,10 +407,10 @@
                   </div>
                 </div>
                 <div class="user-review">
-                  <!-- image user review -->
+                  <!-- images user review -->
                   <div class="user-review__img">
                     <img
-                      src="/resources/image/avatar/MyritieRunoosion.png"
+                      src="/src/images/avatars/MyritieRunoosion.png"
                       alt="avt of user"
                     />
                   </div>
